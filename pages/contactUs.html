@@ -4,87 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - <?php echo $institute_name; ?></title>
-    <style>
-        /* CSS styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #0d0d0d; /* dark gray background */
-        }
-
-        header {
-            background-color: #e60000; /* primary color */
-            padding: 1em;
-            text-align: center;
-        }
-
-        header nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        header nav ul li {
-            margin-right: 20px;
-        }
-
-        header nav a {
-            color: #ffffff; /* white text color */
-            text-decoration: none;
-        }
-
-        .contact-form {
-            background-color: #0d0d0d; /* dark gray background */
-            padding: 2em;
-            max-width: 600px;
-            margin: 40px auto;
-            border: 1px solid #e60000; /* primary color */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-form label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #e60000; /* primary color */
-            border-radius: 5px;
-        }
-
-        .contact-form input[type="submit"] {
-            background-color: #e60000; /* primary color */
-            color: #ffffff; /* white text color */
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .contact-form input[type="submit"]:hover {
-            background-color: #e60000; /* primary color */
-            opacity: 0.8;
-        }
-
-        .success {
-            color: #e60000; /* primary color */
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .error {
-            color: #e60000;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="contact.css">
+       
 </head>
 <body>
     <header>
@@ -94,6 +15,14 @@
                 <li><a href="about.php">About</a></li>
                 <li><a href="courses.php">Courses</a></li>
                 <li><a href="contact.php">Contact</a></li>
+                <li><a href="adimission.php">adimission</a></li>
+                <li><a href="events.php">events</a></li>
+                <li><a href="examination.php">examination</a></li>
+                <li><a href="syllabus.php">syllabus</a></li>
+                <li><a href="career.php">career</a></li>
+
+
+
             </ul>
         </nav>
     </header>
@@ -105,7 +34,7 @@
             <?php } elseif (isset($error)) { ?>
             <p class="error"><?php echo $error; ?></p>
             <?php } ?>
-            <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
+            <form action="<?php echo $_SERVER["PHP_SELF"]; ?>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -120,7 +49,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 <?php echo $institute_name; ?></p>
+        <p>&copy; <?php echo $vitm_name; ?></p>
     </footer>
 </body>
 </html>

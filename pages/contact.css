@@ -1,0 +1,81 @@
+<style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #444141; /* dark gray background */
+        }
+
+        header {
+            background-color: #e60000; /* primary color */
+            padding: 1em;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav a {
+            color: #f8f6f6; /* white text color */
+            text-decoration: none;
+        }
+
+        .contact-form {
+            background-color: #75dffc; /* dark gray background */
+            padding: 2em;
+            max-width: 600px;
+            margin: 40px auto;
+            border: 1px solid #e60000; /* primary color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #e60000; /* primary color */
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #e60000; /* primary color */
+            color: #c6c2c2; /* white text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #910b0b; /* primary color */
+            opacity: 0.8;
+        }
+
+        .success {
+            color: #961717; /* primary color */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .error {
+            color: #e60000;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
