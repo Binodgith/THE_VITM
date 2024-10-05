@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --primary-color-index: #e60000;
+    --black-color-index:black;
+    --white-color-index:white;
+    --ghost-white-index:ghostWhite; 
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #0d0d0d;
