@@ -9,9 +9,9 @@
     --ghost-white-index:ghostWhite; 
 }
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fef2f2;
-    color: #ffffff;
+    font-family: Georgia, sans-serif ;
+    background-color: #ffffff;
+    color: #000000;
     margin: 0;
     padding: 0;
 }
