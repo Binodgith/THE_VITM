@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color-index: #e60000;
+    --black-color-index:black;
+    --white-color-index:white;
+    --ghost-white-index:ghostWhite;
+    
+
+    
+}
