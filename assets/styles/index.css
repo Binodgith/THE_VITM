@@ -165,5 +165,63 @@ body{
 /* -----------------------------------------------Menu Bar Section--------------------------------------------- */
 
 
+#Menu-bar-sec{
+    width: 100%;
+    background-color: var(--primary-color-index);
+}
+#Menu-bar-sec #menu-list-container{
+    width: 90%;
+    margin: auto;
+}
+#Menu-bar-sec #menu-list-container ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    gap: 0px;
+    position: relative;
+}
+#Menu-bar-sec #menu-list-container ul>li{
+    width: 11%;
+    text-align: center;
+   font-size: 1.1rem;
+   padding: 8px 5px;
+   transition: 0.3s;
+   align-items: center;
+   
+}
+#Menu-bar-sec #menu-list-container>ul>li:hover{
+    background-color: var(--white-color-index);
+    border-radius: 8px;
+    color: var(--primary-color-index);
 
-  
+}
+#Menu-bar-sec #menu-list-container>ul>li:hover  a{
+    color: var(--primary-color-index);
+}
+
+#Menu-bar-sec #menu-list-container ul a{
+    font-family: var(--font-roboto);
+    text-decoration: none;
+    color: var(--white-color-index);
+
+}
+
+#Menu-bar-sec #menu-list-container #menu-sub-list{
+    position: absolute;
+    display: block;
+    top: 100%;
+}
+#Menu-bar-sec #menu-list-container #menu-sub-list li{
+    background-color: var(--primary-color-index);
+    margin: 1px 0px;
+}
+#Menu-bar-sec #menu-list-container #menu-sub-list li a{
+    color: var(--white-color-index);
+}
+#Menu-bar-sec #menu-list-container #menu-sub-list li:hover{
+    background-color: var(--white-color-index) ;
+}
+#Menu-bar-sec #menu-list-container #menu-sub-list li:hover a{
+    color: var(--primary-color-index);
+}
