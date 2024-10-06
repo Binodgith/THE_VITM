@@ -6,6 +6,7 @@
     --white-color-index:white;
     --ghost-white-index:ghostWhite;
     --blue1-index:#0000e6;
+    --black-index:black;
     --font-roboto-condensed:"Roboto Condensed", sans-serif;
     --font-poppins:"Poppins";
     --font-roboto:"Roboto", sans-serif;
@@ -22,16 +23,19 @@
 body{
     background-color: var(--ghost-white-index);
 }
+header{
+    z-index: 1000;
+}
 
 /* ----------------------------------To- Tgaline Section---------------------------------------------------------------- */
 #top-sec{
     /* background-color: var(--primary-color-index); */
-    background: linear-gradient(34deg,var(--primary-color-index)3%, var(--blue1-index) 15%, var(--primary-color-index)50%);
+    background: linear-gradient(34deg,var(--primary-color-index)3%, var(--blue1-index) 15%, rgb(248, 170, 0) 50%);
 } 
 
 #top-1{
     width:90%;
-    height: 4vh;
+    height: 3.5vh;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -179,15 +183,16 @@ body{
     display: flex;
     justify-content:space-between;
     gap: 0px;
-    position: relative;
+    /* position: relative; */
 }
 #Menu-bar-sec #menu-list-container ul>li{
-    width: 11%;
+    width: 15%;
     text-align: center;
    font-size: 1.1rem;
-   padding: 8px 5px;
+   padding: 10px 6px;
    transition: 0.3s;
    align-items: center;
+   position: relative;
    
 }
 #Menu-bar-sec #menu-list-container>ul>li:hover{
@@ -196,6 +201,14 @@ body{
     color: var(--primary-color-index);
 
 }
+
+#Menu-bar-sec #menu-list-container>ul>li:hover #menu-sub-list li{
+    display: block;
+}
+
+
+
+
 #Menu-bar-sec #menu-list-container>ul>li:hover  a{
     color: var(--primary-color-index);
 }
@@ -208,14 +221,20 @@ body{
 }
 
 #Menu-bar-sec #menu-list-container #menu-sub-list{
+    z-index: 100;
     position: absolute;
     display: block;
     top: 100%;
 }
 #Menu-bar-sec #menu-list-container #menu-sub-list li{
-    background-color: var(--primary-color-index);
+    width: 100%;
+    /* background-color: var(--primary-color-index); */
+    background-color:#e60000b6 ;
     margin: 1px 0px;
+    display: none;
 }
+
+
 #Menu-bar-sec #menu-list-container #menu-sub-list li a{
     color: var(--white-color-index);
 }
@@ -224,4 +243,219 @@ body{
 }
 #Menu-bar-sec #menu-list-container #menu-sub-list li:hover a{
     color: var(--primary-color-index);
+}
+
+
+
+
+/* ----------------------------slider section------------------------------------------------ */
+#index-slider-sec{
+    overflow: hidden;
+    z-index: 0;
+}
+#slider-sec-container{
+    width: 400%;
+    position: relative;
+    display: flex;
+    animation-name: index-banner-slide;
+    animation-iteration-count: infinite;
+    animation-duration: 15S;
+}
+#slider-sec-container a {
+    width: 25%;
+}
+#slider-sec-container img{
+    width:100%;
+    
+}
+
+
+@keyframes index-banner-slide {
+    0%{
+        left: 0;
+    }
+    20%{
+        left:0;
+    }
+    26%{
+        left: -100%;
+    }
+    45%{
+        left:-100%;
+    }
+    52%{
+        left:-200%;
+    }
+    70%{
+        left: -200%;
+    }
+    76%{
+        left:-300%;
+    }
+    90%{
+        left:-300%;
+    }
+    100%{
+        left: 0;
+    }
+
+}
+
+
+
+
+/* ---------------------------------------------LAtest notification section------------------------------------------- */
+#index-latest-notification{
+    width: 100%;
+    margin: 30px 0px;
+}
+
+#latest-notification-container{
+    width: 80%;
+    margin: auto;
+}
+
+#latest-notification-container #notification-box{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    border: 2px solid var(--primary-color-index);   
+    border-radius: 20px;
+   overflow: hidden;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#latest-notification-container #notification-box .box-title{
+    width: 20%;
+    background-color: var(--primary-color-index);
+    padding: 10px;
+    color: var(--white-color-index);
+    text-align: center;
+    align-items: center;
+    font-family: var(--font-roboto);
+}
+#latest-notification-container #notification-box .box-content{
+    width: 80%;
+
+}
+
+#latest-notification-container #notification-box .box-content section{
+    padding: 10px;
+    animation-name: scroll-notice;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+}
+
+@keyframes scroll-notice {
+    0%{
+        top: 0%;
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+    100%{
+        top: 0%;
+    }
+}
+
+
+
+#latest-notification-container #notification-box .box-content section a{
+    display: block;
+    font-size: 1.4rem;
+    margin: 15px 0px;
+    
+}
+
+
+
+
+
+/* ---------------------------------Admission Advertisment ---------------------- */
+#Ads-admission1{
+    width: 100%;
+    margin: 70px 0px;
+}
+
+#Ads-admission1 #ads-asmission-container{
+    width: 90%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#Ads-admission1 #ads-asmission-container img{
+    width: 100%;
+}
+
+
+
+
+
+/* --------------------------Announcement Box-------------------------------- */
+#announcement_event{
+    width: 100%;
+}
+
+#announcement_event #announcement_event_container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+#announcement_event #announcement_event_container #announcement-box{
+    width: 40%;
+    /* height: 60vh; */
+    border: 2px solid var(--black-color-index);
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: var(--font-roboto);
+}
+
+#announcement_event_container #announcement-box #announcement-heading{
+    background-color: var(--primary-color-index);
+    border-bottom: 2px solid var(--black-color-index);
+    padding: 18px;
+    display: block;
+    color: var(--white-color-index);
+}
+
+#announcement_event_container #announcement-box #announcement-content {
+    padding: 20px;
+    background-color: var(--white-color-index);
+    overflow: hidden;
+    height: 40vh;
+}
+
+#announcement_event_container #announcement-box #announcement-content section a{
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(29, 29, 29);
+    border-bottom: 0.7px solid grey;    
+}
+
+#announcement_event_container #announcement-box #announcement-content section{
+    /* z-index: 0; */
+    display: block;
+    animation-name: scroll-notice;
+    animation-iteration-count: infinite;
+    animation-duration: 35s;
+}
+
+#announcement_event_container #announcement-box #announcement-btn a{
+    text-align: right;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color:var(--primary-color-index);
+    color: var(--white-color-index);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#announcement_event_container #announcement-box #announcement-btn a:hover{
+    opacity: 70%;
 }
