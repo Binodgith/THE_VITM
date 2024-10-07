@@ -186,10 +186,10 @@ header{
     /* position: relative; */
 }
 #Menu-bar-sec #menu-list-container ul>li{
-    width: 15%;
+    width: 12%;
     text-align: center;
    font-size: 1.1rem;
-   padding: 10px 6px;
+   padding: 10px 3px;
    transition: 0.3s;
    align-items: center;
    position: relative;
@@ -321,8 +321,8 @@ header{
     display: flex;
     border: 2px solid var(--primary-color-index);   
     border-radius: 20px;
-   overflow: hidden;
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 #latest-notification-container #notification-box .box-title{
@@ -343,7 +343,7 @@ header{
     padding: 10px;
     animation-name: scroll-notice;
     animation-iteration-count: infinite;
-    animation-duration: 25s;
+    animation-duration: 30s;
 }
 
 @keyframes scroll-notice {
@@ -394,26 +394,31 @@ header{
 /* --------------------------Announcement Box-------------------------------- */
 #announcement_event{
     width: 100%;
+    margin-bottom: 10vh;
+    
 }
 
 #announcement_event #announcement_event_container{
     width: 90%;
     margin: auto;
     display: flex;
+    justify-content: space-around;
+    height: 63vh;
 }
 
 #announcement_event #announcement_event_container #announcement-box{
     width: 40%;
     /* height: 60vh; */
-    border: 2px solid var(--black-color-index);
+    border: 1px solid var(--black-color-index);
     border-radius: 20px;
     overflow: hidden;
     font-family: var(--font-roboto);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 #announcement_event_container #announcement-box #announcement-heading{
     background-color: var(--primary-color-index);
-    border-bottom: 2px solid var(--black-color-index);
+    border-bottom: 1px solid var(--black-color-index);
     padding: 18px;
     display: block;
     color: var(--white-color-index);
@@ -443,9 +448,13 @@ header{
     animation-duration: 35s;
 }
 
-#announcement_event_container #announcement-box #announcement-btn a{
+#announcement_event_container #announcement-box #announcement-btn{
     text-align: right;
-    font-size: 1.2rem;
+}
+
+
+#announcement_event_container #announcement-box #announcement-btn a{
+    font-size: 1.2rem; 
     display: inline-block;
     margin: 10px;
     padding: 10px;
@@ -457,5 +466,87 @@ header{
 }
 
 #announcement_event_container #announcement-box #announcement-btn a:hover{
+    opacity: 70%;
+}
+
+
+
+
+
+
+/* ----------------------------Event Management ----------------------------------------- */
+#event-box{
+    width: 40%;
+    border: 1px solid var(--black-color-index);
+    /* padding: 20px; */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#event-box #event-title{
+    background-color: rgba(128, 128, 128, 0.63);
+    padding: 15px;
+    border-bottom: 1px solid var(--black-color-index);
+}
+
+
+#event-box  #event-content{
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: auto;
+    height: 43vh;
+    background-color: var(--white-color-index);
+}
+
+#event-box  #event-content #event{
+    display: flex;
+    margin: 30px 0px;
+    
+}
+
+#event-box  #event-content #event .event-year{
+    font-size: 1.3rem;
+}
+
+#event-box  #event-content #event .calender-icon{
+   display: inline;
+    align-items: center;
+}
+
+#event-box  #event-content #event .event-date{
+    width: 38%;
+    padding: 10px;
+    background-color: var(--primary-color-index);
+    border-radius: 10px;
+    margin: 0px 10px;
+    color: var(--white-color-index);
+    text-align: center;
+    box-shadow: 1px 3px gray;
+
+}
+
+#event-box  #event-content #event #event-description p{
+    /* font-size: 0.8rem; */
+}
+
+#event-box  #event-btn{
+    text-align: right;
+}
+
+#event-box  #event-btn a{
+
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color:gray;
+    color: var(--black-color-index);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#event-box  #event-btn a:hover{
     opacity: 70%;
 }
