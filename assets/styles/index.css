@@ -12,7 +12,7 @@
     --font-poppins:"Poppins";
     --font-roboto:"Roboto", sans-serif;
     --font-open-sans:"Open Sans", sans-serif;
-    
+    --font-pacifico:"Pacifico", cursive;
 }
 
 
@@ -54,12 +54,13 @@ header{
     animation-name: tagline-blink ;
     animation-duration: 1.3s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes tagline-blink {
     0%{
         display: block;
-    };
+    }
     49%{
         display:block ;
     }
@@ -262,6 +263,7 @@ header{
     animation-name: index-banner-slide;
     animation-iteration-count: infinite;
     animation-duration: 15S;
+    animation-timing-function: linear;
 }
 #slider-sec-container a {
     width: 25%;
@@ -310,10 +312,11 @@ header{
 #index-latest-notification{
     width: 100%;
     margin: 30px 0px;
+    overflow: hidden;
 }
 
 #latest-notification-container{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -322,8 +325,8 @@ header{
     height: 7vh;
     display: flex;
     border: 2px solid var(--primary-color-index);   
-    border-radius: 20px;
-    overflow: hidden;
+    border-radius: 10px;
+    /* overflow: hidden; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
@@ -338,34 +341,22 @@ header{
 }
 #latest-notification-container #notification-box .box-content{
     width: 80%;
-
+    overflow: hidden;
 }
 
 #latest-notification-container #notification-box .box-content section{
+    width: 200%;
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
-    animation-name: scroll-notice;
-    animation-iteration-count: infinite;
+    animation-name: scroll-left-animation;
     animation-duration: 30s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
 }
-
-@keyframes scroll-notice {
-    0%{
-        top: 0%;
-    }
-    100%{
-        transform: translateY(-100%);
-    }
-    100%{
-        top: 0%;
-    }
-}
-
-
 
 #latest-notification-container #notification-box .box-content section a{
-    display: block;
-    font-size: 1.4rem;
-    margin: 15px 0px;
+    font-size: 1.2rem;
     
 }
 
@@ -450,6 +441,21 @@ header{
     animation-iteration-count: infinite;
     animation-duration: 35s;
 }
+
+@keyframes scroll-notice {
+    0%{
+        top: 0%;
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+    100%{
+        top: 0%;
+    }
+
+    
+}
+
 
 #announcement_event_container #announcement-box #announcement-btn{
     text-align: right;
@@ -634,12 +640,12 @@ header{
 
 
 /* -------------------------------------Reservation-box-------------------------------- */
-#reservation-box{
+.bg-blue-gradient{
     margin-bottom: 10vh;
     background-image: linear-gradient(90deg, rgba(0, 3, 59, 0.788),rgb(0, 29, 66)), url('../media/reservation-bc.jpg');
     /* height: 20vh; */
     background-size: cover;
-    opacity: 80%;
+    /* opacity: 80%; */
     padding: 10vh;
 }
 #reservation-box #reservation-box-container{
@@ -647,6 +653,7 @@ header{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    
 }
 #reservation-box #reservation-box-container .reservation-content{
     font-size: 1.8rem;
@@ -774,4 +781,264 @@ header{
 /* ---------------------------------Student Achiement------------------------------------ */
 
 
+#student-achievement-sec{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 
+}
+#student-achievement-container{
+    overflow: hidden;
+}
+
+#student-achievement-container #student-achievement-content{
+    width: 250%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    gap: 3rem;
+    animation-name: slide-left-step;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes slide-left-step {
+    0%{
+        left:0%;
+    }
+    25%{
+        left: 0%;
+    }
+    26%{
+        left: -50%;
+    }
+    50%{
+        left:-50% ;
+    }
+    51%{
+        left: -100%;
+    }
+    75%{
+        left: -100%;
+    }
+    76%{
+        left: -150%;
+    }
+    99%{
+        left: -150%;
+    }
+    100%{
+        left: 0%;
+    }
+    
+}
+
+
+
+#student-achievement-container #student-achievement-content .achievement-box{
+    /* width: 30%; */
+    text-align: center;
+    background-color: var(--white-color-index);
+    border-radius: 10px;
+    padding: 4vh 0vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#student-achievement-content .achievement-box .student-img-box{
+    width: 30%;
+    margin: auto;
+    border-radius: 60%;
+    overflow: hidden;
+}
+#student-achievement-content .achievement-box .student-img-box img{
+    width: 100%;
+}
+#student-achievement-content .achievement-box .greeting-message{
+    font-size: 2rem;
+    font-family: var(--font-pacifico);
+    color: var(--primary-color-index);
+}
+
+#student-achievement-content .achievement-box .student-details p{
+    margin: 5px 0px;
+}
+
+#student-achievement-content .achievement-box .Students-name{
+    font-size: 1.5rem;
+    font-weight: bolder ;
+    font-family: var(--font-roboto);
+
+}
+
+#student-achievement-content .achievement-box .Students-batch{
+    font-size: 1.2rem;
+}
+#student-achievement-content .achievement-box .Students-placed-company{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color:yellow;
+    background-color: var(--black-color-index);
+    padding: 5px;
+    text-shadow: 1px 2px var(--grey-for-shadow);
+}
+
+#student-achievement-container #student-achievement-view-all{
+    text-align: center;
+}
+
+#student-achievement-container #student-achievement-view-all a{
+    background-color: var(--primary-color-index);
+    text-decoration: none;
+    color: var(--white-color-index);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color-index);
+    margin: 5vh 0vh;
+    font-size: 1.1rem;
+}
+
+#student-achievement-container #student-achievement-view-all a:hover{
+    opacity: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------Placement partners section------------------------------------- */
+#placement-partner{
+    margin-bottom: 10vh;
+}
+#placement-partner-container{
+    width: 100%;
+
+}
+#placement-partner-container #placement-partner-content{
+    background-color:#e600002c;
+    overflow: hidden;
+}
+
+#placement-partner-container #placement-partner-content .brand-list {
+    padding: 3rem 0rem;
+    display: flex;
+    width: 150%;
+    gap: 3rem;
+
+}
+
+#placement-partner-container #placement-partner-content #brand-list-1{
+    animation-name: scroll-left-animation;
+    animation-duration: 20s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+#placement-partner-container #placement-partner-content #brand-list-2{
+    animation-name: scroll-left-animation;
+    animation-duration: 20s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate-reverse;
+    animation-timing-function: linear;
+}
+
+
+@keyframes scroll-left-animation{
+    0%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#placement-partner-container #placement-partner-content .brand-list .brand-img-box{
+    background-color: var(--white-color-index);
+    width: 20vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#placement-partner-container #placement-partner-content .brand-list .brand-img-box img{
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------Contact US Section---------------------------------- */
+#contact-us-sec{
+    background-color: var(--white-color-index);
+    padding: 10px;
+    margin-bottom: 5vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#contact-us-sec #contact-us-sec-container{
+    width: 90%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#contact-us-sec-container #contact-us-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-us-sec-container #contact-us-content #contact-details p{
+    font-size: 1.3rem;
+    margin: 1rem 0rem;
+}
+
+#contact-us-sec-container #contact-us-content #contact-details .contact-address{
+    font-size: 1.5rem;
+    font-family: var(--font-poppins);
+}
+#contact-us-sec-container #contact-us-content #contact-details .contact-address span{
+    color: var(--primary-color-index);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#contact-us-sec-container #contact-us-content #contact-details .contact-phone span{
+    color: #0000e6;
+}
+#contact-us-sec-container #contact-us-content #contact-details .contact-email span{
+    color: brown;
+}
+
+
+#contact-us-sec-container #contact-us-content #contact-details #contact-form-btn{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--white-color-index);
+    border-radius: 5px;
+    margin: 2rem 0rem;
+    display: inline-block;
+    background-color: var(--primary-color-index);
+    padding: 15px;
+    transition: 0.2s;
+}
+
+#contact-us-sec-container #contact-us-content #contact-details #contact-form-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color-index);
+    border: 1px solid var(--primary-color-index);
+}
