@@ -32,7 +32,7 @@ header{
 /* ----------------------------------To- Tgaline Section---------------------------------------------------------------- */
 #top-sec{
     /* background-color: var(--primary-color-index); */
-    background: linear-gradient(34deg,var(--primary-color-index)3%, var(--blue1-index) 15%, rgb(248, 170, 0) 50%);
+    background: linear-gradient(34deg,var(--primary-color-index)3%, var(--blue1-index) 15%, rgb(221, 70, 0) 50%);
 } 
 
 #top-1{
@@ -1041,4 +1041,99 @@ header{
     background-color: transparent;
     color: var(--primary-color-index);
     border: 1px solid var(--primary-color-index);
+}
+
+
+
+
+
+
+/* -------------------------------Foooter Secton ------------------------------------------------*/
+#footer-main{
+    background-color: var(--black-color-index);
+}
+
+#footer-container{
+    width: 90%;
+    margin: auto;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-color-index);
+    gap: 1rem;
+}
+
+#footer-container #footer-brand-details-sec #footer-brand-logo{
+    width: 30%;
+    /* margin: auto; */
+    background-color: var(--white-color-index);
+    padding: 20px;
+    box-shadow: 6px 4px var(--primary-color-index);
+    overflow: hidden;
+    border-radius: 50%;
+}
+#footer-container #footer-brand-details-sec #footer-brand-logo img{
+    width: 100%;
+}
+
+#footer-container #footer-brand-details-sec p{
+    font-size: 1.2rem;
+    font-family: var(--font-poppins);
+    margin: 1rem auto;
+}
+
+#footer-container #footer-brand-details-sec a{
+    font-size: 1.1rem;
+    display: block;
+    text-decoration: none;
+    color: var(--white-color-index);
+    margin: 1rem 0rem;
+}
+#footer-container #footer-brand-details-sec a:hover{
+    color: var(--primary-color-index);
+}
+
+#footer-container #footer-brand-details-sec a span{
+    color: var(--primary-color-index);
+}
+#footer-container .footer-primary-heading h2{
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+}
+
+#footer-container .footer-primary-heading h2 span{
+    color: var(--primary-color-index);
+    text-shadow: 0.5px 1px var(--ghost-white-index);
+}
+
+#footer-container .footer-anchor-tags a{
+    display:block ;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    margin: 1rem 0rem;
+    transition: 0.2s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footer-container .footer-anchor-tags a span{
+    color:darkgreen;
+    text-shadow: 1px 1px var(--grey-for-shadow);
+}
+
+#footer-container .footer-anchor-tags a::before{
+    background-color: var(--primary-color-index);
+    border-radius: 1em;
+    display: inline-block;
+    height: 0.35em;
+    margin-right: 6px;
+    width: 0.35em;
+}
+
+#footer-container .footer-anchor-tags a:hover{
+    color: var(--primary-color-index);
+
+}
+
+#footer-container .footer-social-links a{
+
 }
