@@ -694,7 +694,8 @@ header{
     border: 1px solid var(--black-color-index);
     border-radius: 10px;
     overflow: hidden;
-    color: var(--primary-color-index);
+    font-size: 1.2rem;
+    color: var(--black-color-index);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 #facilities-sec-container #facilities-content .facilities-box .box-img{
@@ -743,7 +744,7 @@ header{
 #facilities-sec-container #facilities-content .facilities-box .facilities-title{
     padding: 30px 5px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 
@@ -1062,7 +1063,9 @@ header{
     color: var(--white-color-index);
     gap: 1rem;
 }
-
+#footer-container #footer-brand-details-sec{
+    width: 25%;
+}
 #footer-container #footer-brand-details-sec #footer-brand-logo{
     width: 30%;
     /* margin: auto; */
@@ -1096,21 +1099,23 @@ header{
 #footer-container #footer-brand-details-sec a span{
     color: var(--primary-color-index);
 }
+#footer-container .footer-primary-heading{
+    border-bottom: 1px solid var(--white-color-index);
+}
 #footer-container .footer-primary-heading h2{
-    text-decoration: underline;
     margin-bottom: 1.5rem;
 }
 
 #footer-container .footer-primary-heading h2 span{
     color: var(--primary-color-index);
-    text-shadow: 0.5px 1px var(--ghost-white-index);
+    /* text-shadow: 0.5px 1px var(--ghost-white-index); */
 }
 
 #footer-container .footer-anchor-tags a{
     display:block ;
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 1rem 0rem;
     transition: 0.2s;
     font-family: Arial, Helvetica, sans-serif;
@@ -1134,6 +1139,31 @@ header{
 
 }
 
-#footer-container .footer-social-links a{
 
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------Copyrights deiclaimer section */
+#copyrights-disclaimer-sec{
+    background-color: var(--black-color-index);
+    border-top: 2px solid var(--white-color-index);
+    padding: 10px;
+}
+#copyrights-disclaimer-sec #copyrights-disclaimer-container{
+    width:80%;
+    margin:10px auto;
+    color: var(--white-color-index);
+    text-align: center;
+    font-family: var(--font-poppins);
+}
+#copyrights-disclaimer-sec #copyrights-disclaimer-container p{
+    margin: 5px auto;
 }
