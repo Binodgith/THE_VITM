@@ -116,7 +116,7 @@
     color: var(--primary-color-index);
   }
   
-  .vision, .mission-repeated, .why-choose-us {
+  .vision, .mission, .why-choose-us {
     background-color: var(--ghost-white-index);
   }
   
