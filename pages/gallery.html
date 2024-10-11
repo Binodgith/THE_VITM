@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Institute Gallery</h1>
+        <div class="gallery-grid">
+            <a href="image1.jpg" class="gallery-item"><img src="image1.jpg" alt="Campus Image 1"></a>
+            <a href="image2.jpg" class="gallery-item"><img src="image2.jpg" alt="Campus Image 2"></a>
+            <a href="image3.jpg" class="gallery-item"><img src="image3.jpg" alt="Campus Image 3"></a>
+            <a href="image4.jpg" class="gallery-item"><img src="image4.jpg" alt="Campus Image 4"></a>
+            <a href="image5.jpg" class="gallery-item"><img src="image5.jpg" alt="Campus Image 5"></a>
+            <a href="image6.jpg" class="gallery-item"><img src="image6.jpg" alt="Campus Image 6"></a>
+            <a href="image7.jpg" class="gallery-item"><img src="image7.jpg" alt="Campus Image 7"></a>
+            <a href="image8.jpg" class="gallery-item"><img src="image8.jpg" alt="Campus Image 8"></a>
+            <a href="image9.jpg" class="gallery-item"><img src="image9.jpg" alt="Campus Image 9"></a>
+            <a href="image10.jpg" class="gallery-item"><img src="image10.jpg" alt="Campus Image 10"></a>
+            <a href="image11.jpg" class="gallery-item"><img src="image11.jpg" alt="Campus Image 11"></a>
+            <a href="image12.jpg" class="gallery-item"><img src="image12.jpg" alt="Campus Image 12"></a>
+            <a href="image13.jpg" class="gallery-item"><img src="image13.jpg" alt="Campus Image 13"></a>
+            <a href="image14.jpg" class="gallery-item"><img src="image14.jpg" alt="Campus Image 14"></a>
+            <a href="image15.jpg" class="gallery-item"><img src="image15.jpg" alt="Campus Image 15"></a>
+            <a href="image16.jpg" class="gallery-item"><img src="image16.jpg" alt="Campus Image 16"></a>
+        </div>
+    </div>
+
+    <script>
+
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function (event) {
+                event.preventDefault();
+                const fullImage = document.createElement('img');
+                fullImage.src = this.href;
+                fullImage.style.position = 'fixed';
+                fullImage.style.top = '50%';
+                fullImage.style.left = '50%';
+                fullImage.style.transform = 'translate(-50%, -50%)';
+                fullImage.style.maxWidth = '90%';
+                fullImage.style.maxHeight = '90%';
+                fullImage.style.zIndex = '1000';
+                document.body.appendChild(fullImage);
+                fullImage.addEventListener('click', () => {
+                    document.body.removeChild(fullImage);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
