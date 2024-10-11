@@ -10,7 +10,7 @@
     --font-body: 'Arial', sans-serif;
 }
 
-body {
+#main-gallery-section   {
     font-family: var(--font-body);
     background-color: var(--ghost-white-index);
     color: var(--secondary-color-index);
