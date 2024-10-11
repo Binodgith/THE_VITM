@@ -16,12 +16,12 @@
     box-sizing: border-box;
   }
   
-  /* body {
+  #main-content {
     font-family: var(--font-body);
     color: var(--secondary-color-index);
     background-color: var(--ghost-white-index);
   }
-   */
+  
   #about-us-header {
     position: relative;
     text-align: center;
@@ -90,7 +90,7 @@
     padding-left: 20px;
   }
   
-  button {
+  #about-us-header .header-button {
     background-color: var(--primary-color-index);
     color: var(--white-color-index);
     border: none;
@@ -100,7 +100,7 @@
     transition: background-color 0.3s ease;
   }
   
-  button:hover {
+  #about-us-header .header-button:hover {
     background-color: #cc0000;
   }
   
