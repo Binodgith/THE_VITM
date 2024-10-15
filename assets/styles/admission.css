@@ -49,7 +49,7 @@
     justify-content: space-between;
 }
 #admission-Details-main-sec #admission-course-sec{
-    width: 60%;
+    width: 55%;
 }
 #admission-course-sec #admission-course-list-container{
     display: grid;
@@ -73,7 +73,7 @@
     padding: 10px;
     border-bottom: 1px solid var(--black-color-index);
     text-align: center;
-    background-color:var(--primary-color-index);
+    background-color:rgba(255, 0, 0, 0.804);
     color: var(--white-color-index);
 }
 
@@ -122,3 +122,51 @@
 #admission-course-list-container .course-box .course-box-status .closed{
     background-color:red;
 }
+
+
+
+
+/* -------------------Admission Notice box----------------------------------- */
+#admission-notice-sec{
+    width: 40%;
+    margin-top: 2rem;
+
+}
+#admission-notice-container{
+    border-radius: 10px;
+    border: 1px solid var(--black-color-index);
+    overflow: hidden;
+}
+#admission-notice-container #admission-notice-heading{
+    background-color: var(--grey-for-shadow);
+    font-family: var(--font-roboto);
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--black-color-index);
+}
+
+#admission-notice-container #admission-notice-list {
+    padding: 10px;
+    height: 110vh;
+    overflow-y: auto;
+}
+#admission-notice-container #admission-notice-list .notice-box{
+    padding: 10px;
+    margin: 0.6rem 0rem;
+    font-size: 1.1rem;
+    text-align: justify;
+    font-family: var(--font-open-sans);
+}
+#admission-notice-container #admission-notice-list .notice-box .notice-content li{
+    color: var(--black-color-index);
+    font-weight:600;
+    margin: 10px 0px;
+    /* font-size: 2rem; */
+}
+#admission-notice-container #admission-notice-list .notice-box .notice-content li a{
+    color:brown;
+    text-decoration: none;
+    font-size:1.6rem;
+}
+
