@@ -1,98 +1,150 @@
-let admission_notic_list=[
+let admission_notice_list=[
     {
-        notic_id:"an001",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an001",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:"56456dftgsdfs4sdf584s565"
     },
     {
-        notic_id:"an002",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an002",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an003",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an003",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:"sdgfsd6541s6df8541sdf"
     },
     {
-        notic_id:"an004",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an004",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an005",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an005",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:"dsfd56846sdf464sdf"
     },
     {
-        notic_id:"an006",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an006",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an007",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an007",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an008",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an008",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an009",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an009",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an0010",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an0010",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an0011",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an0011",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:"sdfgsdsd86sdf4s6d87f894"
     },
     {
-        notic_id:"an0012",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an0012",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an0013",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an0013",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an0014",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an0014",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an0015",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an0015",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an0016",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an0016",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an0017",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an0017",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an0018",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an0018",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
     {
-        notic_id:"an0019",
-        notic_date:"20-08-2024",
-        notic_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!"
+        notice_id:"an0019",
+        notice_date:"20-08-2024",
+        notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
+        notice_file:""
     },
 
 ]
+
+// -------------------------Apppeing Notices by fetching from Database-----------------------
+
+let append_admission_notice_list=(data)=>{
+
+
+    data.map((ele)=>{
+        let notice_box_div=document.createElement("div");
+        notice_box_div.setAttribute("class","notice-box");
+ 
+        if(ele.notice_file!=""){
+            notice_box_div.innerHTML=`<div class="notice-content">
+                                <li><a href="https://drive.google.com/uc?export=download&id=${ele.notice_file}" target="_blank"><i class="fa-solid fa-file-arrow-down"></i> &nbsp;</a>${ele.notice_content}</li>
+                            </div>
+                            <div class="notice-date">
+                                <p><span>Released On:- </span>${ele.notice_date}</p>
+                            </div>`;
+        }
+        else{
+            notice_box_div.innerHTML=`<div class="notice-content">
+                                <li><a href="https://drive.google.com/uc?export=download&id=${ele.notice_file}" target="_blank"></a>${ele.notice_content}</li>
+                            </div>
+                            <div class="notice-date">
+                                <p><span>Released On:- </span>${ele.notice_date}</p>
+                            </div>`;
+        }
+
+        document.querySelector("#admission-notice-list-container #admission-notice-list").append(notice_box_div);
+    })
+
+}
+
+append_admission_notice_list(admission_notice_list);
