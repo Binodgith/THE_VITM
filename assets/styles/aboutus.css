@@ -171,11 +171,6 @@
     margin-top: 10px;
   }
   
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    header {
-      height: auto;
-    }
   
     .background-image img {
       height: 250px;
@@ -210,4 +205,4 @@
     .principal-section img {
       margin-bottom: 20px;
     }
-}
+
