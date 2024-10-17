@@ -1,0 +1,23 @@
+#syllabus-hole-page-contanier{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, 
+    rgba(249, 247, 247, 0.347), rgba(240, 237, 237, 0.582)), url('../media/litul_image/syllabus\ page.jpg');;
+    /* position: relative;
+
+     */
+     background-position:center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position:fixed;
+}
+/* #syllabus-hole-page-contanier>img{
+    width: 100%;
+    height: 100vh;
+    position:sticky
+} */
+#syllabus-hole-page-contanier #syllabus-page-content{
+
+
+    
+}
