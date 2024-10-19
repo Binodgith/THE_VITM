@@ -2,6 +2,7 @@
 
 :root{
     --primary-color-index: #e60000;
+    --fade-of-primary-color:#c42a2a;
     --black-color-index:black;
     --white-color-index:white;
     --ghost-white-index:ghostWhite;
