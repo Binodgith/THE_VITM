@@ -1,38 +1,4047 @@
+// -------------------btech cse---------------
+
+let id_finder={
+    bt001:"B.Tech",
+    bc002:"BCA",
+    mt003:"M.TECH",
+    mb004:"MBA",
+    mc005:"MCA",
+
+    //sem--------------
+
+    s001:"1ST SEM",
+    s002:"2ND SEM",
+    s003:"3RD SEM",
+    s004:"4TH SEM",
+    s005:"5TH SEM",
+    s006:"6TH SEM",
+    s007:"7TH SEM",
+    s008:"8TH SEM",
+    s000:"ALL",
+
+
+    //  branch------------
+
+    //  btech----------
+
+    bcs001:"CSE",
+    bet002:"ETC",
+    bee003:"EEE",
+    bcv004:"CIVIL",
+    bme005:"MECHANICAL",
+    bch006:"CHEMICAL",
+    b000:"ALL",
+
+    // mtech ------------
+
+    
+    mcs001:"CSE",
+    met002:"ETC",
+    mee003:"EEE",
+    mcv004:"CIVIL",
+    mme005:"MECHANICAL",
+    mch006:"CHEMICAL",
+   
+    // mba ----------------
+
+    mib001:"INTERNATIONAL BUSINESS",
+    mhr002:"HUMAN RESOURCE AND MANAGEMANT ",
+    mba003:"BUSINESS ANALYTICS",
+    mf004:"FINANCE",
+    mr005:"MARKETING",
+
+
+    // year---------------
+
+    y001:"1ST YEAR",
+    y002:"2ND YEAR",
+    y003:"3RD YEAR",
+    y004:"4TH YEAR",
+
+
+
+    // subject -----------
+
+    mth001:"MATHEMATICS",
+    phy003:"PHYSICS",
+    chem002:"CHEMISTRY",
+    cp004:"C PROGRAMMING" , 
+    bee005:"BASIC ELECTRICAL ENGINEERING" , 
+    be006:"BASIC ELECTRONICS",
+    bme007:"BASIC MECHANICAL ENGINEERING",
+    em008:"ENGINEERING MECHANICS",
+    ds009:"DATA STRUCTURE AND ALGORITHM",
+    os010:"OPERATING SYSTEM",
+    se011:"SOFTWARE ENGINEERING",
+    oop013:"OBJECT ORIENTED PROGRAMMING LANGUAGE",
+    ccp014:"CLOUD COUMPTING",
+    aca015:"ADVANCE COMPUTER ARCHITECTURE",
+    cg016:"COMPUTER GRAPHICS",
+    cn017:"COMPUTER NETWORK",
+    daa018:"DESIGN AND ANALYSIS OF ALGORITHM",
+    it019:"INTERNET TECHNOLOGY",
+    sta020:"STRUCTURAL ANALYSIS",
+    act021:"ADVANCE CONCERETE TECHNOLOGY",
+    gt022:"GEOTECHNICAL TECHNOLOGY",
+    ee023:"ENVIRONMENTAL ENGINEERING",
+    std024:"STRUCTURAL DESIGN ",
+    dm025:"DESASTER MANAGEMENT",
+    cs026:"CONTROL SYSTEM",
+    fm027:"FLUID MECHANICS",
+    rt028:"ROBOTICS",
+    mce029:"MICRO-ECONOMICS",
+    bst030:"BUSINESS STATICS",
+    ob031:"ORGANISATIONAL BEHAVIOR",
+    hrm032:"HUMAN RESOUSCE MANAGEMENT",
+    ld033:"LEADERSHIP MANAGEMENT",
+    pd034:"PROJRCT MANAJEMENT",
+    cb035:"CONSUMER BEHAVIOR",
+    am036:"ADVERTISING MANAGEMENT",
+    bl037:"BUSINESS LAW",
+    adec038:"ADMINISTRATIVE ECONOMICS",
+    cd039:"COMPILER DESIGN",
+    nt040:"NETWORK THEORY"
+
+
+}
+
+
+
 let syllabus_list=[
+
     {
-        course_name:"B.Tech",
-        branch_name:"Computer science engineering(CSE)",
-        semester:"1st",
-        subjest:"Mathematics",
-        syllabus_document_id:"1MFErpbNmCFRPVpyeuraQs2YlaKDL4h_p"
+
+        // btech 1st year all --------- 
+        course:"bt001",
+        branch:"bcs001",
+        year:"y001",
+        sem:"s001",
+        subject:"mth001",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
     },
     {
-        course_name:"B.Tech",
-        branch_name:"Computer science engineering(CSE)",
-        semester:"1st",
-        subjest:"Physics",
-        syllabus_document_id:"1MFErpbNmCFRPVpyeuraQs2YlaKDL4h_p"
+        course:"bt001",
+        branch:"bcs001",
+        year:"y001",
+        sem:"s001",
+        subject:"phy003",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
     },
     {
-        course_name:"B.Tech",
-        branch_name:"Computer science engineering(CSE)",
-        semester:"1st",
-        subjest:"Chemistry",
-        syllabus_document_id:"1MFErpbNmCFRPVpyeuraQs2YlaKDL4h_p"
+        course:"bt001",
+        branch:"bcs001",
+        year:"y001",
+        sem:"s001",
+        subject:"chem002",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
     },
     {
-        course_name:"B.Tech",
-        branch_name:"Computer science engineering(CSE)",
-        semester:"1st",
-        subjest:"Basic electrical Engineering (BEE)",
-        syllabus_document_id:"1MFErpbNmCFRPVpyeuraQs2YlaKDL4h_p"
+        course:"bt001",
+        branch:"bcs001",
+        year:"y001",
+        sem:"s001",
+        subject:"cp004",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
     },
     {
-        course_name:"B.Tech",
-        branch_name:"Computer science engineering(CSE)",
-        semester:"1st",
-        subjest:"Mathematics",
-        syllabus_document_id:"1MFErpbNmCFRPVpyeuraQs2YlaKDL4h_p"
+        course:"bt001",
+        branch:"bcs001",
+        year:"y001",
+        sem:"s001",
+        subject:"bee005",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y001",
+        sem:"s001",
+        subject:"be006",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+
+
+    // cse ----------
+    
+    // btech 3rd sem cse ----
+
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y002",
+        sem:"s003",
+        subject:"ds009",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y002",
+        sem:"s003",
+        subject:"cn017",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y002",
+        sem:"s003",
+        subject:"oop013",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y002",
+        sem:"s003",
+        subject:"obo031",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y002",
+        sem:"s003",
+        subject:"mth001",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+
+//    btech 4th sem ------
+
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y002",
+        sem:"s004",
+        subject:"daa018",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y002",
+        sem:"s004",
+        subject:"mth001",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y002",
+        sem:"s004",
+        subject:"mce029",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y002",
+        sem:"s004",
+        subject:"rt028",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y002",
+        sem:"s004",
+        subject:"nt040",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
     },
     
+    //    btech 5th sem ------
+
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y003",
+        sem:"s005",
+        subject:"cg016",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y003",
+        sem:"s005",
+        subject:"0s010",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y003",
+        sem:"s005",
+        subject:"aca015",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415"
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y003",
+        sem:"s005",
+        subject:"cp004",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y003",
+        sem:"s005",
+        subject:"oop013",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415"
+    },
+
+    // btech 6th sem --------------
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y003",
+        sem:"s006",
+        subject:"se011",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y003",
+        sem:"s006",
+        subject:"ccp014",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y003",
+        sem:"s006",
+        subject:"cs026",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y003",
+        sem:"s006",
+        subject:"cd039",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y003",
+        sem:"s006",
+        subject:"it019",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+
+    // btech 7th sem ----------
+
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y004",
+        sem:"s007",
+        subject:"dm025",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y004",
+        sem:"s007",
+        subject:"bst030",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y004",
+        sem:"s007",
+        subject:"cb035",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y004",
+        sem:"s007",
+        subject:"ee023",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y004",
+        sem:"s007",
+        subject:"it019",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"bt001",
+        branch:"bcs001",
+        year:"y004",
+        sem:"s007",
+        subject:"hrm032",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    
+  
+
+
+
+
+// btech eee -----------
+
+// btech 3rd sem eee ----
+
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y002",
+    sem:"s003",
+    subject:"ds009",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y002",
+    sem:"s003",
+    subject:"cn017",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y002",
+    sem:"s003",
+    subject:"oop013",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y002",
+    sem:"s003",
+    subject:"obo031",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y002",
+    sem:"s003",
+    subject:"mth001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+//    btech 4th sem ------
+
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y002",
+    sem:"s004",
+    subject:"std024",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y002",
+    sem:"s004",
+    subject:"mth001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y002",
+    sem:"s004",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y002",
+    sem:"s004",
+    subject:"rt028",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y002",
+    sem:"s004",
+    subject:"nt040",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+//    btech 5th sem ------
+
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y003",
+    sem:"s005",
+    subject:"cg016",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y003",
+    sem:"s005",
+    subject:"0s010",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y003",
+    sem:"s005",
+    subject:"aca015",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y003",
+    sem:"s005",
+    subject:"gt022",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y003",
+    sem:"s005",
+    subject:"oop013",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+// btech 6th sem --------------
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y003",
+    sem:"s006",
+    subject:"se011",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y003",
+    sem:"s006",
+    subject:"ccp014",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y003",
+    sem:"s006",
+    subject:"cs026",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y003",
+    sem:"s006",
+    subject:"cd039",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y003",
+    sem:"s006",
+    subject:"it019",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+// btech 7th sem ----------
+
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y004",
+    sem:"s007",
+    subject:"dm025",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y004",
+    sem:"s007",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y004",
+    sem:"s007",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y004",
+    sem:"s007",
+    subject:"ee023",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y004",
+    sem:"s007",
+    subject:"it019",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bee003",
+    year:"y004",
+    sem:"s007",
+    subject:"hrm032",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// btech  etc ----------
+// 3rd sem ---------------
+
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y002",
+    sem:"s003",
+    subject:"ds009",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y002",
+    sem:"s003",
+    subject:"cn017",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y002",
+    sem:"s003",
+    subject:"oop013",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y002",
+    sem:"s003",
+    subject:"obo031",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y002",
+    sem:"s003",
+    subject:"mth001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+//    btech 4th sem ------
+
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y002",
+    sem:"s004",
+    subject:"std024",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y002",
+    sem:"s004",
+    subject:"mth001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y002",
+    sem:"s004",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y002",
+    sem:"s004",
+    subject:"rt028",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y002",
+    sem:"s004",
+    subject:"nt040",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+//    btech 5th sem ------
+
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y003",
+    sem:"s005",
+    subject:"cg016",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y003",
+    sem:"s005",
+    subject:"0s010",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y003",
+    sem:"s005",
+    subject:"aca015",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y003",
+    sem:"s005",
+    subject:"gt022",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y003",
+    sem:"s005",
+    subject:"oop013",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+// btech 6th sem --------------
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y003",
+    sem:"s006",
+    subject:"se011",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y003",
+    sem:"s006",
+    subject:"ccp014",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y003",
+    sem:"s006",
+    subject:"cs026",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y003",
+    sem:"s006",
+    subject:"cd039",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y003",
+    sem:"s006",
+    subject:"it019",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+// btech 7th sem ----------
+
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y004",
+    sem:"s007",
+    subject:"dm025",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y004",
+    sem:"s007",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y004",
+    sem:"s007",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y004",
+    sem:"s007",
+    subject:"ee023",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y004",
+    sem:"s007",
+    subject:"it019",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bet002",
+    year:"y004",
+    sem:"s007",
+    subject:"hrm032",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+
+
+// btech civil---
+// 3rd sem ---
+
+
+
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y002",
+    sem:"s003",
+    subject:"act021",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y002",
+    sem:"s003",
+    subject:"ee023",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y002",
+    sem:"s003",
+    subject:"oop013",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y002",
+    sem:"s003",
+    subject:"obo031",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y002",
+    sem:"s003",
+    subject:"mth001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+//    btech 4th sem ------
+
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y002",
+    sem:"s004",
+    subject:"std024",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y002",
+    sem:"s004",
+    subject:"mth001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y002",
+    sem:"s004",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y002",
+    sem:"s004",
+    subject:"rt028",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y002",
+    sem:"s004",
+    subject:"cs026",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+//    btech 5th sem ------
+
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y003",
+    sem:"s005",
+    subject:"cg016",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y003",
+    sem:"s005",
+    subject:"gt022",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y003",
+    sem:"s005",
+    subject:"dm025",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y003",
+    sem:"s005",
+    subject:"em008",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y003",
+    sem:"s005",
+    subject:"oop013",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+// btech 6th sem --------------
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y003",
+    sem:"s006",
+    subject:"fm027",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y003",
+    sem:"s006",
+    subject:"bme007",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y003",
+    sem:"s006",
+    subject:"mth001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y003",
+    sem:"s006",
+    subject:"sta020",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y003",
+    sem:"s006",
+    subject:"it019",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+// btech 7th sem ----------
+
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y004",
+    sem:"s007",
+    subject:"dm025",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y004",
+    sem:"s007",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y004",
+    sem:"s007",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y004",
+    sem:"s007",
+    subject:"ee023",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y004",
+    sem:"s007",
+    subject:"it019",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bcv004",
+    year:"y004",
+    sem:"s007",
+    subject:"hrm032",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+ 
+
+// mech 
+// 3rd sem -----------------
+
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y002",
+    sem:"s003",
+    subject:"ds009",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y002",
+    sem:"s003",
+    subject:"cn017",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y002",
+    sem:"s003",
+    subject:"oop013",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y002",
+    sem:"s003",
+    subject:"obo031",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y002",
+    sem:"s003",
+    subject:"mth001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+//    btech 4th sem ------
+
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y002",
+    sem:"s004",
+    subject:"std024",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y002",
+    sem:"s004",
+    subject:"mth001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y002",
+    sem:"s004",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y002",
+    sem:"s004",
+    subject:"rt028",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y002",
+    sem:"s004",
+    subject:"fm027",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+//    btech 5th sem ------
+
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y003",
+    sem:"s005",
+    subject:"cg016",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y003",
+    sem:"s005",
+    subject:"0s010",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y003",
+    sem:"s005",
+    subject:"nt040",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y003",
+    sem:"s005",
+    subject:"gt022",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y003",
+    sem:"s005",
+    subject:"em008",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+// btech 6th sem --------------
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y003",
+    sem:"s006",
+    subject:"se011",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y003",
+    sem:"s006",
+    subject:"bme007",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y003",
+    sem:"s006",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y003",
+    sem:"s006",
+    subject:"nt040",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y003",
+    sem:"s006",
+    subject:"it019",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+// btech 7th sem ----------
+
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y004",
+    sem:"s007",
+    subject:"dm025",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y004",
+    sem:"s007",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y004",
+    sem:"s007",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y004",
+    sem:"s007",
+    subject:"ee023",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y004",
+    sem:"s007",
+    subject:"it019",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bme005",
+    year:"y004",
+    sem:"s007",
+    subject:"hrm032",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+// chemical
+// 3rd sem ------------
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y002",
+    sem:"s003",
+    subject:"fm027",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y002",
+    sem:"s003",
+    subject:"cn017",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y002",
+    sem:"s003",
+    subject:"oop013",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},,
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y002",
+    sem:"s003",
+    subject:"obo031",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y002",
+    sem:"s003",
+    subject:"mth001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+
+//    btech 4th sem ------
+
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y002",
+    sem:"s004",
+    subject:"std024",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y002",
+    sem:"s004",
+    subject:"mth001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y002",
+    sem:"s004",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y002",
+    sem:"s004",
+    subject:"rt028",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y002",
+    sem:"s004",
+    subject:"sta020",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+//    btech 5th sem ------
+
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y003",
+    sem:"s005",
+    subject:"dm025",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y003",
+    sem:"s005",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y003",
+    sem:"s005",
+    subject:"hrm032",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y003",
+    sem:"s005",
+    subject:"gt022",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y003",
+    sem:"s005",
+    subject:"chem002",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+// btech 6th sem --------------
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y003",
+    sem:"s006",
+    subject:"phy003",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y003",
+    sem:"s006",
+    subject:"ee023",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y003",
+    sem:"s006",
+    subject:"os010",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y003",
+    sem:"s006",
+    subject:"cs026",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y003",
+    sem:"s006",
+    subject:"sta020",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+// btech 7th sem ----------
+
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y004",
+    sem:"s007",
+    subject:"dm025",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y004",
+    sem:"s007",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y004",
+    sem:"s007",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y004",
+    sem:"s007",
+    subject:"ee023",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y004",
+    sem:"s007",
+    subject:"it019",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bt001",
+    branch:"bch006",
+    year:"y004",
+    sem:"s007",
+    subject:"hrm032",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+
+
+// mtech -------------
+
+// cse ----------
+    
+//  1st sem ---------
+
+{
+        course:"mt003",
+        branch:"mcs001",
+        year:"y001",
+        sem:"s001",
+        subject:"mth001",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+
+
+    {
+        course:"mt003",
+        branch:"mcs001",
+        year:"y001",
+        sem:"s001",
+        subject:"se001",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mcs001",
+        year:"y001",
+        sem:"s001",
+        subject:"it019",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mcs001",
+        year:"y001",
+        sem:"s001",
+        subject:"cp004",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+
+    // 2nd sem--------------
+
+
+    {
+        course:"mt003",
+        branch:"mcs001",
+        year:"y001",
+        sem:"s002",
+        subject:"cd039",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mcs001",
+        year:"y001",
+        sem:"s002",
+        subject:"aca015",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mcs001",
+        year:"y001",
+        sem:"s002",
+        subject:"cg016",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mcs001",
+        year:"y001",
+        sem:"s002",
+        subject:"ccp014",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    
+
+    // 3rd sem ------
+
+
+
+    
+    {
+        course:"mt003",
+        branch:"mcs001",
+        year:"y002",
+        sem:"s003",
+        subject:"cd039",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mcs001",
+        year:"y002",
+        sem:"s003",
+        subject:"aca015",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mcs001",
+        year:"y002",
+        sem:"s003",
+        subject:"cg016",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mcs001",
+        year:"y002",
+        sem:"s003",
+        subject:"ccp014",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    
+
+    // eee -------------
+    // 1st sem ------------
+
+
+    {
+        course:"mt003",
+        branch:"mee003",
+        year:"y001",
+        sem:"s001",
+        subject:"mth001",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+
+
+    {
+        course:"mt003",
+        branch:"mee003",
+        year:"y001",
+        sem:"s001",
+        subject:"se001",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mee003",
+        year:"y001",
+        sem:"s001",
+        subject:"it019",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mee003",
+        year:"y001",
+        sem:"s001",
+        subject:"cp004",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+
+    // 2nd sem--------------
+
+
+    {
+        course:"mt003",
+        branch:"mee003",
+        year:"y001",
+        sem:"s002",
+        subject:"cd039",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mee003",
+        year:"y001",
+        sem:"s002",
+        subject:"aca015",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mee003",
+        year:"y001",
+        sem:"s002",
+        subject:"cg016",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mee003",
+        year:"y001",
+        sem:"s002",
+        subject:"ccp014",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    
+
+    // 3rd sem ------
+
+
+
+    
+    {
+        course:"mt003",
+        branch:"mee003",
+        year:"y002",
+        sem:"s003",
+        subject:"cd039",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mee003",
+        year:"y002",
+        sem:"s003",
+        subject:"aca015",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mee003",
+        year:"y002",
+        sem:"s003",
+        subject:"cg016",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    {
+        course:"mt003",
+        branch:"mee003",
+        year:"y002",
+        sem:"s003",
+        subject:"ccp014",
+        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_released_date:"25-08-2019",
+        syllabus_upload_date:"21-10-2024",
+        syllabus_id:"sy25415",
+    },
+    
+
+   
+     
+
+
+
+   
+
+
+
+// etc -------------
+// 1st sem ------------
+
+
+{
+    course:"mt003",
+    branch:"met002",
+    year:"y001",
+    sem:"s001",
+    subject:"mth001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+
+
+{
+    course:"mt003",
+    branch:"met002",
+    year:"y001",
+    sem:"s001",
+    subject:"se001",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mt003",
+    branch:"met002",
+    year:"y001",
+    sem:"s001",
+    subject:"it019",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mt003",
+    branch:"met002",
+    year:"y001",
+    sem:"s001",
+    subject:"cp004",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+
+// 2nd sem--------------
+
+
+{
+    course:"mt003",
+    branch:"met002",
+    year:"y001",
+    sem:"s002",
+    subject:"cd039",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mt003",
+    branch:"met002",
+    year:"y001",
+    sem:"s002",
+    subject:"aca015",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mt003",
+    branch:"met002",
+    year:"y001",
+    sem:"s002",
+    subject:"cg016",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mt003",
+    branch:"met002",
+    year:"y001",
+    sem:"s002",
+    subject:"ccp014",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+
+
+// 3rd sem ------
+
+
+
+
+{
+    course:"mt003",
+    branch:"met002",
+    year:"y002",
+    sem:"s003",
+    subject:"cd039",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mt003",
+    branch:"met002",
+    year:"y002",
+    sem:"s003",
+    subject:"aca015",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mt003",
+    branch:"met002",
+    year:"y002",
+    sem:"s003",
+    subject:"cg016",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mt003",
+    branch:"met002",
+    year:"y002",
+    sem:"s003",
+    subject:"ccp014",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+
+
+
+
+// mca ------------
+// 1st year-----------
+
+
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y001",
+    sem:"s000",
+    subject:"cp004",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y001",
+    sem:"s000",
+    subject:"os010",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y001",
+    sem:"s000",
+    subject:"aca015",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y001",
+    sem:"s000",
+    subject:"ccp014",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y001",
+    sem:"s000",
+    subject:"oop013",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+
+
+
+// 2nd year -----
+
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y002",
+    sem:"s000",
+    subject:"se011",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y002",
+    sem:"s000",
+    subject:"cg016",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y002",
+    sem:"s000",
+    subject:"rt028",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y002",
+    sem:"s000",
+    subject:"ccp014",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y002",
+    sem:"s000",
+    subject:"se011",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// 3rd year ----
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y003",
+    sem:"s000",
+    subject:"std024",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y003",
+    sem:"s000",
+    subject:"ds009",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y003",
+    sem:"s000",
+    subject:"cn017",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"mc005",
+    branch:"b000",
+    year:"y003",
+    sem:"s000",
+    subject:"daa018",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+
+
+
+
+// bca ------------
+// 1st year-----------
+
+
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y001",
+    sem:"s000",
+    subject:"cp004",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y001",
+    sem:"s000",
+    subject:"os010",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y001",
+    sem:"s000",
+    subject:"aca015",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y001",
+    sem:"s000",
+    subject:"ccp014",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y001",
+    sem:"s000",
+    subject:"oop013",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+
+
+
+// 2nd year -----
+
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y002",
+    sem:"s000",
+    subject:"se011",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y002",
+    sem:"s000",
+    subject:"cg016",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y002",
+    sem:"s000",
+    subject:"rt028",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415"
+},
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y002",
+    sem:"s000",
+    subject:"ccp014",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y002",
+    sem:"s000",
+    subject:"se011",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// 3rd year ----
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y003",
+    sem:"s000",
+    subject:"std024",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y003",
+    sem:"s000",
+    subject:"ds009",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y003",
+    sem:"s000",
+    subject:"cn017",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+{
+    course:"bc002",
+    branch:"b000",
+    year:"y003",
+    sem:"s000",
+    subject:"daa018",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// mba --------------
+
+// international business ---------
+
+
+// 1st sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+
+// 2nd sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"dm025",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// 3rd sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// 4th sem -----
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s004",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s004",
+    subject:"adec038",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+
+
+
+
+
+
+
+// mba --------------
+
+// human resource and management ---------
+
+
+// 1st sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+
+// 2nd sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"dm025",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// 3rd sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// 4th sem -----
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s004",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s004",
+    subject:"adec038",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+
+
+
+
+
+
+// mba --------------
+
+// business analytics---------
+
+
+// 1st sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+
+// 2nd sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"dm025",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// 3rd sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// 4th sem -----
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s004",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s004",
+    subject:"adec038",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+
+
+
+
+
+
+// mba --------------
+
+//finance---------
+
+
+// 1st sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+
+// 2nd sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"dm025",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// 3rd sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// 4th sem -----
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s004",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s004",
+    subject:"adec038",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+
+
+
+
+// mba --------------
+
+// maarketing---------
+
+
+// 1st sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s001",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+
+// 2nd sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y001",
+    sem:"s002",
+    subject:"dm025",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// 3rd sem ------
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"mce029",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"bst030",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"am036",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s003",
+    subject:"cb035",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+// 4th sem -----
+
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s004",
+    subject:"pd034",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+{
+    course:"mb004",
+    branch:"mib001",
+    year:"y002",
+    sem:"s004",
+    subject:"adec038",
+    syllabus_file_id:"dfgsdfg3545gfs",
+    syllabus_released_date:"25-08-2019",
+    syllabus_upload_date:"21-10-2024",
+    syllabus_id:"sy25415",
+},
+
+
+
+
+
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
