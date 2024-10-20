@@ -7,7 +7,7 @@ let id_finder={
     mb004:"MBA",
     mc005:"MCA",
 
-    //sem--------------
+    //sem--------------    
 
     s001:"1ST SEM",
     s002:"2ND SEM",
