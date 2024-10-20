@@ -3975,3 +3975,198 @@ let syllabus_list=[
 
 
 ]
+
+
+
+let syllabus_subject_extract={
+    "bt001":{
+        "bcs001":{
+            "y001":['s001','s002'],
+            "y002":['s003','s004'],
+            "y003":['s005','s006'],
+            "y004":['s007','s008'],
+        },
+        "bet002":{
+            "y001":['s001','s002'],
+            "y002":['s003','s004'],
+            "y003":['s005','s006'],
+            "y004":['s007','s008'],
+        },
+        "bee003":{
+            "y001":['s001','s002'],
+            "y002":['s003','s004'],
+            "y003":['s005','s006'],
+            "y004":['s007','s008'],
+        },
+        "bcv004":{
+            "y001":['s001','s002'],
+            "y002":['s003','s004'],
+            "y003":['s005','s006'],
+            "y004":['s007','s008'],
+        },
+        "bme005":{
+            "y001":['s001','s002'],
+            "y002":['s003','s004'],
+            "y003":['s005','s006'],
+            "y004":['s007','s008'],
+        },
+        "bch006":{
+            "y001":['s001','s002'],
+            "y002":['s003','s004'],
+            "y003":['s005','s006'],
+            "y004":['s007','s008'],
+        },
+        
+    },
+    "bc002":{
+        "b000":{
+            "y001":['s000'],
+            "y002":['s000'],
+            "y003":['s000'],
+        },
+    },
+    "mt003":{
+        "mcs001":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+            
+        },
+        "met002":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+            
+        },
+        "mee003":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+            
+        },
+        "mcv004":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+            
+        },
+        "mme005":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+           
+        },
+        "mch005":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+           
+        },
+    },
+    "mb004":{
+        "mib001":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+        },
+        "mhr002":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+        },
+        "mba003":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+        },
+        "mf004":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+        },
+        "mr005":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+        },
+    },
+    "mc005":{
+        "b000":{
+            "y001":['s000'],
+            "y002":['s000'],
+        },
+    },
+}
+
+
+
+
+// --------------appending in select tags-------------------------------------
+
+let courses_selected=document.getElementById("courses-dropdown");
+let branch_selected=document.getElementById("branch-dropdown");
+let course_year_selected=document.getElementById("course-year-dropdown");
+let semester_selected=document.getElementById("semester-dropdown");
+
+
+for(let opt in syllabus_subject_extract){
+    let option = document.createElement('option');
+    option.value=opt;
+    option.innerText=id_finder[opt];
+    courses_selected.appendChild(option);
+}
+
+courses_selected.onchange=()=>{
+    branch_selected.innerHTML=null;
+    let default_option=document.createElement('option');
+    default_option.innerText="Select Branch";
+    branch_selected.append(default_option);
+    
+    for(let opt in syllabus_subject_extract[courses_selected.value]){
+        let option = document.createElement('option');
+        option.value=opt;
+        option.innerText=id_finder[opt];
+        branch_selected.appendChild(option);
+    }
+}
+
+branch_selected.onchange=()=>{
+    course_year_selected.innerHTML=null;
+    let default_option=document.createElement('option');
+    default_option.innerText="Select Course Year";
+    course_year_selected.append(default_option);
+    
+    for(let opt in syllabus_subject_extract[courses_selected.value][branch_selected.value]){
+        let option = document.createElement('option');
+        option.value=opt;
+        option.innerText=id_finder[opt];
+        course_year_selected.appendChild(option);
+    }
+}
+
+course_year_selected.onchange=()=>{
+    semester_selected.innerHTML=null;
+    let default_option=document.createElement('option');
+    default_option.innerText="Select Semester";
+    semester_selected.append(default_option);
+
+    syllabus_subject_extract[courses_selected.value][branch_selected.value][course_year_selected.value].forEach((opt)=>{
+        let option = document.createElement('option');
+        option.value=opt;
+        option.innerText=id_finder[opt];
+        semester_selected.appendChild(option);
+    })
+    
+}
+
