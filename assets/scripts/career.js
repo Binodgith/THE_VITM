@@ -230,3 +230,290 @@ career_sec_btn.forEach((btn)=>{
     })
 })
 
+
+
+
+
+
+// ----------for syllabus
+// 
+
+let id_finder={
+    bt001:"B.Tech",
+    bc002:"BCA",
+    mt003:"M.TECH",
+    mb004:"MBA",
+    mc005:"MCA",
+
+    //sem--------------
+
+    s001:"1ST SEM",
+    s002:"2ND SEM",
+    s003:"3RD SEM",
+    s004:"4TH SEM",
+    s005:"5TH SEM",
+    s006:"6TH SEM",
+    s007:"7TH SEM",
+    s008:"8TH SEM",
+    s000:"ALL",
+
+
+    //  branch------------
+
+    //  btech----------
+
+    bcs001:"CSE",
+    bet002:"ETC",
+    bee003:"EEE",
+    bcv004:"CIVIL",
+    bme005:"MECHANICAL",
+    bch006:"CHEMICAL",
+    b000:"ALL",
+
+    // mtech ------------
+
+    
+    mcs001:"CSE",
+    met002:"ETC",
+    mee003:"EEE",
+    mcv004:"CIVIL",
+    mme005:"MECHANICAL",
+    mch006:"CHEMICAL",
+   
+    // mba ----------------
+
+    mib001:"INTERNATIONAL BUSINESS",
+    mhr002:"HUMAN RESOURCE AND MANAGEMANT ",
+    mba003:"BUSINESS ANALYTICS",
+    mf004:"FINANCE",
+    mr005:"MARJETING",
+
+
+    // year---------------
+
+    y001:"1ST YEAR",
+    y002:"2ND YEAR",
+    y003:"3RD YEAR",
+    y004:"4TH YEAR",
+
+
+
+    // subject -----------
+
+    mth001:"MATHEMATICS",
+    phy003:"PHYSICS",
+    chem002:"CHEMISTRY",
+    cp004:"C PROGRAMMING" , 
+    bee005:"BASIC ELECTRICAL ENGINEERING" , 
+    be006:"BASIC ELECTRONICS",
+    bme007:"BASIC MECHANICAL ENGINEERING",
+    em008:"ENGINEERING MECHANICS",
+    ds009:"DATA STRUCTURE AND ALGORITHM",
+    os010:"OPERATING SYSTEM",
+    se011:"SOFTWARE ENGINEERING",
+    oop013:"OBJECT ORIENTED PROGRAMMING LANGUAGE",
+    ccp014:"CLOUD COUMPTING",
+    aca015:"ADVANCE COMPUTER ARCHITECTURE",
+    cg016:"COMPUTER GRAPHICS",
+    cn017:"COMPUTER NETWORK",
+    daa018:"DESIGN AND ANALYSIS OF ALGORITHM",
+    it019:"INTERNET TECHNOLOGY",
+    sta020:"STRUCTURAL ANALYSIS",
+    act021:"ADVANCE CONCERETE TECHNOLOGY",
+    gt022:"GEOTECHNICAL TECHNOLOGY",
+    ee023:"ENVIRONMENTAL ENGINEERING",
+    std024:"STRUCTURAL DESIGN ",
+    dm025:"DESASTER MANAGEMENT",
+    cs026:"CONTROL SYSTEM",
+    fm027:"FLUID MECHANICS",
+    rt028:"ROBOTICS",
+    mce029:"MICRO-ECONOMICS",
+    bst030:"BUSINESS STATICS",
+    ob031:"ORGANISATIONAL BEHAVIOR",
+    hrm032:"HUMAN RESOUSCE MANAGEMENT",
+    ld033:"LEADERSHIP MANAGEMENT",
+    pd034:"PROJRCT MANAJEMENT",
+    cb035:"CONSUMER BEHAVIOR",
+    am036:"ADVERTISING MANAGEMENT",
+    bl037:"BUSINESS LAW",
+    adec038:"ADMINISTRATIVE ECONOMICS",
+    cd039:"COMPILER DESIGN",
+    nt040:"NETWORK THEORY"
+
+
+}
+
+
+
+let syllabus_subject_extract={
+    "bt001":{
+        "bcs001":{
+            "y001":['s001','s002'],
+            "y002":['s003','s004'],
+            "y003":['s005','s006'],
+            "y004":['s007','s008'],
+        },
+        "bet002":{
+            "y001":['s001','s002'],
+            "y002":['s003','s004'],
+            "y003":['s005','s006'],
+            "y004":['s007','s008'],
+        },
+        "bee003":{
+            "y001":['s001','s002'],
+            "y002":['s003','s004'],
+            "y003":['s005','s006'],
+            "y004":['s007','s008'],
+        },
+        "bcv004":{
+            "y001":['s001','s002'],
+            "y002":['s003','s004'],
+            "y003":['s005','s006'],
+            "y004":['s007','s008'],
+        },
+        "bme005":{
+            "y001":['s001','s002'],
+            "y002":['s003','s004'],
+            "y003":['s005','s006'],
+            "y004":['s007','s008'],
+        },
+        "bch006":{
+            "y001":['s001','s002'],
+            "y002":['s003','s004'],
+            "y003":['s005','s006'],
+            "y004":['s007','s008'],
+        },
+        
+    },
+    "bc002":{
+        "b000":{
+            "y001":['s000'],
+            "y002":['s000'],
+            "y003":['s000'],
+        },
+    },
+    "mt003":{
+        "mcs001":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+            
+        },
+        "met002":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+            
+        },
+        "mee003":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+            
+        },
+        "mcv004":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+            
+        },
+        "mme005":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+           
+        },
+        "mch005":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+           
+        },
+    },
+    "mb004":{
+        "mib001":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+        },
+        "mhr002":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+        },
+        "mba003":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+        },
+        "mf004":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+        },
+        "mr005":{
+            "y001":[
+                's001','s002'
+            ],
+            "y002":['s001','s002'],
+        },
+    },
+    "mc005":{
+        "b000":{
+            "y001":['s000'],
+            "y002":['s000'],
+        },
+    },
+}
+
+let courses_selected=document.getElementById("courses-dropdown");
+let branch_selected=document.getElementById("branch-dropdown");
+let course_year_selected=document.getElementById("course-year-dropdown");
+let semester_selected=document.getElementById("semester-dropdown");
+
+
+for(let opt in syllabus_subject_extract){
+    let option = document.createElement('option');
+    option.value=opt;
+    option.innerText=id_finder[opt];
+    courses_selected.appendChild(option);
+}
+
+courses_selected.onchange=()=>{
+    branch_selected.innerHTML=null;
+    let default_option=document.createElement('option');
+    default_option.innerText="Select Branch";
+    branch_selected.append(default_option);
+    
+    for(let opt in syllabus_subject_extract[courses_selected.value]){
+        let option = document.createElement('option');
+        option.value=opt;
+        option.innerText=id_finder[opt];
+        branch_selected.appendChild(option);
+    }
+}
+
+branch_selected.onchange=()=>{
+    course_year_selected.innerHTML=null;
+    let default_option=document.createElement('option');
+    default_option.innerText="Select Branch";
+    course_year_selected.append(default_option);
+    
+    for(let opt in syllabus_subject_extract[courses_selected.value][branch_selected.value]){
+        let option = document.createElement('option');
+        option.value=opt;
+        option.innerText=id_finder[opt];
+        course_year_selected.appendChild(option);
+    }
+}
+
