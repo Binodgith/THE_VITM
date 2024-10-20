@@ -1,6 +1,7 @@
 #career-opportunity-container{
     width: 80%;
     margin: auto;
+    margin-bottom: 5rem;
     
 }
 
@@ -9,7 +10,7 @@
      padding: 15px;
      background-color:  var(--ghost-white-index);
      z-index: 5;
-     transition: 0.4s;
+     transition: 0.3s;
      border-radius: 5px;
      border-bottom: none;
 }
@@ -18,9 +19,12 @@
     color: var(--white-color-index);
     border-bottom: none;
 }
+#career-opportunity-container #career-opportunity-btn .active:hover{
+    background-color:var(--fade-of-primary-color) ;
+}
 
 #career-opportunity-container #career-opportunity-btn button:hover{
-    background-color: var(--fade-of-primary-color);;
+    background-color:#c42a2ac8;
     color: var(--white-color-index);
     cursor: pointer;
 }
@@ -44,11 +48,13 @@
     margin: 1.5rem auto;
     border-radius: 15px;
     box-shadow: inset var(--primary-color-index) -7px 0px 0px,inset var(--primary-color-index) 7px 0px 0px, 1px 1px 3px gray;
+    /* filter: grayscale();
+    opacity: 0.8; */
 }   
 
 #career-opportunity-list .recruitment-box .recruitment-details .recruitment-role{
     font-size: 1.8rem;
-    color:brown;
+    /* color:brown; */
     font-weight: bolder;
     margin: 1rem 0rem;
     text-decoration: underline;
