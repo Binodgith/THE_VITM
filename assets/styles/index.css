@@ -425,14 +425,28 @@ header{
     /* height: 40vh; */
     height: 60%;
 }
+#announcement_event_container #announcement-box #announcement-content section>div{
+    border-bottom: 0.7px solid grey;  
+    margin: 10px auto;  
 
-#announcement_event_container #announcement-box #announcement-content section a{
+}
+#announcement_event_container #announcement-box #announcement-content section>div p{
+    text-align: right;
+    font-size: 15px;
+}
+#announcement_event_container #announcement-box #announcement-content section>div a{
     display: block;
     font-size: 1rem;
     text-decoration: none;
     padding: 10px;
     color: rgb(29, 29, 29);
-    border-bottom: 0.7px solid grey;    
+    transition: 0.3s;
+}
+
+#announcement_event_container #announcement-box #announcement-content section>div a:hover{
+    color: var(--black-color-index);
+    text-decoration: underline;
+
 }
 
 #announcement_event_container #announcement-box #announcement-content section{
