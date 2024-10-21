@@ -221,7 +221,7 @@ let syllabus_list=[
         branch:"bcs001",
         year:"y002",
         sem:"s003",
-        subject:"obo031",
+        subject:"ob031",
         syllabus_file_id:"dfgsdfg3545gfs",
         syllabus_released_date:"25-08-2019",
         syllabus_upload_date:"21-10-2024",
@@ -528,7 +528,7 @@ let syllabus_list=[
     branch:"bee003",
     year:"y002",
     sem:"s003",
-    subject:"obo031",
+    subject:"ob031",
     syllabus_file_id:"dfgsdfg3545gfs",
     syllabus_released_date:"25-08-2019",
     syllabus_upload_date:"21-10-2024",
@@ -830,7 +830,7 @@ let syllabus_list=[
     branch:"bet002",
     year:"y002",
     sem:"s003",
-    subject:"obo031",
+    subject:"ob031",
     syllabus_file_id:"dfgsdfg3545gfs",
     syllabus_released_date:"25-08-2019",
     syllabus_upload_date:"21-10-2024",
@@ -1136,7 +1136,7 @@ let syllabus_list=[
     branch:"bcv004",
     year:"y002",
     sem:"s003",
-    subject:"obo031",
+    subject:"ob031",
     syllabus_file_id:"dfgsdfg3545gfs",
     syllabus_released_date:"25-08-2019",
     syllabus_upload_date:"21-10-2024",
@@ -1438,7 +1438,7 @@ let syllabus_list=[
     branch:"bme005",
     year:"y002",
     sem:"s003",
-    subject:"obo031",
+    subject:"ob031",
     syllabus_file_id:"dfgsdfg3545gfs",
     syllabus_released_date:"25-08-2019",
     syllabus_upload_date:"21-10-2024",
@@ -1740,7 +1740,7 @@ let syllabus_list=[
     branch:"bch006",
     year:"y002",
     sem:"s003",
-    subject:"obo031",
+    subject:"ob031",
     syllabus_file_id:"dfgsdfg3545gfs",
     syllabus_released_date:"25-08-2019",
     syllabus_upload_date:"21-10-2024",
@@ -4128,6 +4128,7 @@ for(let opt in syllabus_subject_extract){
 }
 
 courses_selected.onchange=()=>{
+    document.querySelector("#syllabus-listed-sec #syllabus-list-append-box").innerHTML='<div class="syllabus-box"><h3>Fill your condition in filter box first.........</h3> </div>';
     branch_selected.innerHTML=null;
     let default_option=document.createElement('option');
     default_option.innerText="Select Branch";
@@ -4168,5 +4169,44 @@ course_year_selected.onchange=()=>{
         semester_selected.appendChild(option);
     })
     
+}
+
+semester_selected.onchange=()=>{
+    append_syllabus_list(syllabus_list,courses_selected.value,branch_selected.value,course_year_selected.value,semester_selected.value);
+}
+
+
+
+
+
+
+// ------------------------Apppending syllabus in list-------------------------------
+function append_syllabus_list(data,courses_selected,branch_selected,course_year_selected,semester_selected){
+
+    let filtered_data=data.filter((ele)=>{
+        return ele.course==courses_selected && ele.branch==branch_selected && ele.year==course_year_selected && ele.sem==semester_selected ;
+    })
+
+    console.log(filtered_data);
+    document.querySelector("#syllabus-listed-sec #syllabus-list-append-box").innerHTML=null;
+    filtered_data.map((ele)=>{
+        let syllabus_box=document.createElement("div");
+        syllabus_box.setAttribute("class","syllabus-box");
+        syllabus_box.innerHTML=`<div class="syllabus-details">
+                            <p class="syllabus-subject">${id_finder[ele.subject]}</p>
+                            <p class="syllabus-course"><b>Course: </b>${id_finder[ele.course]}</p>
+                            <p class="syllabus-branch"><b>Branch: </b>${id_finder[ele.branch]}</p>
+                            <p class="syllabus-semester"><b>Sem: </b>${id_finder[ele.sem]}</p>
+                        </div>
+                        <div class="syllabus-btn">
+                            <a href="" id="syllabus-view-btn"><i class="fa-solid fa-eye"></i></a>
+                            <a href="https://drive.google.com/uc?export=download&id=${id_finder[ele.syllabus_file_id]}" id="syllabus-download-btn"><i class="fa-solid fa-file-arrow-down"></i></a>
+                        </div>`;
+
+        document.querySelector("#syllabus-listed-sec #syllabus-list-append-box").append(syllabus_box);
+    })
+
+    
+
 }
 
