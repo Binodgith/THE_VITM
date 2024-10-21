@@ -11,13 +11,26 @@
      background-repeat: no-repeat;
      background-position:fixed;
 }
-/* #syllabus-hole-page-contanier>img{
-    width: 100%;
-    height: 100vh;
-    position:sticky
-} */
-#syllabus-hole-page-contanier #syllabus-page-content{
+
+#syllabus-hole-page-contanier #syllabus-filter-selection{
+    height:70%;
+    width: 30%;
+    background-color: antiquewhite;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: auto;
+    position:relative;
+    appearance: none;
+}
+
+#syllabus-hole-page-contanier  #syllabus-filter-selection  .syllabus_dropdown{
+
+    
 
 
     
+
 }
