@@ -5,6 +5,9 @@ let cur_year = cur_date.getFullYear();
 
 // -----------------------------------------
 
-document.getElementById("footer-copyright-year").innerText=cur_year;
+window.onload=()=>{
+    document.getElementById("footer-copyright-year").innerText=cur_year;
+
+}
 
 
