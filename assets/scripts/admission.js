@@ -7,13 +7,13 @@ let admission_notice_list=[
     },
     {
         notice_id:"an002",
-        notice_date:"20-08-2024",
+        notice_date:"25-08-2024",
         notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
         notice_file:""
     },
     {
         notice_id:"an003",
-        notice_date:"20-08-2024",
+        notice_date:"28-08-2024",
         notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
         notice_file:"sdgfsd6541s6df8541sdf"
     },
@@ -25,13 +25,13 @@ let admission_notice_list=[
     },
     {
         notice_id:"an005",
-        notice_date:"20-08-2024",
+        notice_date:"23-10-2024",
         notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
         notice_file:"dsfd56846sdf464sdf"
     },
     {
         notice_id:"an006",
-        notice_date:"20-08-2024",
+        notice_date:"21-10-2024",
         notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
         notice_file:""
     },
@@ -43,7 +43,7 @@ let admission_notice_list=[
     },
     {
         notice_id:"an008",
-        notice_date:"20-08-2024",
+        notice_date:"24-10-2024",
         notice_content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Perferendis dolore placeat earum at!",
         notice_file:""
     },
@@ -116,11 +116,29 @@ let admission_notice_list=[
 
 ]
 
+
+// ----------------get date formate in yyyy-mm-dd--------------------------------
+function getYMD(date){
+    let formattedDate;
+    if (typeof date=="string" &&  date.split('-')[0].length){
+       formattedDate=new Date(date.split("-").reverse().join("-"));
+    }
+    else{
+        formattedDate = new Date(date.toISOString().split('T')[0]);
+    }
+
+    return formattedDate;
+}
+
+
+
 // -------------------------Apppeing Notices by fetching from Database-----------------------
 
 let append_admission_notice_list=(data)=>{
 
-
+    data.sort((d1,d2)=>{
+        return getYMD(d2.notice_date) - getYMD(d1.notice_date);
+    })
     data.map((ele)=>{
         let notice_box_div=document.createElement("div");
         notice_box_div.setAttribute("class","notice-box");
