@@ -46,7 +46,7 @@
 #admission-course-list-container .course-box>p{
     padding: 10px;
     line-height: 1.5;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: justify;
 }
 #admission-course-list-container .course-box .course-box-btn{
@@ -57,7 +57,7 @@
     text-decoration: none;
     border-radius: 10px;
     padding:10px ;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--white-color-index);
     border: 1px solid var(--grey-for-shadow);
     transition: 0.3s;
@@ -133,6 +133,6 @@
 #admission-notice-container #admission-notice-list .notice-box .notice-content li a{
     color:brown;
     text-decoration: none;
-    font-size:1.6rem;
+    font-size:1.5rem;
 }
 

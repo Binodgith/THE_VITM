@@ -28,6 +28,8 @@ body{
 }
 header{
     z-index: 1000;
+    top: 0;
+    position:sticky;
 }
 
 /* ----------------------------------To- Tgaline Section---------------------------------------------------------------- */
@@ -98,6 +100,7 @@ header{
 /* ---------------------------------------------Main- Logo Section ------------------------------------ */
 #main-logo-sec{
     width: 100%;
+    background-color: #fff;
 }
 
 #main-logo-sec #main-logo-sec-container{
@@ -176,6 +179,7 @@ header{
 #Menu-bar-sec{
     width: 100%;
     background-color: var(--primary-color-index);
+    box-shadow: 0px 5px 10px gray;
 }
 #Menu-bar-sec #menu-list-container{
     width: 90%;
@@ -355,10 +359,19 @@ header{
     animation-iteration-count:infinite;
     animation-timing-function: linear;
 }
+#latest-notification-container #notification-box .box-content section:hover{
+    animation-play-state:paused;
+}
 
 #latest-notification-container #notification-box .box-content section a{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    /* color:darkcyan; */
+    color:black;
+    text-decoration: none;
     
+}
+#latest-notification-container #notification-box .box-content section a:hover{
+    color: #0000e6;
 }
 
 
@@ -455,6 +468,9 @@ header{
     animation-name: scroll-notice;
     animation-iteration-count: infinite;
     animation-duration: 35s;
+}
+#announcement_event_container #announcement-box #announcement-content section:hover{
+    animation-play-state: paused;
 }
 
 @keyframes scroll-notice {
@@ -816,6 +832,8 @@ header{
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    transition: 0.3s;
+
 }
 
 @keyframes slide-left-step {
@@ -852,12 +870,13 @@ header{
 
 
 #student-achievement-container #student-achievement-content .achievement-box{
-    /* width: 30%; */
+    width: 30%;
     text-align: center;
     background-color: var(--white-color-index);
     border-radius: 10px;
     padding: 4vh 0vh;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 #student-achievement-content .achievement-box .student-img-box{
@@ -956,6 +975,10 @@ header{
     animation-direction: alternate;
     animation-timing-function: linear;
 }
+/* #placement-partner-container #placement-partner-content #brand-list-1:hover{
+    cursor: pointer;
+    animation-play-state: paused;
+} */
 
 #placement-partner-container #placement-partner-content #brand-list-2{
     animation-name: scroll-left-animation;
@@ -964,6 +987,10 @@ header{
     animation-direction:alternate-reverse;
     animation-timing-function: linear;
 }
+/* #placement-partner-container #placement-partner-content #brand-list-2:hover{
+    cursor: pointer;
+    animation-play-state: paused;
+} */
 
 
 @keyframes scroll-left-animation{
@@ -1181,4 +1208,48 @@ header{
 }
 #copyrights-disclaimer-sec #copyrights-disclaimer-container p{
     margin: 5px auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* -----------------Popup Section----------------------- */
+
+#popup-primary-common {
+    width: 100%;
+    height: 100vh;
+    position:absolute ;
+    background-color: #1b1b1bce;
+    z-index: 2000;
+    top: 0px;
+    position: fixed;
+}
+
+#popup-primary-common #popup-primary-container{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    background-color: var(--white-color-index);
+    top: 15%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#popup-primary-common #popup-primary-container #popup-close-btn{
+    text-align: right;
+}
+
+#popup-primary-common #popup-primary-container #popup-close-btn i{
+    font-size: 1.8rem;
+}
+#popup-primary-common #popup-primary-container #popup-close-btn i:hover{
+    color: var(--primary-color-index);
+    cursor: pointer;
+
 }

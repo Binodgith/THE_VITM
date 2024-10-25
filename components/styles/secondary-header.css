@@ -28,3 +28,19 @@
     font-size: 3rem;
     text-shadow: 2px 4px var(--primary-color-index);
 }
+
+
+
+/* --------------heading for all---------------- */
+#box-primary-title{
+    width: 80%;
+    text-align: center;
+    margin: 5vh auto;
+    color: var(--primary-color-index);
+    font-family: var(--font-poppins);
+    border-bottom: 1px solid var(--primary-color-index);
+}
+#box-primary-title h1{
+    text-shadow: 2px 3px var(--grey-for-shadow);
+}
+

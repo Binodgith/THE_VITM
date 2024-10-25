@@ -132,6 +132,9 @@ let append_career_opportunity_list=(received_data,aplication_status)=>{
         }
     })
 
+    data.sort((d1,d2)=>{
+        return getYMD(d2.job_released_date) - getYMD(d1.job_released_date);
+    })
 
     data.map((ele)=>{
         let recruitment_box=document.createElement("div");

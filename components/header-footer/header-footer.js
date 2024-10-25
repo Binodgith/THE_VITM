@@ -11,7 +11,7 @@ function header_main(){
                 </div>
     
                 <div id="Admission-btn1-container" class="admission-btn">
-                    <a href=""> Admission </a>
+                    <a href="./pages/admission.html"> Admission </a>
                     <img id= "new-tag" src="./assets/media/New-tag.png" alt="">
                 </div>
             </div>
@@ -24,54 +24,54 @@ function header_main(){
         <div id="Menu-bar-sec">
             <div id="menu-list-container">
                 <ul id="main-list">
-                    <li><a href="#"><i class="fa-solid fa-house"></i> &nbsp;Home</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> &nbsp;Home</a></li>
+                    <li><a href="./pages/aboutUs.html">About Us</a></li>
                     <li>
                         <a href="#">Academic &nbsp;<i class="fa-solid fa-sort-down"></i></a>
                         <ul id="menu-sub-list">
                             <li><a href="">BPUT</a></li>
-                            <li><a href="">Facilities</a></li>
-                            <li><a href="">Alumni</a></li>
-                            <li><a href="">Gallery</a></li>
-                            <li><a href="">Campus</a></li>
-                            <li><a href="">Academic Calander</a></li>
-                            <li><a href="">Faculty & Staff</a></li>
-                            <li><a href="">Notice</a></li>
-                            <li><a href="">Placements</a></li>
+                            <li><a href="./pages/facilities.html">Facilities</a></li>
+                            <li><a href="./pages/alumni.html">Alumni</a></li>
+                            <li><a href="./pages/gallery.html">Gallery</a></li>
+                            <li><a href="./pages/aboutUs.html">Campus</a></li>
+                            <li><a href="./pages/events.html">Academic Calander</a></li>
+                            <li><a href="./pages/staff_faculty.html">Faculty & Staff</a></li>
+                            <li><a href="./pages/annoucement.html">Notice</a></li>
+                            <li><a href="./pages/alumni.html">Placements</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">Admission  &nbsp;<i class="fa-solid fa-sort-down"></i></a>
 
                         <ul id="menu-sub-list">
-                            <li><a href="">U.G Course</a></li>
-                            <li><a href="">P.G Course</a></li>
-                            <li><a href="">Eligibility</a></li>
+                            <li><a href="./pages/admission.html">U.G Course</a></li>
+                            <li><a href="./pages/admission.html">P.G Course</a></li>
+                            <li><a href="./pages/admission.html">Eligibility</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">Examination  &nbsp;<i class="fa-solid fa-sort-down"></i></a>
 
                         <ul id="menu-sub-list">
-                            <li><a href="">Results</a></li>
-                            <li><a href="">Forms</a></li>
+                            <li><a href="./pages/result.html">Results</a></li>
+                            <li><a href="./pages/downloads.html">Forms</a></li>
                             <li><a href="">Hall ticket</a></li>
-                            <li><a href="">Syllabus</a></li>
+                            <li><a href="./pages/syllabus.html">Syllabus</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">Students  &nbsp;<i class="fa-solid fa-sort-down"></i></a>
 
                         <ul id="menu-sub-list">
-                            <li><a href="">Admission</a></li>
-                            <li><a href="">Results</a></li>
-                            <li><a href="">Alumni</a></li>
+                            <li><a href="./pages/admission.html">Admission</a></li>
+                            <li><a href="./pages/result.html">Results</a></li>
+                            <li><a href="./pages/alumni.html">Alumni</a></li>
                             <li><a href="">Scholarship Portal</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Facilities</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="./pages/facilities.html">Facilities</a></li>
+                    <li><a href="./pages/gallery.html">Gallery</a></li>
+                    <li><a href="./pages/contactUs.html">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -101,14 +101,14 @@ function footer_main(){
 
                     <div  class="footer-anchor-tags">
                         <a href="">BPUT</a>
-                        <a href="">Facilities</a>
-                        <a href="">Alumni</a>
-                        <a href="">Campus</a>
-                        <a href="">Faculty & Staff</a>
-                        <a href="">Placements</a>
-                        <a href="">Results</a>
-                        <a href="">Syllabus</a>
-                        <a href="">Admission</a>
+                        <a href="./pages/facilities.html">Facilities</a>
+                        <a href="./pages/alumni.html">Alumni</a>
+                        <a href="./pages/aboutUs.html">Campus</a>
+                        <a href="./pages/staff_faculty.html">Faculty & Staff</a>
+                        <a href="./pages/alumni.html">Placements</a>
+                        <a href="./pages/result.html">Results</a>
+                        <a href="./pages/syllabus.html">Syllabus</a>
+                        <a href="./pages/admission.html">Admission</a>
                     </div>
 
 
@@ -120,15 +120,15 @@ function footer_main(){
                     </div>
 
                     <div  class="footer-anchor-tags">
-                        <a href="">Career</a>
+                        <a href="./pages/career.html">Career</a>
                         <a href="">Hall Ticket</a>
-                        <a href="">Notice</a>
+                        <a href="./pages/announcement.html">Notice</a>
+                        <a href="./pages/events.html">Events</a>
                         <a href="">Developers</a>
-                        <a href="">Sitemap</a>
-                        <a href="">Gallery</a>
-                        <a href="">About US</a>
-                        <a href="">Contact US </a>
-                        <a href="">Downloads</a>
+                        <a href="./pages/gallery.html">Gallery</a>
+                        <a href="./pages/aboutUs.html">About US</a>
+                        <a href="./pages/contactUs.html">Contact US </a>
+                        <a href="./pages/downloads.html">Downloads</a>
                     </div>
 
                 </div>
