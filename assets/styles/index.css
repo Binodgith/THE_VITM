@@ -833,6 +833,7 @@ header{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transition: 0.3s;
+
 }
 
 @keyframes slide-left-step {
@@ -869,12 +870,13 @@ header{
 
 
 #student-achievement-container #student-achievement-content .achievement-box{
-    /* width: 30%; */
+    width: 30%;
     text-align: center;
     background-color: var(--white-color-index);
     border-radius: 10px;
     padding: 4vh 0vh;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 #student-achievement-content .achievement-box .student-img-box{
