@@ -123,7 +123,7 @@ let admission_course_list=[
         course_duration:"4 year",
         course_academic_year:"2024-2025",
         course_short_description:"BTech course is a four-year undergraduate degree awarded to candidates interested in engineering and technology.",
-        course_application_last_date:"30-09-2024",
+        course_application_last_date:"30-11-2024",
         course_id:"bt001",
         course_admission_id:"",
         course_admission_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
@@ -147,7 +147,7 @@ let admission_course_list=[
         course_duration:"2 year",
         course_academic_year:"2024-2025",
         course_short_description:"A Master of Computer Applications (MCA) is a postgraduate course that focuses on computer science. It provides students with a broad understanding of computer networks, software development, database management, and programming languages",
-        course_application_last_date:"30-11-2024",
+        course_application_last_date:"30-09-2024",
         course_id:"mc005",
         course_admission_id:"",
         course_admission_file_id:"1hN-cjsx2IoelleMHM0xt5OSCbHXsvmXDEBa3BBol-qQ",
@@ -171,7 +171,7 @@ let admission_course_list=[
         course_duration:"2 year",
         course_academic_year:"2024-2025",
         course_short_description:"MTech is a 2-year long postgraduate engineering course. The Full Form of M Tech is Master of Technology. MTech courses are available in different specializations such as Data Science, AI, Cyber Security, etc",
-        course_application_last_date:"30-11-2024",
+        course_application_last_date:"25-10-2024",
         course_id:"b0001",
         course_admission_id:"",
         course_admission_file_id:"1P6L9PWAnAtL6RQghA5GYfMygDLQ88EQQGGvFwnRXq14",
@@ -244,7 +244,19 @@ let append_admission_course_list=(data)=>{
     data.map((ele)=>{
         let course_box=document.createElement("div");
         course_box.setAttribute("class","course-box");
-        course_box.innerHTML=`<div class="course-box">
+        
+
+        
+
+        document.querySelector("#admission-course-list #admission-course-list-container").append(course_box);
+
+        if((getYMD(ele.course_application_last_date).getTime()) > (getYMD(new Date()).getTime())){
+            // let status=document.createElement("p")
+            // status.setAttribute("class", "open");
+            // status.innerText="Application Open";
+            // document.querySelector("#admission-course-list #admission-course-list-container .course-box-status").appendChild(status);
+
+            course_box.innerHTML=`<div class="course-box">
                             <h3 class="course-box-name">${ele.course_full_name}<br> ${ele.course_short_name}</h3>
                             <p class="course-box-duration"><b>Course Duration:- </b> ${ele.course_duration}</p>
                             <p class="course-box-academicyear"><b>Academic year:- </b> ${ele.course_academic_year}</p>
@@ -257,27 +269,31 @@ let append_admission_course_list=(data)=>{
                             </div>
                             
                             <div class="course-box-status">
-                                
+                                <p class="open"> Application Open</p>
                             </div>
                         </div>`;
-
-        
-
-        
-
-        document.querySelector("#admission-course-list #admission-course-list-container").append(course_box);
-
-        if((getYMD(ele.course_application_last_date).getTime()) > (getYMD(new Date()).getTime())){
-            let status=document.createElement("p")
-            status.setAttribute("class", "open");
-            status.innerText="Application Open";
-            document.querySelector("#admission-course-list #admission-course-list-container .course-box-status").appendChild(status);
         }
         else{
-            let status=document.createElement("p")
-            status.setAttribute("class", "closed");
-            status.innerText="Application closed";
-            document.querySelector("#admission-course-list #admission-course-list-container .course-box-status").appendChild(status);
+            // let status=document.createElement("p")
+            // status.setAttribute("class", "closed");
+            // status.innerText="Application closed";
+            // document.querySelector("#admission-course-list #admission-course-list-container .course-box-status").appendChild(status);
+
+            course_box.innerHTML=`<div class="course-box">
+                            <h3 class="course-box-name">${ele.course_full_name}<br> ${ele.course_short_name}</h3>
+                            <p class="course-box-duration"><b>Course Duration:- </b> ${ele.course_duration}</p>
+                            <p class="course-box-academicyear"><b>Academic year:- </b> ${ele.course_academic_year}</p>
+                            <p class="course-box-para">${ele.course_short_description}</p>
+                            <p class="course-box-lastdate"> <b>Last Date:- </b> ${ele.course_application_last_date}</p>
+    
+                            <div class="course-box-btn">
+                                <a href="" id="course-box-view-details-btn"><i class="fa-solid fa-eye"></i> &nbsp; View Details</a>
+                            </div>
+                            
+                            <div class="course-box-status">
+                                <p class="closed"> Application closed</p>
+                            </div>
+                        </div>`;
         }
 
     })
