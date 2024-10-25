@@ -116,6 +116,70 @@ let admission_notice_list=[
 
 ]
 
+let admission_course_list=[
+    {
+        course_full_name:"Bachelor of Technology",
+        course_short_name:"(B.Tech)",
+        course_duration:"4 year",
+        course_academic_year:"2024-2025",
+        course_short_description:"BTech course is a four-year undergraduate degree awarded to candidates interested in engineering and technology.",
+        course_application_last_date:"30-09-2024",
+        course_id:"bt001",
+        course_admission_id:"",
+        course_admission_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        course_admission_file_embed:"2PACX-1vSpdoC5ajVwI_5qOBjwAQ6LkGhvOWTEimbgK-ZRsUPue-r_sfuNisFsWMfQnyHzh0ulB0L9lcjPnvYF",
+    },
+    {
+        course_full_name:"Bachelor of computer Application",
+        course_short_name:"(BCA)",
+        course_duration:"3 year",
+        course_academic_year:"2024-2025",
+        course_short_description:"A Bachelor of Computer Applications (BCA) is a three-year undergraduate degree program that focuses on the practical aspects of computer science and its application",
+        course_application_last_date:"30-11-2024",
+        course_id:"bc002",
+        course_admission_id:"",
+        course_admission_file_id:"1mKxvwEbxHi3p5HlnBCFUuMHZeZPCRPKdOW27YkD5_54",
+        course_admission_file_embed:"2PACX-1vQbqYZ7HVnJIqyIyZVqqNKCuNDjyyRbIXcM0iD4CnP0shr4Sl8gZpNkGsHfoB27wMD6iv6Nuv9I_KI5",
+    },
+    {
+        course_full_name:"Master of Computer Application",
+        course_short_name:"(MCA)",
+        course_duration:"2 year",
+        course_academic_year:"2024-2025",
+        course_short_description:"A Master of Computer Applications (MCA) is a postgraduate course that focuses on computer science. It provides students with a broad understanding of computer networks, software development, database management, and programming languages",
+        course_application_last_date:"30-11-2024",
+        course_id:"mc005",
+        course_admission_id:"",
+        course_admission_file_id:"1hN-cjsx2IoelleMHM0xt5OSCbHXsvmXDEBa3BBol-qQ",
+        course_admission_file_embed:"2PACX-1vTmQQMBIgH-p7APTT2sfC4dwbwd_Qlgyelfxx0Hr-HPvMmtznIQY_tWv4WiIeOOkgaqL1r_8GPNjewL",
+    },
+    {
+        course_full_name:"Master of Business Academy",
+        course_short_name:"(MBA)",
+        course_duration:"2 year",
+        course_academic_year:"2024-2025",
+        course_short_description:"A Master of Business Administration (MBA) is a postgraduate degree that teaches students business practices and management skills",
+        course_application_last_date:"30-11-2024",
+        course_id:"mb004",
+        course_admission_id:"",
+        course_admission_file_id:"12M8AJ3UGpc4xETKf0VKH_yd9fQI8UzBWn2aM0pzShk8",
+        course_admission_file_embed:"2PACX-1vRAvLJN39-gkWioe3IM9FEQqGbF7_umiPYlPcdhe2P_BqCVMzcDC-5YW6d5vYbEfZffUuBNgdsW8BdT",
+    },
+    {
+        course_full_name:"Master of Technology",
+        course_short_name:"(M.Tech)",
+        course_duration:"2 year",
+        course_academic_year:"2024-2025",
+        course_short_description:"MTech is a 2-year long postgraduate engineering course. The Full Form of M Tech is Master of Technology. MTech courses are available in different specializations such as Data Science, AI, Cyber Security, etc",
+        course_application_last_date:"30-11-2024",
+        course_id:"b0001",
+        course_admission_id:"",
+        course_admission_file_id:"1P6L9PWAnAtL6RQghA5GYfMygDLQ88EQQGGvFwnRXq14",
+        course_admission_file_embed:"2PACX-1vShHJRP7sYS8AOGUTnF3lbTNZ4qZgeswJdlnuIFPauXDk6QfTGExSf4n9cpKE6EFgNqeAESlXM6rY1j",
+    }
+    
+]
+
 
 // ----------------get date formate in yyyy-mm-dd--------------------------------
 function getYMD(date){
@@ -166,3 +230,57 @@ let append_admission_notice_list=(data)=>{
 }
 
 append_admission_notice_list(admission_notice_list);
+
+
+
+
+
+
+
+
+// ---------------------Append Course box-----------------------
+let append_admission_course_list=(data)=>{
+    // document.querySelector("#admission-course-list #admission-course-list-container").innerHTML=null;
+    data.map((ele)=>{
+        let course_box=document.createElement("div");
+        course_box.setAttribute("class","course-box");
+        course_box.innerHTML=`<div class="course-box">
+                            <h3 class="course-box-name">${ele.course_full_name}<br> ${ele.course_short_name}</h3>
+                            <p class="course-box-duration"><b>Course Duration:- </b> ${ele.course_duration}</p>
+                            <p class="course-box-academicyear"><b>Academic year:- </b> ${ele.course_academic_year}</p>
+                            <p class="course-box-para">${ele.course_short_description}</p>
+                            <p class="course-box-lastdate"> <b>Last Date:- </b> ${ele.course_application_last_date}</p>
+    
+                            <div class="course-box-btn">
+                                <a href="" id="course-box-view-details-btn"><i class="fa-solid fa-eye"></i> &nbsp; View Details</a>
+                                <a href="" id="course-box-apply-btn"> <i class="fa-solid fa-pen"></i> &nbsp; Apply</a>
+                            </div>
+                            
+                            <div class="course-box-status">
+                                
+                            </div>
+                        </div>`;
+
+        
+
+        
+
+        document.querySelector("#admission-course-list #admission-course-list-container").append(course_box);
+
+        if((getYMD(ele.course_application_last_date).getTime()) > (getYMD(new Date()).getTime())){
+            let status=document.createElement("p")
+            status.setAttribute("class", "open");
+            status.innerText="Application Open";
+            document.querySelector("#admission-course-list #admission-course-list-container .course-box-status").appendChild(status);
+        }
+        else{
+            let status=document.createElement("p")
+            status.setAttribute("class", "closed");
+            status.innerText="Application closed";
+            document.querySelector("#admission-course-list #admission-course-list-container .course-box-status").appendChild(status);
+        }
+
+    })
+}
+
+append_admission_course_list(admission_course_list)
