@@ -261,7 +261,6 @@ let append_admission_course_list=(data)=>{
     
                             <div class="course-box-btn">
                                 <a href="" id="course-box-view-details-btn"><i class="fa-solid fa-eye"></i> &nbsp; View Details</a>
-                                <a href="" id="course-box-apply-btn"> <i class="fa-solid fa-pen"></i> &nbsp; Apply</a>
                             </div>
                             
                             <div class="course-box-status">
@@ -281,7 +280,14 @@ let append_admission_course_list=(data)=>{
             let status=document.createElement("p")
             status.setAttribute("class", "open");
             status.innerText="Application Open";
+            let admission_apply_btn=document.createElement("a");
+            admission_apply_btn.setAttribute("id", "course-box-apply-btn");
+            admission_apply_btn.href="";
+            admission_apply_btn.innerHTML='<i class="fa-solid fa-pen"></i> &nbsp; Apply';
+            
 
+            
+            doc_data.querySelector(".course-box .course-box-btn").appendChild(admission_apply_btn);
             doc_data.querySelector(".course-box .course-box-status").append(status);
         }
         else{
@@ -289,6 +295,7 @@ let append_admission_course_list=(data)=>{
             status.setAttribute("class", "closed");
             status.innerText="Application closed";
 
+            course_box.style.filter='grayscale(0.9)'
             doc_data.querySelector(".course-box .course-box-status").append(status);
         }
 
@@ -298,8 +305,8 @@ let append_admission_course_list=(data)=>{
         doc_data.querySelector("#course-box-view-details-btn").addEventListener("click",(e)=>{
             e.preventDefault();
             let popup_html=`<div id="btn-sec">
-                        <a href="https://docs.google.com/document/d/${ele.course_admission_file_id}/export?format=pdf" target="_blank" id="admission-popup-download-btn">Download <i class="fa-regular fa-circle-down"></i></a>
-                        <a href="" target="_blank" id="admission-popup-apply-btn">Proceed to Apply <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://docs.google.com/document/d/${ele.course_admission_file_id}/export?format=pdf" target="_blank" id="admission-popup-download-btn"><i class="fa-solid fa-print"></i> Print</a>
+                        
                     </div>
 
                     <div id="embed-sec">

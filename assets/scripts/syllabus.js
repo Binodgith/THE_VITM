@@ -4193,7 +4193,7 @@ function append_syllabus_list(data,courses_selected,branch_selected,course_year_
         let syllabus_box=document.createElement("div");
         syllabus_box.setAttribute("class","syllabus-box");
         syllabus_box.innerHTML=`<div class="syllabus-details">
-                            <p class="syllabus-subject">${id_finder[ele.subject]}</p>
+                            <p class="syllabus-subject"><i class="fa-solid fa-book"></i> ${id_finder[ele.subject]}</p>
                             <p class="syllabus-course"><b>Course: </b>${id_finder[ele.course]}</p>
                             <p class="syllabus-branch"><b>Branch: </b>${id_finder[ele.branch]}</p>
                             <p class="syllabus-semester"><b>Sem: </b>${id_finder[ele.sem]}</p>

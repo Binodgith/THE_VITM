@@ -4,7 +4,8 @@ let announcement_list=[
         notice_description:"We are pleased to announce that the deadline for BTech 2024 admissions has been extended to July 25, 2024, due to high demand. Prospective students who have not yet applied can submit their applications online through the admissions portal. Don't miss the opportunity to secure your seat!",
         notice_release_date:"29-06-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"dsdg7841RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC81RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"2PACX-1vSpdoC5ajVwI_5qOBjwAQ6LkGhvOWTEimbgK-ZRsUPue-r_sfuNisFsWMfQnyHzh0ulB0L9lcjPnvYF",
         notice_id:"ancmt-0005",
     },
     {
@@ -12,7 +13,8 @@ let announcement_list=[
         notice_description:"The college will observe its winter break from December 20, 2023, to January 5, 2024. No classes or administrative work will take place during this period. The new semester will begin on January 10, 2024, after a brief orientation session for students.",
         notice_release_date:"10-12-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"dsdg7841RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC81RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"2PACX-1vSpdoC5ajVwI_5qOBjwAQ6LkGhvOWTEimbgK-ZRsUPue-r_sfuNisFsWMfQnyHzh0ulB0L9lcjPnvYF",
         notice_id:"ancmt-0008",
     },
 
@@ -21,7 +23,8 @@ let announcement_list=[
         notice_description:"Our Annual Tech Fest, AKASH 2K24 , will take place from December 12 to 14, 2024. Registrations for events and competitions will open on November 1. Students from all departments are encouraged to participate and showcase their talent.",
         notice_release_date:"22-11-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"2PACX-1vSpdoC5ajVwI_5qOBjwAQ6LkGhvOWTEimbgK-ZRsUPue-r_sfuNisFsWMfQnyHzh0ulB0L9lcjPnvYF",
         notice_id:"ancmt-0011",
     },
     {
@@ -29,7 +32,8 @@ let announcement_list=[
         notice_description:"The annual Sports Week will be held from November 20 to 25, 2024. Events include football, cricket, badminton, and table tennis. Students can register their teams on the sports page by  before November 09 . Let's promote fitness and teamwork! ",
         notice_release_date:"18-11-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"2PACX-1vSpdoC5ajVwI_5qOBjwAQ6LkGhvOWTEimbgK-ZRsUPue-r_sfuNisFsWMfQnyHzh0ulB0L9lcjPnvYF",
         notice_id:"ancmt-0014",
     },
     {
@@ -37,7 +41,8 @@ let announcement_list=[
         notice_description:"The Training and Placement Cell has announced internship opportunities with leading tech companies. Interested students should submit their resumes to the T&P office by October 25. Interviews will be conducted in November.",
         notice_release_date:"23-09-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"",
         notice_id:"ancmt-0017"
     },
     {
@@ -45,7 +50,8 @@ let announcement_list=[
         notice_description:"The college is organizing a 24-hour coding hackathon from November 15 to 16, 2024. The hackathon is open to students from all years. Teams will work on real-world problem statements and compete for cash prizes. Registration closes on November 10.",
         notice_release_date:"20-10-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"",
         notice_id:"ancmt-0008"
     },
     {
@@ -53,7 +59,8 @@ let announcement_list=[
         notice_description:"The examination schedule for the Fall 2024 semester has been released. Students can access the detailed timetable in the examination section of the website. Exams will start from November 15, 2024. Make sure to review your subjects and prepare well in advance. Any conflicts should be reported by October 25, 2024.",
         notice_release_date:"28-10-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC81RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"",
         notice_id:"ancmt-0020"
     },
     {
@@ -61,7 +68,8 @@ let announcement_list=[
         notice_description:"The Annual Alumni Meet will be held on December 20, 2024. Alumni from all batches are invited to reconnect with their peers and faculty. The event will feature a panel discussion, networking sessions, and a cultural evening. Register online by December 10.",
         notice_release_date:"26-11-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC81RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"",
         notice_id:"ancmt-0023"
     },
     {
@@ -69,7 +77,8 @@ let announcement_list=[
         notice_description:"An inter-college online quiz competition will be held on November 10, 2024. Topics will include general knowledge, current affairs, and technical subjects. Winners will receive cash prizes and certificates. Register on the events page by November 5.",
         notice_release_date:"31-10-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC81RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"",
         notice_id:"ancmt-0026"
     },
     {
@@ -77,7 +86,8 @@ let announcement_list=[
         notice_description:"The college has partnered with a leading startup incubator to launch an incubation program for aspiring entrepreneurs. Interested students can apply with their business ideas by November 15, 2024. Selected teams will receive mentorship and seed funding.",
         notice_release_date:"03-10-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC81RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"",
         notice_id:"ancmt-0029"
     },
     {
@@ -85,7 +95,8 @@ let announcement_list=[
         notice_description:"Applications for merit-based and need-based scholarships for the academic year 2024-2025 are now open. Interested students should apply through the scholarship portal by October 31. Submit all required documents for verification.",
         notice_release_date:"03-10-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC81RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"",
         notice_id:"ancmt-0032"
     },
     {
@@ -93,7 +104,8 @@ let announcement_list=[
         notice_description:"A campus recruitment drive will be held from November 20 to 25, 2024, for final-year students. Companies from various sectors, including IT, manufacturing, and finance, will participate. Prepare your resumes and register with the placement cell.",
         notice_release_date:"15-10-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC81RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"",
         notice_id:"ancmt-0035"
     },
     {
@@ -101,7 +113,8 @@ let announcement_list=[
         notice_description:"We are pleased to welcome three new faculty members to the Computer Science and Mechanical Engineering departments. Their profiles and research areas are available on the faculty page. We look forward to their contributions.",
         notice_release_date:"15-10-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC81RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"",
         notice_id:"ancmt-0038"
     },
 
@@ -110,7 +123,8 @@ let announcement_list=[
         notice_description:"The Student Council elections for the academic year 2024-2025 will be held on November 1, 2024. Nominations for various positions are now open. Interested students can submit their nomination forms by October 20.",
         notice_release_date:"01-10-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC81RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"",
         notice_id:"ancmt-0041"
     },
     {
@@ -118,7 +132,8 @@ let announcement_list=[
         notice_description:"The Freshers' Party for the 2024-2025 batch will be held on October 29, 2024. The event will include performances, fun games, and a DJ night. All first-year students are invited. Contact your class representative for more details.",
         notice_release_date:"30-09-2024",
         notice_release_by:"Principal (dr.Bhimsen)",
-        notice_file_id:"dsdg784-3jhsdfg",
+        notice_file_id:"1RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC81RanqysKCpdDfx_H2wtIIQDkL3PerOUKSAtKpayTNxC8",
+        notice_file_embed_id:"",
         notice_id:"ancmt-0044"
     },
 

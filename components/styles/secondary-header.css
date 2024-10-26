@@ -57,7 +57,7 @@
     background-color: #1b1b1be5;
     z-index: 2000;
     top: 0px;
-    visibility:hidden;
+    /* visibility:hidden; */
     animation-name: fadeup;
     animation-duration: 0.5s;
 }
@@ -78,9 +78,10 @@
     width: 80%;
     margin: auto;
     background-color: ghostwhite;
-    top: 15%;
+    top: 10%;
     padding: 1rem;
     border-radius: 10px;
+    overflow-y: auto;
 }
 
 
