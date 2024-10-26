@@ -5,14 +5,17 @@
     --white-color-index: white;
     --ghost-white-index: ghostwhite;
     --secondary-color-index: #333333;
-    --accent-color: #007bff;
+    --accent-color: #a0522d;
+    --phone-color: #4b9cd3;
+    --phone-hover-color: #3b83b2;
+    --email-hover-color: #8b4f33;
     --text-color-light: #f5f5f5;
     --font-heading: 'Georgia', serif;
     --font-body: 'Arial', sans-serif;
   }
   
   /* Reset styling */
-  body{
+   #staff_faculty-property-container body{
     background-color: ghostwhite;
   }
   * {
@@ -78,7 +81,7 @@
   .member-name {
     font-family: var(--font-heading);
     font-size: 1.3em;
-    color: var(--primary-color-index);
+    color: var(--secondary-color-index);
     margin: 10px 0;
   }
   
@@ -111,12 +114,12 @@
   }
   
   /* Telephone Button */
-  .button.phone {
-    background-color: var(--primary-color-index);
+  .phone {
+    background-color: var(--phone-color);
   }
   
-  .button.phone:hover {
-    background-color: darken(var(--primary-color-index), 10%);
+  .button.phone:hover, .button.phone:focus, .button.phone:active {
+    background-color: darken(var(--phone-hover-color), 10%);
   }
   
   /* Email Button */
@@ -124,8 +127,8 @@
     background-color: var(--accent-color);
   }
   
-  .button.email:hover {
-    background-color: darken(var(--accent-color), 10%);
+  .button.email:hover, .button.email:focus,.button.email:active {
+    background-color: darken(var(--email-hover-color), 10%);
   }
   
   /* Responsive Design */
