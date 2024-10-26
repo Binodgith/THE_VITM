@@ -20,7 +20,9 @@ function open_popup(data){
     document.querySelector("#popup-commom-sec").innerHTML=content_popup();
     let popup_window=document.querySelector("#popup-primary-common");
     let popup_window_content=document.querySelector("#popup-primary-container #popup-content-container ");
-    popup_window.style.display="block";
+    popup_window.style.visibility="visible";
+    // popup_window.style.transform='scale(1)';
+
     popup_window_content.innerHTML=null;
     popup_window_content.append(data)
 
@@ -32,6 +34,7 @@ function open_popup(data){
 }
 
 
+export{open_popup}
 // -----------------------------------------------------------
 // let data1=document.createElement("div");
 // data1.innerHTML='<h1> appended </h1>'

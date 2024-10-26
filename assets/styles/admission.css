@@ -34,7 +34,7 @@
 }
 
 #admission-course-list-container .course-box h3{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: var(--font-roboto);
     padding: 10px;
     border-bottom: 1px solid var(--black-color-index);
@@ -43,7 +43,7 @@
     color: var(--white-color-index);
 }
 
-#admission-course-list-container .course-box>p{
+#admission-course-list-container .course-box p{
     padding: 10px;
     line-height: 1.5;
     font-size: 1.1rem;
@@ -59,7 +59,7 @@
     padding:10px ;
     font-size: 1.1rem;
     color: var(--white-color-index);
-    border: 1px solid var(--grey-for-shadow);
+    /* border: 1px solid var(--grey-for-shadow); */
     transition: 0.3s;
 }
 #admission-course-list-container .course-box .course-box-btn a:hover{
@@ -81,6 +81,9 @@
     font-size: 1.2rem;
     width: 100%;
     margin-top: 1.5rem;
+    margin-bottom: 0px;
+    bottom: 0px;
+    position: sticky;
 }
 #admission-course-list-container .course-box .course-box-status .open{
     background-color:green;
@@ -136,3 +139,50 @@
     font-size:1.5rem;
 }
 
+
+
+
+
+
+
+
+
+/* -------------------popup Content Styling------------------- */
+#popup-content-container{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+#popup-content-container #btn-sec{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto;
+
+}
+
+#popup-content-container #btn-sec a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color:green;
+    color: white;
+    padding: 13px;
+    border-radius: 10px;
+    box-shadow: 1px 2px  gray;
+    transition: 0.2s;
+}
+#popup-content-container #btn-sec a:hover{
+    background-color: rgb(0, 84, 0);
+}
+#popup-content-container #embed-sec {
+    width: 95%;
+    margin: auto;
+    background-color: #fff;
+}
+#popup-content-container #embed-sec iframe{
+    width: 100%;
+    height: 55vh;
+    border-radius: 10px;
+}
+
+/* ------------------------------------------------------ */
