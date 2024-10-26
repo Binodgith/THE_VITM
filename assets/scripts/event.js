@@ -2,230 +2,338 @@ let event_list=[
     {
         event_title:"Admission Date extended",
         event_description:"We are pleased to announce that the deadline for BTech 2024 admissions has been extended to July 25, 2024, due to high demand. Prospective students who have not yet applied can submit their applications online through the admissions portal. Don't miss the opportunity to secure your seat!",
-        event_date:"25-07-2024",
-        event_release_date:"29-06-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
+        event_date:"29-06-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0005",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"Winter Break - December 20, 2023 to January 5, 2024",
         event_description:"The college will observe its winter break from December 20, 2023, to January 5, 2024. No classes or administrative work will take place during this period. The new semester will begin on January 10, 2024, after a brief orientation session for students.",
-        event_release_date:"10-12-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"20-12-2023 to 05-01-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0008",
+        event_img_id:"hdgbuuhjbbvb",
     },
 
     {
         event_title:"Annual Tech Fest Date Released : Join us for our annual AKASH 2K24 celebration on  date : 10-01-2025",
         event_description:"Our Annual Tech Fest, AKASH 2K24 , will take place from December 12 to 14, 2024. Registrations for events and competitions will open on November 1. Students from all departments are encouraged to participate and showcase their talent.",
-        event_release_date:"22-11-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"10-01-2025",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0011",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:" Annula Sports Tournament Date Released : signup for the tournament and showcase your skill before 09-11-2024",
         event_description:"The annual Sports Week will be held from November 20 to 25, 2024. Events include football, cricket, badminton, and table tennis. Students can register their teams on the sports page by  before November 09 . Let's promote fitness and teamwork! ",
-        event_release_date:"18-11-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"20-11-2024 to 25-11-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0014",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"Interinship Opportunities : Expolre exciting interndhip placment eith top companies",
         event_description:"The Training and Placement Cell has announced internship opportunities with leading tech companies. Interested students should submit their resumes to the T&P office by October 25. Interviews will be conducted in November.",
-        event_release_date:"23-09-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"25-10-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0017"
+        event_id:"evnt-0017",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"Hackathon: Colabration with  top studenet to solve real world problems",
         event_description:"The college is organizing a 24-hour coding hackathon from November 15 to 16, 2024. The hackathon is open to students from all years. Teams will work on real-world problem statements and compete for cash prizes. Registration closes on November 10.",
-        event_release_date:"20-10-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"15-11-2024 to 16-11-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0008"
+        event_id:"evnt-0008",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"  Semester Exam Schedule Released",
         event_description:"The examination schedule for the Fall 2024 semester has been released. Students can access the detailed timetable in the examination section of the website. Exams will start from November 15, 2024. Make sure to review your subjects and prepare well in advance. Any conflicts should be reported by October 25, 2024.",
-        event_release_date:"28-10-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"25-11-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0020"
+        event_id:"evnt-0020",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"Alumni Meet 2024",
         event_description:"The Annual Alumni Meet will be held on December 20, 2024. Alumni from all batches are invited to reconnect with their peers and faculty. The event will feature a panel discussion, networking sessions, and a cultural evening. Register online by December 10.",
-        event_release_date:"26-11-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"10-12-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0023"
+        event_id:"evnt-0023",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"Online Quiz Competition",
         event_description:"An inter-college online quiz competition will be held on November 10, 2024. Topics will include general knowledge, current affairs, and technical subjects. Winners will receive cash prizes and certificates. Register on the events page by November 5.",
-        event_release_date:"31-10-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"10-11-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0026"
+        event_id:"evnt-0026",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:" [October 3, 2024] Startup Incubation Program",
         event_description:"The college has partnered with a leading startup incubator to launch an incubation program for aspiring entrepreneurs. Interested students can apply with their business ideas by November 15, 2024. Selected teams will receive mentorship and seed funding.",
-        event_release_date:"03-10-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"15-11-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0029"
+        event_id:"evnt-0029",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"Scholarship Application Open",
         event_description:"Applications for merit-based and need-based scholarships for the academic year 2024-2025 are now open. Interested students should apply through the scholarship portal by October 31. Submit all required documents for verification.",
-        event_release_date:"03-10-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"31-10-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0032"
+        event_id:"evnt-0032",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"Campus News : Stay update on the latest happenings around campus",
         event_description:"A campus recruitment drive will be held from November 20 to 25, 2024, for final-year students. Companies from various sectors, including IT, manufacturing, and finance, will participate. Prepare your resumes and register with the placement cell.",
-        event_release_date:"15-10-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"20-11-2024 to 25-11-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0035"
+        event_id:"evnt-0035",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"New Faculty Join the Department",
         event_description:"We are pleased to welcome three new faculty members to the Computer Science and Mechanical Engineering departments. Their profiles and research areas are available on the faculty page. We look forward to their contributions.",
-        event_release_date:"15-10-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"20-10-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0038"
+        event_id:"evnt-0038",
+        event_img_id:"hdgbuuhjbbvb",
     },
 
     {
         event_title:"Student Council Elections",
         event_description:"The Student Council elections for the academic year 2024-2025 will be held on November 1, 2024. Nominations for various positions are now open. Interested students can submit their nomination forms by October 20.",
-        event_release_date:"01-10-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"01-11-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0041"
+        event_id:"evnt-0041",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"[September 30, 2024]  Freshers' Party 2024",
         event_description:"The Freshers' Party for the 2024-2025 batch will be held on October 29, 2024. The event will include performances, fun games, and a DJ night. All first-year students are invited. Contact your class representative for more details.",
-        event_release_date:"30-09-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"29-10-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0044"
+        event_id:"evnt-0044",
+        event_img_id:"hdgbuuhjbbvb",
     },
 
     {
         event_title:" Cybersecurity Awareness Week",
         event_description:"The college will observe Cybersecurity Awareness Week from October 24 to 30, 2024. Various sessions on data privacy, ethical hacking, and online security will be conducted. Students can participate in the events by registering on the cybersecurity page.",
-        event_release_date:"15-10-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"24-10-2024 to 30-10-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0047"
+        event_id:"evnt-0047",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"Workshop on AI & ML",
         event_description:"A two-day workshop on Artificial Intelligence and Machine Learning will be held on November 5-6, 2024. The workshop is open to 3rd and 4th-year students. Experts from industry and academia will be conducting the sessions. Register by October 30 to secure your spot.",
-        event_release_date:"01-11-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"05-11-2024 to 05-11-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0050"
+        event_id:"evnt-0050",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:" Diwali Break Notice ",
         event_description:"The college will remain closed from October 31 to November 02 , 2024, for Diwali holidays. Classes will resume on November 03 . Students are advised to submit all pending assignments before the break.",
-        event_release_date:"15-10-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"31-10-2024 to 02-11-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0053"
+        event_id:"evnt-0053",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"[October 11, 2024]  Blood Donation Camp",
         event_description:"The college will host a blood donation camp on October 30, 2024, in collaboration with the local Red Cross Society. Students and staff are encouraged to participate. Donors will receive certificates of appreciation. Register at the medical room by October 25.",
-        event_release_date:"11-10-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"30-10-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0056"
+        event_id:"evnt-0056",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"Summer Internship Program Applications Open  April 1, 2024 ",
         event_description:"Applications for the Summer Internship Program are now open. Students can apply to leading companies for internships in fields such as software development, electronics, and mechanical engineering. Submit your applications by April 15, 2024",
-        event_release_date:"15-03-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"15-04-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0059"
+        event_id:"evnt-0059",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"Project Submission Deadline Extended To November 10 , 2024",
         event_description:"The final-year project submission deadline has been extended to November  10 , 2024. Make sure your projects are complete and submitted before the deadlin",
-        event_release_date:"19-10-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"10-11-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0062"
+        event_id:"evnt-0062",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:" New Hostel Rules Announced – August 30, 2023 ",
         event_description:"The college has updated its hostel rules. Students are required to adhere to the new curfew timings and regulations. Violations may result in penalties.",
-        event_release_date:"30-08-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"30-08-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0065"
+        event_id:"evnt-0065",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:" New Semester Classes Begin  January 10, 2024 ",
         event_description:"The new semester classes will commence on January 15, 2024. All students are required to attend the orientation session that morning, followed by regular lectures. Get ready to start the new semester on a positive note!",
-        event_release_date:"05-01-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"15-01-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0068"
+        event_id:"evnt-0068",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:" Robotics Club Meeting  August 15, 2023 ",
         event_description:"The Robotics Club will hold its first meeting for the semester on August 20, 2024. Students interested in learning about robotics projects and competitions are encouraged to join.",
-        event_release_date:"15-08-2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
         event_date:"10-08-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0071"
+        event_id:"evnt-0071",
+        event_img_id:"hdgbuuhjbbvb",
     },
     {
         event_title:"  [September 23, 2024]  Industry Interaction Program",
         event_description:"A special industry interaction program will be conducted on October 30, 2024, where students can meet and interact with professionals from leading companies. This event will provide insights into the latest industry trends and career opportunities",
-        event_release_date:"23-09-2024",
-        event_date:"30-10--2024",
+        event_date_from:"25-07-2024",
+        event_date_to:"25-07-2024",
+        event_date:"30-10-2024",
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
-        event_id:"evnt-0074"
+        event_id:"evnt-0074",
     },
  
 ]
+
+
+
+
+
+
+function getYMD(date){
+    let formattedDate;
+    if (typeof date=="string" &&  date.split('-')[0].length){
+       formattedDate=new Date(date.split("-").reverse().join("-"));
+    }
+    else{
+        formattedDate = new Date(date.toISOString().split('T')[0]);
+    }
+
+    return formattedDate;
+}
+
+
+
+
+
+
+function append_event_list(data){
+    data.sort((date1,date2)=>{
+        return (getYMD(date1.event_date_from)-getYMD(date2.event_date_from))
+    })
+    
+
+}
+
+
+
+
+
+
+
+
+var slideIndex=1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+
+function plusSlides(n) {
+    showSlides(slideIndex = n);
+}
+
+function plusSlides(n) {
+   var i;
+   var slides=document.getElementsByClassName("my Slides")
+}
+
+
+
+
