@@ -56,7 +56,7 @@
     font-family: var(--font-body);
     line-height: 1.6;
     margin: 20px 0px;
-    background-color: var(--white-color-index);
+    background-color: var(--ghost-white-index);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 1200px;
@@ -64,28 +64,28 @@
     margin-right: auto;
   }
   
-  h1, h2 {
+  #about-peropery-section-container .about-section-under-main  h1, h2 {
     color: var(--primary-color-index);
     font-family: var(--font-heading);
     margin-bottom: 15px;
   }
   
-  h1 {
+  #about-peropery-section-container .about-section-under-main h1 {
     font-size: 36px;
   }
 
-  h2 {
+  #about-peropery-section-container .about-section-under-main h2 {
     font-size: 28px;
   }
   
-  p, ul {
+  #about-peropery-section-container .about-section-under-main  p, ul {
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
     color: var(--secondary-color-index);
   }
   
-  ul {
+  #about-peropery-section-container .about-section-under-main ul {
     list-style-type: disc;
     padding-left: 20px;
   }
@@ -108,7 +108,7 @@
     display: none;
     margin-top: 20px;
     padding: 20px;
-    background-color: var(--ghost-white-index);
+    background-color: var(--white-color-index);
     border-left: 4px solid var(--primary-color-index);
     border-radius: 5px;
   }
@@ -125,7 +125,7 @@
   }
 
   .vision, .mission, .why-choose-us {
-    background-color: var(--ghost-white-index);
+    background-color: var(--white-color-index);
   }
   
   .why-choose-us {
@@ -171,11 +171,6 @@
     margin-top: 10px;
   }
   
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    header {
-      height: auto;
-    }
   
     .background-image img {
       height: 250px;
@@ -197,7 +192,7 @@
       font-size: 24px;
     }
   
-    button {
+     button {
       font-size: 16px;
       padding: 10px 18px;
     }
@@ -210,4 +205,4 @@
     .principal-section img {
       margin-bottom: 20px;
     }
-}
+
