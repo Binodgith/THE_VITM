@@ -2,6 +2,7 @@
 
 import { announcement_list } from "../../components/Local JSON/announcement_list.js";
 
+
 function getYMD(date){
     let formattedDate;
     if (typeof date=="string" &&  date.split('-')[0].length){

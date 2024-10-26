@@ -104,7 +104,7 @@ function footer_main(){
                         <a href="./pages/facilities.html">Facilities</a>
                         <a href="./pages/alumni.html">Alumni</a>
                         <a href="./pages/aboutUs.html">Campus</a>
-                        <a href="./pages/staff_daculty.html">Faculty & Staff</a>
+                        <a href="./pages/staff_faculty.html">Faculty & Staff</a>
                         <a href="./pages/alumni.html">Placements</a>
                         <a href="./pages/result.html">Results</a>
                         <a href="./pages/syllabus.html">Syllabus</a>

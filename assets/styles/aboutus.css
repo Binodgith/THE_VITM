@@ -70,22 +70,22 @@
     margin-bottom: 15px;
   }
   
-  h1 {
+  #about-peropery-section-container .about-section-under-main h1 {
     font-size: 36px;
   }
 
-  h2 {
+  #about-peropery-section-container .about-section-under-main h2 {
     font-size: 28px;
   }
   
-  p, ul {
+  #about-peropery-section-container .about-section-under-main  p, ul {
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
     color: var(--secondary-color-index);
   }
   
-  ul {
+  #about-peropery-section-container .about-section-under-main ul {
     list-style-type: disc;
     padding-left: 20px;
   }
