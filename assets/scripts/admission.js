@@ -181,6 +181,14 @@ let admission_course_list=[
 ]
 
 
+// ---------------Import sectiuon------------
+import { open_popup } from "../../components/Functions/common_function.js";
+
+
+
+
+
+
 // ----------------get date formate in yyyy-mm-dd--------------------------------
 function getYMD(date){
     let formattedDate;
@@ -245,19 +253,7 @@ let append_admission_course_list=(data)=>{
         let course_box=document.createElement("div");
         course_box.setAttribute("class","course-box");
         
-
-        
-
-        document.querySelector("#admission-course-list #admission-course-list-container").append(course_box);
-
-        if((getYMD(ele.course_application_last_date).getTime()) > (getYMD(new Date()).getTime())){
-            // let status=document.createElement("p")
-            // status.setAttribute("class", "open");
-            // status.innerText="Application Open";
-            // document.querySelector("#admission-course-list #admission-course-list-container .course-box-status").appendChild(status);
-
-            course_box.innerHTML=`<div class="course-box">
-                            <h3 class="course-box-name">${ele.course_full_name}<br> ${ele.course_short_name}</h3>
+        let htmlc=`<div> <h3 class="course-box-name">${ele.course_full_name}<br> ${ele.course_short_name}</h3>
                             <p class="course-box-duration"><b>Course Duration:- </b> ${ele.course_duration}</p>
                             <p class="course-box-academicyear"><b>Academic year:- </b> ${ele.course_academic_year}</p>
                             <p class="course-box-para">${ele.course_short_description}</p>
@@ -269,32 +265,58 @@ let append_admission_course_list=(data)=>{
                             </div>
                             
                             <div class="course-box-status">
-                                <p class="open"> Application Open</p>
-                            </div>
-                        </div>`;
+                                
+                            </div> 
+                        </div>
+                        `
+
+        let doc = new DOMParser().parseFromString(htmlc, 'text/html');
+        let doc_data = doc.body.firstChild;
+        course_box.append(doc_data);
+
+
+
+        //----------------- status sahown accordingly------------------
+        if((getYMD(ele.course_application_last_date).getTime()) > (getYMD(new Date()).getTime())){
+            let status=document.createElement("p")
+            status.setAttribute("class", "open");
+            status.innerText="Application Open";
+
+            doc_data.querySelector(".course-box .course-box-status").append(status);
         }
         else{
-            // let status=document.createElement("p")
-            // status.setAttribute("class", "closed");
-            // status.innerText="Application closed";
-            // document.querySelector("#admission-course-list #admission-course-list-container .course-box-status").appendChild(status);
+            let status=document.createElement("p")
+            status.setAttribute("class", "closed");
+            status.innerText="Application closed";
 
-            course_box.innerHTML=`<div class="course-box">
-                            <h3 class="course-box-name">${ele.course_full_name}<br> ${ele.course_short_name}</h3>
-                            <p class="course-box-duration"><b>Course Duration:- </b> ${ele.course_duration}</p>
-                            <p class="course-box-academicyear"><b>Academic year:- </b> ${ele.course_academic_year}</p>
-                            <p class="course-box-para">${ele.course_short_description}</p>
-                            <p class="course-box-lastdate"> <b>Last Date:- </b> ${ele.course_application_last_date}</p>
-    
-                            <div class="course-box-btn">
-                                <a href="" id="course-box-view-details-btn"><i class="fa-solid fa-eye"></i> &nbsp; View Details</a>
-                            </div>
-                            
-                            <div class="course-box-status">
-                                <p class="closed"> Application closed</p>
-                            </div>
-                        </div>`;
+            doc_data.querySelector(".course-box .course-box-status").append(status);
         }
+
+
+
+        // ---------------View Details btn call---------------
+        doc_data.querySelector("#course-box-view-details-btn").addEventListener("click",(e)=>{
+            e.preventDefault();
+            let popup_html=`<div id="btn-sec">
+                        <a href="https://docs.google.com/document/d/${ele.course_admission_file_id}/export?format=pdf" target="_blank" id="admission-popup-download-btn">Download <i class="fa-regular fa-circle-down"></i></a>
+                        <a href="" target="_blank" id="admission-popup-apply-btn">Proceed to Apply <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div id="embed-sec">
+                        <iframe src="https://docs.google.com/document/d/e/${ele.course_admission_file_embed}/pub?embedded=true"></iframe>
+                    </div>`
+
+            let doc = new DOMParser().parseFromString(popup_html, 'text/html');
+            let popup_data = doc.body;
+            open_popup(popup_data);
+        })
+        
+
+
+        document.querySelector("#admission-course-list #admission-course-list-container").append(course_box);
+
+
+       
 
     })
 }
