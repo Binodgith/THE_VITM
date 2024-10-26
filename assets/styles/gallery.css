@@ -30,7 +30,7 @@
     padding: 20px;
 }
 
-h1 {
+.gallery-container h1 {
     font-family: var(--font-heading);
     color: var(--primary-color-index);
     margin-bottom: 30px;
@@ -54,7 +54,7 @@ h1 {
 
 .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     transition: transform 0.2s;
 }
