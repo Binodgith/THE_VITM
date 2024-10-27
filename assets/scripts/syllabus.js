@@ -117,10 +117,10 @@ let syllabus_list=[
         year:"y001",
         sem:"s001",
         subject:"mth001",
-        syllabus_file_id:"dfgsdfg3545gfs",
+        syllabus_file_id:"1mZSbeP0X3M3OU5E7D7IGAFWsoT6BAs6q",
         syllabus_released_date:"25-08-2019",
         syllabus_upload_date:"21-10-2024",
-        syllabus_id:"sy25415",
+        syllabus_id:"1mZSbeP0X3M3OU5E7D7IGAFWsoT6BAs6q",
     },
     {
         course:"bt001",
@@ -4180,6 +4180,10 @@ semester_selected.onchange=()=>{
 
 
 
+
+
+
+
 // ------------------------Apppending syllabus in list-------------------------------
 function append_syllabus_list(data,courses_selected,branch_selected,course_year_selected,semester_selected){
 
@@ -4200,9 +4204,14 @@ function append_syllabus_list(data,courses_selected,branch_selected,course_year_
                         </div>
                         <div class="syllabus-btn">
                             <a href="" id="syllabus-view-btn"><i class="fa-solid fa-eye"></i></a>
-                            <a href="https://drive.google.com/uc?export=download&id=${id_finder[ele.syllabus_file_id]}" id="syllabus-download-btn"><i class="fa-solid fa-file-arrow-down"></i></a>
+                            <a href="https://drive.google.com/uc?export=download&id=${ele.syllabus_file_id}" id="syllabus-download-btn"><i class="fa-solid fa-file-arrow-down"></i></a>
                         </div>`;
 
+        
+        syllabus_box.querySelector(".syllabus-btn #syllabus-view-btn").addEventListener("click",(e)=>{
+            e.preventDefault();
+            window.open(`https://drive.google.com/file/d/${ele.syllabus_file_id}/preview`, `Syallabus Preiew`, `width=90%, margin=auto `);
+        })             
         document.querySelector("#syllabus-listed-sec #syllabus-list-append-box").append(syllabus_box);
     })
 
@@ -4210,3 +4219,4 @@ function append_syllabus_list(data,courses_selected,branch_selected,course_year_
 
 }
 
+ 

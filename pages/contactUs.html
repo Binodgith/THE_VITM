@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact us</title>
     <link rel="stylesheet" href="../assets/styles/contact_us.css">
+    <link rel="stylesheet" href="../assets/styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../assets/styles/admission.css">
+    <link rel="stylesheet" href="../components/styles/secondary-header.css">
 </head>
 <body>
 
@@ -147,6 +148,83 @@
         
         <div id="contact-us-page-02">
            
+            <div id="contact-form-container">
+                <div id="form-itself">
+                    <form action="">
+                        <div id="contact-person-name" class="contact-input-sec">
+
+                            <section>
+                                <label for="contact-person-name">Enter Name </label>
+                                <input type="text" value="" id="contact-person-name-input" required>
+
+                            </section>
+                            
+                            <section>
+                                <label for="contact-person-type"> Who are you?</label>
+                                <select name="contact-person-type" id="contact-person-type-input" required>
+                                    <option value="">Select</option>
+                                    <option value="sudent">Student</option>
+                                    <option value="guardian">Guardian</option>
+                                </select>
+
+                            </section>
+
+                        </div>
+
+                        <div id="contact-person-mobile" class="contact-input-sec">
+                            <section>
+                                <label for="contact-person-mobile">Enter Mobile Number</label>
+                                <section>
+                                    <input type="tel" id="contact-person-mobile-input" required>
+                                    <button id="contact-mobile-otp-send-btn">Send OTP</button>
+                                </section>
+
+                            </section>
+
+                            <section>
+                                <input type="text" id="contact-mobile-opt-input" >
+                                <button id="contact-mobile-otp-verify-btn">Verify</button>
+                            </section>
+                        </div>
+
+                        <div id="contact-person-email" class="contact-input-sec">
+                            <section>
+                                <label for="contact-person-email">Enter Mobile Number</label>
+                                <section>
+                                    <input type="tel" id="contact-person-email-input" required>
+                                    <button id="contact-email-otp-send-btn">Send OTP</button>
+                                </section>
+
+                            </section>
+
+                            <section>
+                                <input type="text" id="contact-email-opt-input" >
+                                <button id="contact-email-otp-verify-btn">Verify</button>
+                            </section>
+                        </div>
+
+                        <div id="contact-person-subject" class="contact-input-sec">
+                            <section>
+                                <label for="contact-person-subject">Subject</label>
+                                <input type="text" id="contact-person-subject-input" required>
+                            </section>
+                        </div>
+
+                        <div id="contact-person-message" class="contact-input-sec">
+                            <section>
+                                <label for="contact-person-message">Message</label>
+                                <textarea name="contact-person-message"  id="contact-person-message-input" rows="5" cols="100%" required>
+
+                                </textarea>
+                            </section>
+                        </div>
+
+
+                        <button type="submit" id="contact-form-submit-btn">Submit</button>
+                        
+                    </form>
+                </div>
+            </div>
              
         
           
