@@ -36,7 +36,7 @@ function header_main(){
                             <li><a href="./pages/aboutUs.html">Campus</a></li>
                             <li><a href="./pages/events.html">Academic Calander</a></li>
                             <li><a href="./pages/staff_faculty.html">Faculty & Staff</a></li>
-                            <li><a href="./pages/annoucement.html">Notice</a></li>
+                            <li><a href="./pages/announcement.html">Notice</a></li>
                             <li><a href="./pages/alumni.html">Placements</a></li>
                         </ul>
                     </li>
