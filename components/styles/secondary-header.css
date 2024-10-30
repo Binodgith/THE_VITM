@@ -1,3 +1,22 @@
+
+
+:root{
+    --primary-color-index: #e60000;
+    --fade-of-primary-color:#c42a2a;
+    --black-color-index:black;
+    --white-color-index:white;
+    --ghost-white-index:ghostWhite;
+    --blue1-index:#0000e6;
+    --black-index:black;
+    --grey-for-shadow:rgba(145, 145, 145, 0.548);
+    --font-roboto-condensed:"Roboto Condensed", sans-serif;
+    --font-poppins:"Poppins";
+    --font-roboto:"Roboto", sans-serif;
+    --font-open-sans:"Open Sans", sans-serif;
+    --font-pacifico:"Pacifico", cursive;
+}
+
+
 /*------------------------ Secondary Header for all pages ----------------------------- */
 #secondary-header-for-all-pages{
     /* width: 100%; */
