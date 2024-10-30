@@ -35,8 +35,24 @@
         <div id="examination-announcements-sec">
             <h2>Examination Related Announcements</h2>
             <ul>
-                <li>Announcement 1: Details about upcoming exams.</li>
-                <li>Announcement 2: Examination guidelines and instructions.</li>
+                <li>
+                    Announcement 1: Details about upcoming exams.
+                    <button onclick="toggleDropdown()">View Details</button>
+                    <!-- Dropdown for exam details -->
+                    <div id="exam-dropdown" style="display: none;">
+                        <label for="exam-select">Select Exam:</label>
+                        <select id="exam-select" onchange="displayExamDetails()">
+                            <option value="">-- Choose an Exam --</option>
+                        </select>
+                        <div id="exam-details"></div>
+                    </div>
+                </li> 
+                <li>Announcement 2: Examination guidelines and instructions.<button onclick="toggleDropdown('guidelines-dropdown')">View Guidelines</button>
+                    <!-- Dropdown for guidelines -->
+                    <div id="guidelines-dropdown" style="display: none;">
+                        <ul id="guidelines-list"></ul>
+                    </div>
+                </li>
                 <li>Announcement 3: Important dates and deadlines.</li>
                 <!-- Add more announcements as needed -->
             </ul>
@@ -45,13 +61,12 @@
         <div id="related-links-sec">
             <h2>Related Links</h2>
             <ul>
-                <li><a href="#course-list">Course List</a></li>
-                <li><a href="#results">Results</a></li>
-                <li><a href="#examination-forms">Examination Forms</a></li>
-                <li><a href="#hall-ticket">Hall Ticket</a></li>
-                <li><a href="#mid-sem-exam">Mid-Sem Exam</a></li>
-                <li><a href="#previous-year-que">Previous Year Questions</a></li>
-                <li><a href="#scholarship">Scholarship</a></li>
+                <li><a href="../pages/syllabus.html">Course List</a></li>
+                <li><a href="../pages/result.html">Results</a></li>
+                <li><a href="../pages/examination.html">Examination Forms</a></li>
+                <li><a href="../pages/examination.html">Mid-Sem Exam</a></li>
+                <li><a href="https://www.bputonline.com/btech-cs-question-papers.html#semester">Previous Year Questions</a></li>
+                <li><a href="../index.html">Scholarship</a></li>
             </ul>
         </div>
         
@@ -88,10 +103,6 @@
                 <label for="year">Year of Study</label>
                 <select id="year" name="year" required>
                     <option value="">Select Year</option>
-                    <option value="1">1st Year</option>
-                    <option value="2">2nd Year</option>
-                    <option value="3">3rd Year</option>
-                    <option value="4">4th Year</option>
                 </select>
             </div>
     
@@ -99,14 +110,6 @@
                 <label for="semester">Semester</label>
                 <select id="semester" name="semester" required>
                     <option value="">Select Semester</option>
-                    <option value="1">1st Semester</option>
-                    <option value="2">2nd Semester</option>
-                    <option value="3">3rd Semester</option>
-                    <option value="4">4th Semester</option>
-                    <option value="5">5th Semester</option>
-                    <option value="6">6th Semester</option>
-                    <option value="7">7th Semester</option>
-                    <option value="8">8th Semester</option>
                 </select>
             </div>
     
@@ -114,6 +117,7 @@
         </form>
     </div>
     
+   
     <footer></footer>
 </body>
 </html>
