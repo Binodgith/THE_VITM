@@ -13,8 +13,9 @@
 
     <header></header>
 
+    <div id="loader-section-main"></div>
 
-     <div id="main-for-contact">
+    <div id="main-for-contact">
         
     <!-- ---------------------sECONDARY PAGE HEADER I.E COMMON FOR ALL PAGES EXPECT OF INDEX OR HOME PAGE------------------------- -->
     <div id="secondary-header-for-all-pages">
@@ -187,7 +188,7 @@
                                 <label for="contact-person-mobile">Enter Mobile Number</label>
                                 <section class="otp-verify-sec">
                                     <input type="number" placeholder="Enter Mobile" title="mobile Number" id="contact-person-mobile-input" required>
-                                    <button id="contact-mobile-otp-send-btn">Send OTP</button>
+                                    <!-- <button id="contact-mobile-otp-send-btn">Send OTP</button> -->
                                 </section>
 
                             </section>
@@ -203,7 +204,7 @@
                         <div id="contact-person-email" class="contact-input-sec">
                             <section>
                                 <label for="contact-person-email">Enter Email</label>
-                                <section class="otp-verify-sec">
+                                <section class="otp-verify-sec ">
                                     <input type="email" placeholder="Enter Email id" title="Email Id" id="contact-person-email-input" required>
                                     <button id="contact-email-otp-send-btn">Send OTP</button>
                                 </section>
@@ -211,8 +212,8 @@
                             </section>
 
                             <section >
-                                <section class="otp-verify-sec display-off">
-                                    <input type="text" id="contact-email-opt-input" placeholder="Enter Email OTP">
+                                <section class="otp-verify-sec email-box-sec display-off">
+                                    <input maxlength="6" type="text" id="contact-email-otp-input" placeholder="Enter Email OTP">
                                     <button id="contact-email-otp-verify-btn">Verify</button>
                                 </section>
                                 
@@ -253,3 +254,5 @@
     <footer></footer>
 </body>
 </html>
+
+<script type="module" src="../assets/scripts/contactus.js"></script>
