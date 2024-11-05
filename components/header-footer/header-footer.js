@@ -2,7 +2,7 @@ function header_main(){
     return `<div id="main-logo-sec">
             <div id="main-logo-sec-container">
                 <div id="logo-container">
-                    <img src="./assets/media/Logo-main-light.png"  title="bland_logo" alt="MAIN LOGO">
+                    <img src="assets/media/Logo-main-light.png"  title="bland_logo" alt="MAIN LOGO">
                 </div>
 
                 <div id="govt-ads-container">

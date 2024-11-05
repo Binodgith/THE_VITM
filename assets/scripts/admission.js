@@ -282,7 +282,7 @@ let append_admission_course_list=(data)=>{
             status.innerText="Application Open";
             let admission_apply_btn=document.createElement("a");
             admission_apply_btn.setAttribute("id", "course-box-apply-btn");
-            admission_apply_btn.href="";
+            admission_apply_btn.href="./Admission/application.html";
             admission_apply_btn.innerHTML='<i class="fa-solid fa-pen"></i> &nbsp; Apply';
             
 

@@ -21,7 +21,6 @@ document.querySelector(".otp-verify-sec #contact-email-otp-send-btn").addEventLi
                 email_inserted=email_input;
                 token_generated=e.token_number;
                 alert(e.message);
-                email_varified=true;
                 document.querySelector('#contact-person-email .display-off').classList.remove('display-off');
                 document.querySelector(".otp-verify-sec #contact-email-otp-send-btn").disabled='true';
                 document.querySelector(".otp-verify-sec #contact-email-otp-send-btn").textContent='Resend';
@@ -54,7 +53,9 @@ document.querySelector(".otp-verify-sec #contact-email-otp-verify-btn").addEvent
         recieved_data.then((e)=>{
             if(e.verify_status){
                 close_loader();
+                email_varified=true;
                 document.querySelector('#contact-person-email .email-box-sec').classList.add('display-off');
+                document.querySelector(".otp-verify-sec #contact-person-email-input").disabled='true';
                 document.querySelector(".otp-verify-sec #contact-email-otp-send-btn").textContent="Verified";
                 document.querySelector(".otp-verify-sec #contact-email-otp-send-btn").style.opacity="1";
                 document.querySelector(".otp-verify-sec #contact-email-otp-send-btn").style.backgroundColor="green";
