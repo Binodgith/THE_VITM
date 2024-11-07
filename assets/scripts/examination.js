@@ -120,10 +120,8 @@ function toggleDropdown() {
 
 
 
-   // Examination list data
-   const examination_list = [
-    { exam_title: "BTech Semester Exam - Fall 2024", exam_description: "The BTech Fall 2024 semester exams will begin on November 15, 2024. The detailed timetable is available on the examination portal. Students are advised to prepare accordingly.", exam_release_date: "01-10-2024", exam_release_by: "Examination Office", exam_file_id: "exam001", exam_id: "exm-0001" }
-];
+      
+        
 
 // Guidelines data
 const examination_guidelines = [
