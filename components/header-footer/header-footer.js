@@ -2,7 +2,7 @@ function header_main(){
     return `<div id="main-logo-sec">
             <div id="main-logo-sec-container">
                 <div id="logo-container">
-                    <img src="assets/media/Logo-main-light.png"  title="bland_logo" alt="MAIN LOGO">
+                    <img src="https://i.ibb.co/kyZcGjJ/Logo-main-light.png"  title="bland_logo" alt="MAIN LOGO">
                 </div>
 
                 <div id="govt-ads-container">
@@ -84,7 +84,7 @@ function footer_main(){
             <div id="footer-container">
                 <div id="footer-brand-details-sec">
                    <div id="footer-brand-logo">
-                        <img src="./assets/media/fav-icon.png" alt="">
+                        <img src="https://i.ibb.co/ZSggZM6/fav-icon.png" alt="">
                    </div>
                    <p class="footer-address">Berhampur, Ganjam, Odisha - 760001</p>
                    <a href=""> <span><i class="fa-solid fa-phone-volume"></i> &nbsp;</span>1800 354 125</a>

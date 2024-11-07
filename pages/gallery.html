@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Institute Gallery</title>
     <link rel="stylesheet" href="../assets/styles/gallery.css">
+    <link rel="shortcut icon" href="https://i.ibb.co/ZSggZM6/fav-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../components/styles/secondary-header.css">
     <script src="https://kit.fontawesome.com/f118dac063.js" crossorigin="anonymous"></script>
 </head>
@@ -62,24 +63,27 @@
         </div>
     </div>
 
+
+    <div id="img-viwer"></div>
+
     <script>
 
         const galleryItems = document.querySelectorAll('.gallery-item');
         galleryItems.forEach(item => {
             item.addEventListener('click', function (event) {
                 event.preventDefault();
-                const fullImage = document.createElement('img');
+
+                let fullImage = document.createElement('img');
                 fullImage.src = this.href;
-                fullImage.style.position = 'fixed';
-                fullImage.style.top = '50%';
-                fullImage.style.left = '50%';
-                fullImage.style.transform = 'translate(-50%, -50%)';
-                fullImage.style.maxWidth = '90%';
-                fullImage.style.maxHeight = '90%';
-                fullImage.style.zIndex = '1000';
-                document.body.appendChild(fullImage);
-                fullImage.addEventListener('click', () => {
-                    document.body.removeChild(fullImage);
+
+                document.querySelector("#img-viwer").append(fullImage);
+                document.querySelector("#img-viwer").style.display='block';
+
+                // document.querySelector("#img-viwer").append(fullimage_div);
+                document.querySelector("#img-viwer").addEventListener('click', () => {
+                    // document.body.removeChild(fullimage_div);
+                    document.querySelector("#img-viwer").removeChild(fullImage);
+                    document.querySelector("#img-viwer").style.display='none';
                 });
             });
         });

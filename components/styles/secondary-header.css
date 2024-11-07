@@ -124,10 +124,11 @@
 /* ------------------Loader Style-------------------- */
 #loader-container{
     width: 100%;
+    top: 0%;
     position: fixed;
     background-color: rgba(250, 250, 250, 0.719);
     height: 100vh;
-    z-index: 1050;
+    z-index: 5050;
   }
   #loader-container #loader-sec{
     width: 10%;

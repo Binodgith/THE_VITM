@@ -7,7 +7,6 @@ alert("This page is under maintanance, Some functions may not work");
 
 
 
-
 function display_off_education(){
     let qual_section=document.querySelectorAll(".row .qual-section");
     qual_section.forEach((ele)=>{
