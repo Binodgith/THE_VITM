@@ -24,31 +24,38 @@
 
 #event_main{
     width: 100%;
+  
 
 }
 
 #event_main .event_main_content{
     width: 80%;
     margin: auto;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    height: 30vh;
+    /* border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px rgba(17, 17, 17, 0.885); */
+
 }
 
 #event_main .event_main_content .event_date_box {
    padding: 10px;
-   background-color: #ff0606e9;
+   background-color:var(--primary-color-index);
    border-radius: 10px;
    color: rgb(255, 255, 255);
    margin: auto;
    font-size: 17px;
    margin-top: 0px;
    font-weight: bold;
-   border: 1px solid black;
-   box-shadow: 1px 1px 1px black;
+   /* border: 1px solid black;
+   box-shadow: 1px 1px 1px black; */
    z-index: 10000;
+   font-family:var(--font-poppins);
 }
 
 #event_main .event_main_content .event_date_box>div{
@@ -61,27 +68,38 @@
 }
 #event_main .event_main_content .event_info {
     font-size: 20px;
+    
 
 }
 
 #event_main .event_main_content .event_info section>*{
 
     margin-bottom: 5px;
+    
 
+}
+#event_main .event_main_content .event_info section h4{
+    color: #0000e6;
+    margin-bottom: 5px;
 }
 
 #event_main .event_main_content .event_image {
     width: 60%;
     height: 30vh;
    
-    background-color: aqua;
 
 }
 #event_main .event_main_content .event_image img{
     width:100%; 
     height:100%;
     object-fit: cover;
+    overflow: hidden;
     
+   
+}
+.horizontal_line {
+    margin: 10px auto;
+    width: 90%;
 }
 
 
