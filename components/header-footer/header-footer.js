@@ -6,13 +6,13 @@ function header_main(){
                 </div>
 
                 <div id="govt-ads-container">
-                    <img src="./assets/media/Govt. Ads.jpg" alt="">
+                    <img src="https://i.ibb.co/xJ9P0kV/Govt-Ads.jpg" alt="">
                     
                 </div>
     
                 <div id="Admission-btn1-container" class="admission-btn">
                     <a href="./pages/admission.html"> Admission </a>
-                    <img id= "new-tag" src="./assets/media/New-tag.png" alt="">
+                    <img id= "new-tag" src="https://i.ibb.co/7VhfvRb/New-tag.png" alt="">
                 </div>
             </div>
 
