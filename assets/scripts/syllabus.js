@@ -4210,7 +4210,7 @@ function append_syllabus_list(data,courses_selected,branch_selected,course_year_
         
         syllabus_box.querySelector(".syllabus-btn #syllabus-view-btn").addEventListener("click",(e)=>{
             e.preventDefault();
-            window.open(`https://drive.google.com/file/d/${ele.syllabus_file_id}/preview`, `Syallabus Preiew`, `width=90%, margin=auto `);
+            window.open(`https://drive.google.com/file/d/${ele.syllabus_file_id}/preview`, `Syallabus Preiew`, `width=screen.width, height=screen.height `);
         })             
         document.querySelector("#syllabus-listed-sec #syllabus-list-append-box").append(syllabus_box);
     })
