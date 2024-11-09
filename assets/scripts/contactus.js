@@ -1,6 +1,6 @@
 import { sent_email_otp,verify_email_otp} from "../../components/Functions/email_otp.js";
 import { start_loader_1,start_loader_2,close_loader } from "../../components/loader/loader.js";
-
+import { alert_popup } from "../../components/popup/alert_popup.js";
 
 // --------------Email Verify-------------------
 
@@ -20,7 +20,8 @@ document.querySelector(".otp-verify-sec #contact-email-otp-send-btn").addEventLi
                 close_loader();
                 email_inserted=email_input;
                 token_generated=e.token_number;
-                alert(e.message);
+                // alert(e.message);
+                alert_popup("success",e.message);
                 document.querySelector('#contact-person-email .display-off').classList.remove('display-off');
                 document.querySelector(".otp-verify-sec #contact-email-otp-send-btn").disabled='true';
                 document.querySelector(".otp-verify-sec #contact-email-otp-send-btn").textContent='Resend';
@@ -28,7 +29,8 @@ document.querySelector(".otp-verify-sec #contact-email-otp-send-btn").addEventLi
 
             }
             else{
-                alert("issue occured from server side")
+                // alert("issue occured from server side")
+                alert_popup("danger","issue occured from server side");
                 close_loader()
             }
         
@@ -36,7 +38,8 @@ document.querySelector(".otp-verify-sec #contact-email-otp-send-btn").addEventLi
         
     }
     else{
-        alert('Enter Valid Email');
+        // alert('Enter Valid Email');
+        alert_popup("danger","Enter Valid Email");
         close_loader();
     }
        
@@ -62,7 +65,8 @@ document.querySelector(".otp-verify-sec #contact-email-otp-verify-btn").addEvent
             }
             else{
                 close_loader();
-                alert(e.message);
+                // alert(e.message);
+                alert_popup("danger",e.message);
                 email_otp_input=null;
             }
         })
@@ -70,7 +74,8 @@ document.querySelector(".otp-verify-sec #contact-email-otp-verify-btn").addEvent
     }
     else{
         close_loader();
-        alert("Enter Valid OTP");
+        // alert("Enter Valid OTP");
+        alert_popup("danger","Enter Valid OTP");
         email_otp_input=null;
     }
 

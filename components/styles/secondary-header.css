@@ -138,3 +138,60 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+
+
+
+
+  /* ------------alert popup-------------------- */
+  .alert {
+    width: 50%;
+    margin: auto;
+    padding: 18px;
+    font-size: 1.2rem;
+    background-color: #f44336;
+    color: white;
+    position: absolute;
+    z-index: 5000;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: slide-down;
+    animation-duration: 7s;
+    box-shadow: 1px 1px 10px grey;
+    visibility: hidden;
+    position: fixed;
+  }
+  
+  @keyframes slide-down {
+    0%{
+        visibility: visible;
+        top: -10%;
+    }
+    15%{
+        top: 10%;
+    }
+    90%{
+        top:10%;
+    }
+    100%{
+        top:-10%;
+        visibility: hidden;
+    }
+    
+  }
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+  

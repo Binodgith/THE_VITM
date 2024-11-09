@@ -1,6 +1,7 @@
 // -----import section---------------------------------
 import { start_loader_1,start_loader_2,close_loader } from "../../components/loader/loader.js";
 import { sent_email_otp,verify_email_otp } from "../../components/Functions/email_otp.js";
+import { alert_popup } from "../components/popup/alert_popup.js";
 
 
 alert("This page is under maintanance, Some functions may not work");
@@ -83,7 +84,8 @@ document.querySelector(".form-group #email-otp-send").addEventListener("click",(
                 close_loader();
                 email_inserted=email_input;
                 token_generated=e.token_number;
-                alert(e.message);
+                // alert(e.message);
+                alert_popup("success",e.message);
                 document.querySelector("#email-otp-form-group").style.display="block"
                 // document.querySelector("#email-otp-form-group").style.visibility="block;"
                 document.querySelector(".form-group #email-otp-send").disabled='true';
@@ -92,7 +94,8 @@ document.querySelector(".form-group #email-otp-send").addEventListener("click",(
 
             }
             else{
-                alert("issue occured from server side")
+                // alert("issue occured from server side");
+                alert_popup("danger","issue occured from server side");
                 close_loader()
             }
         
@@ -100,7 +103,8 @@ document.querySelector(".form-group #email-otp-send").addEventListener("click",(
         
     }
     else{
-        alert('Enter Valid Email');
+        // alert('Enter Valid Email');
+        alert_popup ("danger","Enter Valid Email");
         close_loader();
     }
        
@@ -121,6 +125,7 @@ document.querySelector(".form-group #email-otp-verify").addEventListener("click"
         recieved_data.then((e)=>{
             if(e.verify_status){
                 close_loader();
+                alert_popup("success","Email Verified Successfully")
                 email_varified=true;
                 document.querySelector("#email-otp-form-group").style.display="none"
                 document.querySelector(".form-group #email-otp-send").disabled='true';
@@ -132,7 +137,8 @@ document.querySelector(".form-group #email-otp-verify").addEventListener("click"
             }
             else{
                 close_loader();
-                alert(e.message);
+                // alert(e.message);
+                alert_popup("danger",e.message);
                 email_otp_input=null;
             }
         })
@@ -140,7 +146,8 @@ document.querySelector(".form-group #email-otp-verify").addEventListener("click"
     }
     else{
         close_loader();
-        alert("Enter Valid OTP");
+        // alert("Enter Valid OTP");
+        alert_popup("danger", "Enter Valid OTP");
         email_otp_input=null;
     }
 
