@@ -42,7 +42,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"1yzF-zbsoo4zVIySrLr38qemHk0TOccYAqyT-taI3PHQ",
         event_id:"evnt-0014",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1psJp6jjsSNXDRghaqWprwcBfRssHjai3",
     },
     {
         event_title:"Interinship Opportunities : Expolre exciting interndhip placment eith top companies",
@@ -53,7 +53,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"1tjOZ6COHl0OY4RqzQeOpqYRFU2lm7fyocrFSX6irYrY",
         event_id:"evnt-0017",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1CQlkFkOIAuh2Se4IBDcC34_Iy8mgcm45",
     },
     {
         event_title:"Hackathon: Colabration with  top studenet to solve real world problems",
@@ -64,7 +64,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"1tjOZ6COHl0OY4RqzQeOpqYRFU2lm7fyocrFSX6irYrY",
         event_id:"evnt-0008",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1CQlkFkOIAuh2Se4IBDcC34_Iy8mgcm45",
     },
     {
         event_title:"  Semester Exam Schedule Released",
@@ -75,7 +75,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"1zGv0tGSARsrTmGeiueCrpved4M-XQdk_N670_evvB_g",
         event_id:"evnt-0020",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1no2AiuGEtVMOjNvI6i6BOKKG6ljz1nuV",
     },
     {
         event_title:"Alumni Meet 2024",
@@ -86,7 +86,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"16TdTinkwQ9Wq-DZrJVXIIi4Foz8Ml7W7IY6jGkWZChg",
         event_id:"evnt-0023",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1zqN9lMqmcEPHgrKkP9P0EkrFJ9KfNwsm",
     },
     {
         event_title:"Online Quiz Competition",
@@ -97,7 +97,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"1ECXWRw3iovMyqkT5DPjTrQI4EMonfIwQFMzJplys-Pc",
         event_id:"evnt-0026",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1no2AiuGEtVMOjNvI6i6BOKKG6ljz1nuV",
     },
     {
         event_title:" [October 3, 2024] Startup Incubation Program",
@@ -108,7 +108,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0029",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1no2AiuGEtVMOjNvI6i6BOKKG6ljz1nuV",
     },
     {
         event_title:"Scholarship Application Open",
@@ -119,7 +119,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"1ECXWRw3iovMyqkT5DPjTrQI4EMonfIwQFMzJplys-Pc",
         event_id:"evnt-0032",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1no2AiuGEtVMOjNvI6i6BOKKG6ljz1nuV",
     },
     {
         event_title:"Campus News : Stay update on the latest happenings around campus",
@@ -130,7 +130,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0035",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1sGEyFV76uDMHvoKDnpfOi4Nd6_TRm7k6",
     },
     {
         event_title:"New Faculty Join the Department",
@@ -141,7 +141,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0038",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1no2AiuGEtVMOjNvI6i6BOKKG6ljz1nuV",
     },
 
     {
@@ -153,7 +153,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0041",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1no2AiuGEtVMOjNvI6i6BOKKG6ljz1nuV",
     },
     {
         event_title:"[September 30, 2024]  Freshers' Party 2024",
@@ -164,7 +164,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"1Y9xuNBmOxOoKIGtxyGC7LFO0uIyK2lTeduQUNOOAIeE",
         event_id:"evnt-0044",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1zqN9lMqmcEPHgrKkP9P0EkrFJ9KfNwsm",
     },
 
     {
@@ -176,7 +176,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0047",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1sGEyFV76uDMHvoKDnpfOi4Nd6_TRm7k6",
     },
     {
         event_title:"Workshop on AI & ML",
@@ -187,7 +187,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0050",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1no2AiuGEtVMOjNvI6i6BOKKG6ljz1nuV",
     },
     {
         event_title:" Diwali Break Notice ",
@@ -198,7 +198,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"1tpO6iX1UKXrKcZ-pBQVu3xgTkQHrbPrvIqP_guO0Syg",
         event_id:"evnt-0053",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1sGEyFV76uDMHvoKDnpfOi4Nd6_TRm7k6",
     },
     {
         event_title:"[October 11, 2024]  Blood Donation Camp",
@@ -209,7 +209,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"19TpUssHSJBHMpYUeNG2x9gVAY-W6s3gUihLTSFe44BY",
         event_id:"evnt-0056",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1zqN9lMqmcEPHgrKkP9P0EkrFJ9KfNwsm",
     },
     {
         event_title:"Summer Internship Program Applications Open  April 1, 2024 ",
@@ -220,7 +220,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0059",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1no2AiuGEtVMOjNvI6i6BOKKG6ljz1nuV",
     },
     {
         event_title:"Project Submission Deadline Extended To November 10 , 2024",
@@ -231,7 +231,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0062",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1no2AiuGEtVMOjNvI6i6BOKKG6ljz1nuV",
     },
     {
         event_title:" New Hostel Rules Announced – August 30, 2023 ",
@@ -242,7 +242,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"",
         event_id:"evnt-0065",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1no2AiuGEtVMOjNvI6i6BOKKG6ljz1nuV",
     },
     {
         event_title:" New Semester Classes Begin  January 10, 2024 ",
@@ -253,7 +253,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0068",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1no2AiuGEtVMOjNvI6i6BOKKG6ljz1nuV",
     },
     {
         event_title:" Robotics Club Meeting  August 15, 2023 ",
@@ -264,7 +264,7 @@ let event_list=[
         event_release_by:"Principal (dr.Bhimsen)",
         event_file_id:"dsdg784-3jhsdfg",
         event_id:"evnt-0071",
-        event_img_id:"hdgbuuhjbbvb",
+        event_img_id:"1zqN9lMqmcEPHgrKkP9P0EkrFJ9KfNwsm",
     },
     {
         event_title:"  [September 23, 2024]  Industry Interaction Program",
