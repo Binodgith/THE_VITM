@@ -6,7 +6,7 @@
 }
 
 #career-opportunity-container #career-opportunity-btn button{
-     font-size: 1.6rem;
+     font-size: 1.5rem;
      padding: 15px;
      background-color:  var(--ghost-white-index);
      z-index: 5;
@@ -50,10 +50,13 @@
     box-shadow: inset var(--primary-color-index) -7px 0px 0px,inset var(--primary-color-index) 7px 0px 0px, 1px 1px 3px gray;
     /* filter: grayscale();
     opacity: 0.8; */
-}   
+}  
+#career-opportunity-list .recruitment-box .recruitment-details{
+    width: 90%;
+} 
 
 #career-opportunity-list .recruitment-box .recruitment-details .recruitment-role{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     /* color:brown; */
     font-weight: bolder;
     margin: 1rem 0rem;
@@ -82,7 +85,7 @@
     margin: 3rem auto;
 }
 #career-opportunity-list .recruitment-box .recruitment-apply-btn a{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-decoration: none;
     padding: 15px 30px;
     background-color: green;

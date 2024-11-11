@@ -925,3 +925,82 @@ body{
 }
 
 
+
+
+
+/* ------------------------For Tablet view --------------------------------*/
+
+@media (max-width: 1025px){
+    #latest-notification-container #notification-box{
+        height: auto;
+    }
+    #latest-notification-container #notification-box .box-content section a{
+        font-size: 1.1rem;
+    }
+    #announcement_event #announcement_event_container{
+        width: 100%;
+        height: 43vh;
+    }
+    #announcement_event_container #announcement-box #announcement-content {
+        height: 28vh;
+    }
+
+    #event-box{
+        height: 43vh;
+    }
+    #event-box  #event-content{
+        height: 28vh;
+    }
+    #welcome-box #welcome-box-container #box-content .welcome-box-chairman-img{
+        width: 20%;
+        margin: auto;
+    }
+
+    #welcome-box #welcome-box-container #box-content .welcome-note{
+        width: 80%;
+        padding:10px;
+        align-items: flex-start;
+        margin: auto;
+    }
+
+    #reservation-box #reservation-box-container{
+        width: 90%;
+    }
+    #facilities-sec-container #facilities-content .facilities-box .box-img img{
+        height: auto;
+    }
+    #contact-us-sec-container #contact-us-content{
+        gap: 10px;
+        
+    }
+    #contact-us-sec-container #contact-us-content #contact-details p{
+        font-size: 1.1rem;
+    }
+    #contact-us-sec-container #contact-us-content #contact-details .contact-address{
+        font-size: 1.3rem;
+    }
+    #contact-us-sec-container #contact-us-content #contact-details #contact-form-btn{
+        font-size: 1.1rem;
+    }
+
+
+
+
+
+}
+
+
+
+
+@media (max-width: 412px) {
+    #top-sec{
+        display: none;
+    }
+    #menu-list-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
+

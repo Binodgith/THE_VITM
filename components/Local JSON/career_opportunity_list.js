@@ -89,7 +89,7 @@ let career_opportunity_list=[
         job_short_description:"We are hiring passionate and dedicated professors for CSE, Mechanical, and EEE departments. Join us at THE VITM to contribute to academic excellence and shape the future of engineering education",
         job_prospectus_file_id:"1_-17lhgysvNdbnrlGKkzyBPCyuEJRlDxyY0gJpjkDh4"
 
-    }
+    },
     {
         job_roll:"Security Guard (Non-Teaching staff)",
         job_location:"At Institute (Berhampur)",
@@ -102,7 +102,7 @@ let career_opportunity_list=[
         job_short_description:"We are hiring a vigilant and responsible Security Guard to ensure campus safety at THE VITM. This role involves monitoring campus premises, controlling access points, and maintaining a secure environment for students and staff.",
         job_prospectus_file_id:"1lUVoh5AiEbdUmLXTy3TS8TpAWBtCmSqz742S8T-wy9I"
 
-    }
+    },
     {
         job_roll:"Canteen Incharge (Non-Teaching staff)",
         job_location:"At Institute (Berhampur)",
@@ -115,7 +115,7 @@ let career_opportunity_list=[
         job_short_description:"We're hiring a dedicated Canteen Incharge to oversee daily operations, ensure food quality, manage staff, and maintain hygiene standards in our college canteen. Join our team for a rewarding role!",
         job_prospectus_file_id:"1lUVoh5AiEbdUmLXTy3TS8TpAWBtCmSqz742S8T-wy9I"
 
-    }
+    },
     {
         job_roll:"Accountant (Non-Teaching staff)",
         job_location:"At Institute (Berhampur)",
@@ -128,7 +128,7 @@ let career_opportunity_list=[
         job_short_description:"We're hiring a skilled Accountant to join our engineering college. Ideal candidates should excel in managing finances, maintaining records, and ensuring compliance. Join us to build a brighter future together!",
         job_prospectus_file_id:"1GQi7S60Tn3kTFTdUFl60lJZvsfpNMfljRSwXKgiWKAM"
 
-    }
+    },
 
 ]
 
