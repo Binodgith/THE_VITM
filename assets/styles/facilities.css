@@ -26,11 +26,12 @@
 /* -------facilities---------- */
 .clg_front{
   background-color: var(--bg-color-white);
-  background-image:url(../media/litul_image/college-front.jpeg) ;
+  /* background-image:url(../media/litul_image/college-front.jpeg) ; */
   background-size: cover;
   background-position: center;
   height: 400px;
   width: 100%;
+  margin-top: 200px;
 
   
 }

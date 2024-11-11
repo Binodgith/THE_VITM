@@ -47,7 +47,7 @@
   #main-for-contact .contactus_page_01 {
     height: 100%;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(247, 247, 247, 0.682);
     margin: auto;
     margin-top: 60px;
     display: flex;
@@ -60,7 +60,7 @@
   #main-for-contact .contactus_page_01 .partfor_info{
     height: 70%;
     width: 40%;
-    background-color: rgb(234, 239, 239);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 50px;
     border: 1px solid black;
     border-radius: 5px;
