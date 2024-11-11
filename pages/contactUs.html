@@ -166,18 +166,18 @@
                         <h1>Callback Request</h1>
                     </div>
 
-                    <form action="">
+                    <form action="" id>
                         <div id="contact-person-name" class="contact-input-sec">
 
                             <section>
                                 <label for="contact-person-name">Enter Name </label>
-                                <input type="text" value="" placeholder="Enter Full name" id="contact-person-name-input" required>
+                                <input name="name" type="text" value="" name="name" placeholder="Enter Full name" id="contact-person-name-input" required>
 
                             </section>
                             
                             <section>
                                 <label for="contact-person-type"> Who are you?</label>
-                                <select name="contact-person-type" placceholder="Select" id="contact-person-type-input" required>
+                                <select name="personType" placceholder="Select" id="contact-person-type-input" required>
                                     <option value="">Select</option>
                                     <option value="sudent">Student</option>
                                     <option value="guardian">Guardian</option>
@@ -191,25 +191,25 @@
                             <section>
                                 <label for="contact-person-mobile">Enter Mobile Number</label>
                                 <section class="otp-verify-sec">
-                                    <input type="number" placeholder="Enter Mobile" title="mobile Number" id="contact-person-mobile-input" required>
+                                    <input type="number" name="mobile"  placeholder="Enter Mobile" title="mobile Number" id="contact-person-mobile-input" required>
                                     <!-- <button id="contact-mobile-otp-send-btn">Send OTP</button> -->
                                 </section>
 
                             </section>
 
-                            <section>
+                            <!-- <section>
                                <section class="otp-verify-sec display-off">
                                     <input type="text" id="contact-mobile-opt-input" placeholder="Enter Mobile OTP">
                                     <button id="contact-mobile-otp-verify-btn">Verify</button>
                                </section>
-                            </section>
+                            </section> -->
                         </div>
 
                         <div id="contact-person-email" class="contact-input-sec">
                             <section>
                                 <label for="contact-person-email">Enter Email</label>
                                 <section class="otp-verify-sec ">
-                                    <input type="email" placeholder="Enter Email id" title="Email Id" id="contact-person-email-input" required>
+                                    <input name="email" type="email" placeholder="Enter Email id" title="Email Id" id="contact-person-email-input" required>
                                     <button id="contact-email-otp-send-btn">Send OTP</button>
                                 </section>
 
@@ -227,21 +227,21 @@
                         <div id="contact-person-subject" class="contact-input-sec">
                             <section>
                                 <label for="contact-person-subject">Subject</label>
-                                <input placeholder="Type Subject" title="Subject" type="text" id="contact-person-subject-input" required>
+                                <input name="subject" placeholder="Type Subject" title="Subject" type="text" id="contact-person-subject-input" required>
                             </section>
                         </div>
 
                         <div id="contact-person-message" class="contact-input-sec">
                             <section>
                                 <label for="contact-person-message">Message</label>
-                                <textarea name="contact-person-message"  placeholder="Type the message , you want to sent." id="contact-person-message-input" rows="5" cols="100%" required>
+                                <textarea name="message"  placeholder="Type the message , you want to sent." id="contact-person-message-input" rows="5" cols="100%" required>
 
                                 </textarea>
                             </section>
                         </div>
 
 
-                        <button type="submit" id="contact-form-submit-btn">Submit</button>
+                        <button type="button" name="submit" id="contact-form-submit-btn">Submit</button>
                         
                     </form>
                 </div>
@@ -260,4 +260,4 @@
 </html>
 
 <script type="module" src="../assets/scripts/contactus.js"></script>
-<script src="../components/styles/header-footer.css"></script>
+<script src="../components/header-footer/header-footer.js"></script>
