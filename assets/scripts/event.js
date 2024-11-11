@@ -54,7 +54,7 @@ let event_list=[
         event_file_id:"1tjOZ6COHl0OY4RqzQeOpqYRFU2lm7fyocrFSX6irYrY",
         event_id:"evnt-0017",
         event_img_id:"1CQlkFkOIAuh2Se4IBDcC34_Iy8mgcm45",
-    },
+    }, 
     {
         event_title:"Hackathon: Colabration with  top studenet to solve real world problems",
         event_description:"The college is organizing a 24-hour coding hackathon from November 15 to 16, 2024. The hackathon is open to students from all years. Teams will work on real-world problem statements and compete for cash prizes. Registration closes on November 10.",
