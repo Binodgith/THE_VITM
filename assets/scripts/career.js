@@ -72,7 +72,7 @@ let append_career_opportunity_list=(received_data,aplication_status)=>{
                             </div>
                         </div> 
                         <div class="recruitment-apply-btn">
-                            <a href="">Apply Now</a>
+                            <a href="../../Career/application.html?role=${ele.job_roll}">Apply Now</a>
                         </div>`
         }
         else if(aplication_status=="closed"){

@@ -13,7 +13,9 @@
     --font-heading: 'Georgia', serif;
     --font-body: 'Arial', sans-serif;
   }
-  
+  body{
+    background-color: ghostwhite;
+  }
   /* Reset styling */
    #staff_faculty-property-container body{
     background-color: ghostwhite;

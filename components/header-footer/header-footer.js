@@ -24,7 +24,7 @@ function header_main(){
         <div id="Menu-bar-sec">
             <div id="menu-list-container">
                 <ul id="main-list">
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i> &nbsp;Home</a></li>
+                    <li><a href="/"><i class="fa-solid fa-house"></i> &nbsp;Home</a></li>
                     <li><a href="./pages/aboutUs.html">About Us</a></li>
                     <li>
                         <a href="#">Academic &nbsp;<i class="fa-solid fa-sort-down"></i></a>
@@ -101,14 +101,14 @@ function footer_main(){
 
                     <div  class="footer-anchor-tags">
                         <a href="">BPUT</a>
-                        <a href="./pages/facilities.html">Facilities</a>
-                        <a href="./pages/alumni.html">Alumni</a>
-                        <a href="./pages/aboutUs.html">Campus</a>
-                        <a href="./pages/staff_faculty.html">Faculty & Staff</a>
-                        <a href="./pages/alumni.html">Placements</a>
-                        <a href="./pages/result.html">Results</a>
-                        <a href="./pages/syllabus.html">Syllabus</a>
-                        <a href="./pages/admission.html">Admission</a>
+                        <a href="../../pages/facilities.html">Facilities</a>
+                        <a href="../../pages/alumni.html">Alumni</a>
+                        <a href="../../pages/aboutUs.html">Campus</a>
+                        <a href="../../pages/staff_faculty.html">Faculty & Staff</a>
+                        <a href="../../pages/alumni.html">Placements</a>
+                        <a href="../../pages/result.html">Results</a>
+                        <a href="../../pages/syllabus.html">Syllabus</a>
+                        <a href="../../pages/admission.html">Admission</a>
                     </div>
 
 
@@ -120,15 +120,15 @@ function footer_main(){
                     </div>
 
                     <div  class="footer-anchor-tags">
-                        <a href="./pages/career.html">Career</a>
+                        <a href="../../pages/career.html">Career</a>
                         <a href="">Hall Ticket</a>
-                        <a href="./pages/announcement.html">Notice</a>
-                        <a href="./pages/events.html">Events</a>
+                        <a href="../../pages/announcement.html">Notice</a>
+                        <a href="../../pages/events.html">Events</a>
                         <a href="">Developers</a>
-                        <a href="./pages/gallery.html">Gallery</a>
-                        <a href="./pages/aboutUs.html">About US</a>
-                        <a href="./pages/contactUs.html">Contact US </a>
-                        <a href="./pages/downloads.html">Downloads</a>
+                        <a href="../../pages/gallery.html">Gallery</a>
+                        <a href="../../pages/aboutUs.html">About US</a>
+                        <a href="../../pages/contactUs.html">Contact US </a>
+                        <a href="../../pages/downloads.html">Downloads</a>
                     </div>
 
                 </div>
