@@ -29,7 +29,7 @@ function header_main(){
                     <li>
                         <a href="#">Academic &nbsp;<i class="fa-solid fa-sort-down"></i></a>
                         <ul id="menu-sub-list">
-                            <li><a href="">BPUT</a></li>
+                            <li><a href="https://www.bput.ac.in/" target="_blank">BPUT</a></li>
                             <li><a href="./pages/facilities.html">Facilities</a></li>
                             <li><a href="./pages/alumni.html">Alumni</a></li>
                             <li><a href="./pages/gallery.html">Gallery</a></li>
@@ -66,7 +66,7 @@ function header_main(){
                             <li><a href="./pages/admission.html">Admission</a></li>
                             <li><a href="./pages/result.html">Results</a></li>
                             <li><a href="./pages/alumni.html">Alumni</a></li>
-                            <li><a href="">Scholarship Portal</a></li>
+                            <li><a href="https://scholarship.odisha.gov.in/website/"  target="_blank">Scholarship Portal</a></li>
                         </ul>
                     </li>
                     <li><a href="./pages/facilities.html">Facilities</a></li>

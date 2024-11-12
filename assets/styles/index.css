@@ -395,7 +395,7 @@ body{
 }
 
 #event-box  #event-content #event .event-date{
-    width: 38%;
+    width: 20%;
     padding: 10px;
     background-color: var(--primary-color-index);
     border-radius: 10px;
@@ -405,7 +405,9 @@ body{
     box-shadow: 1px 3px gray;
 
 }
-
+#event-box  #event-content #event #event-description{
+    width: 70%;
+}
 #event-box  #event-content #event #event-description p{
     /* font-size: 0.8rem; */
 }

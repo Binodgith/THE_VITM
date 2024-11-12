@@ -4,7 +4,6 @@ import { sent_email_otp,verify_email_otp } from "../../components/Functions/emai
 import { alert_popup } from "../components/popup/alert_popup.js";
 
 
-alert("This page is under maintanance, Some functions may not work");
 
 
 
