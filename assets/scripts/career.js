@@ -60,7 +60,7 @@ let append_career_opportunity_list=(received_data,aplication_status)=>{
                                 <p><b>Advertisement No.: </b> ${ele.job_adv_no}</p>
                             </div>
                             <div class="recruitment-prospectus-file">
-                                <a href="https://drive.google.com/uc?export=download&id=${ele.job_prospectus_file_id}"><span><i class="fa-regular fa-file-pdf"></i></span>Prospectus</a>
+                                <a href="https://docs.google.com/document/d/${ele.job_prospectus_file_id}/export?format=pdf"><span><i class="fa-regular fa-file-pdf"></i></span>Prospectus</a>
                             </div>
                             <div class="recruitment-application-date">
                                 <p><b>Application Started: </b> ${ele.job_application_start}</p>
