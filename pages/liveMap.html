@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+
+    <div id="map"></div>
+
+    
+
+    <script >
+        function getlocation(){
+          // console.log(navigator.geolocation);
+      navigator.geolocation.getCurrentPosition(getposition);
+          if(navigator.getlocation){
+            
+          }
+        }
+        getlocation();
+        function getposition(pos){
+          console.log(pos.coords.longitude);
+          console.log(pos.coords.latitude);
+          console.log(pos.coords);
+          document.getElementById("map").innerHTML=`<embed src="https://www.google.com/maps?q=${pos.coords.latitude},${pos.coords.longitude}&z=20&output=embed" type="" width="90%" height="550vh"> `
+        }
+
+
+        
+        
+  </script>
+</body>
+</html>
