@@ -4,9 +4,9 @@
    
    let map = L.map('map',{center:[19.3150, 84.7941],zoom:20});
 
-    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    // }).addTo(map);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
     
     // L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.{ext}', {
     //     attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -28,10 +28,10 @@
     //     attribution: '&copy; OpenStreetMap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     // }).addTo(map);
 
-    L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {
-        maxZoom: 18,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+    // L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {
+    //     maxZoom: 18,
+    //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    // }).addTo(map);
 
     var myIcon = L.icon({
         iconUrl: 'https://cdn2.iconfinder.com/data/icons/map-locations-colored-outlined-pixel-perfect/64/pin-map-location-06-1024.png',
@@ -42,9 +42,20 @@
         // shadowSize: [68, 95],
         shadowAnchor: [25, 25]
     });
+
+
+    var busStopIcon = L.icon({
+        iconUrl: '/assets/icons/busStop.png',
+        iconSize: [50, 75],
+        iconAnchor: [30,60],
+        // popupAnchor: [-3, -76],
+        // shadowUrl: 'https://cdn-icons-png.flaticon.com/512/9249/9249336.png',
+        // shadowSize: [68, 95],
+        shadowAnchor: [25, 25]
+    });
     
-    let marker=L.marker([19.314922, 84.794218],{icon:myIcon,zoom:13}).addTo(map).bindPopup("Your live position");
-    L.Routing.control({
+    let marker=L.marker([19.314922, 84.794218],{zoom:20}).addTo(map).bindPopup("Your live position");
+    let myRoute=L.Routing.control({
         waypoints: [
           L.latLng(19.311041, 84.831311),
           L.latLng(19.310054, 84.828033),
@@ -59,8 +70,29 @@
           L.latLng(19.310691, 84.804612),
           L.latLng(19.313225, 84.802311),
         
-        ]
-      },).addTo(map);
+        ],
+        lineOptions: {
+            styles: [{color: 'Green', opacity: 1, weight: 10}]
+        },
+
+        
+        createMarker: function (i, start, n){ 
+            //for (i = 0; waypoint.length; i++){
+            return L.marker (start.latLng, {
+                    draggable: false,
+                    icon: busStopIcon,
+                    iconSize: [25, 25],
+                   routeWhileDragging: false,
+        })}
+                    
+    }).addTo(map);
+
+    
+
+
+    // L.Routing.line(myRoute, {
+    //     styles:[{color: 'black', opacity: 0.15, weight: 9}, {color: 'white', opacity: 0.8, weight: 6}, {color: 'green', opacity: 1, weight: 2}]
+    //  });
 
     // --------------ma layers and mods---------------------
    
@@ -115,10 +147,6 @@ function setmarker(){
 
 
     marker.setLatLng(newLatLng);
-
-    
-   
-    
 
     getlocation();
 }
