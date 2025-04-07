@@ -11,15 +11,15 @@
     var myIcon = L.icon({
         iconUrl: 'https://i.ibb.co/Csn1WqJs/ac0ho6cs-copy.png',
         iconSize: [25, 45],
-        iconAnchor: [60, 50],
+        iconAnchor: [15,25],
         // popupAnchor: [-3, -76],
         // shadowUrl: 'https://cdn-icons-png.flaticon.com/512/9249/9249336.png',
         // shadowSize: [68, 95],
-        shadowAnchor: [22, 94]
+        shadowAnchor: [25, 25]
     });
     let marker=L.marker([19.3150, 84.7941],{icon:myIcon,zoom:13}).addTo(map);
 
-
+    
 
 
     // --------------ma layers and mods---------------------
@@ -52,11 +52,11 @@ function getposition(pos) {
 //     let arr= [[	28.679079,77.069710],[19.076090,72.877426],[14.167040,75.040298]]
 
 //     for(let i=0;i<arr.length; i++){
-//        let  lat=arr[i][0];
-//         let long=arr[i][1];
+//        lat=arr[i][0];
+//         long=arr[i][1];
 //         console.log(arr[i]);
 //             // console.log(pos.latlng);
-//             setmarker(lat,long);
+//         setmarker();
        
 //     }
 // }
@@ -72,8 +72,12 @@ function setmarker(){
     
     let newLatLng = new L.LatLng(lat, long);
     
+    L.circle([lat,long], {radius: 30}).addTo(map);  
+
+
+
     marker.setLatLng(newLatLng);
-   
+
     
    
     
