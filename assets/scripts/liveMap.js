@@ -2,7 +2,7 @@
 
    
    
-   let map = L.map('map',{center:[19.3150, 84.7941],zoom:17});
+   let map = L.map('map',{center:[19.3150, 84.7941],zoom:20});
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -17,7 +17,7 @@
         // shadowSize: [68, 95],
         shadowAnchor: [25, 25]
     });
-    let marker=L.marker([19.3150, 84.7941],{icon:myIcon,zoom:13}).addTo(map);
+    let marker=L.marker([19.3150, 84.7941],{zoom:13}).addTo(map);
 
     
 
@@ -68,7 +68,7 @@ function getposition(pos) {
 
 function setmarker(){
     
-    map.setView([lat,long],17);
+    map.setView([lat,long],20);
     
     let newLatLng = new L.LatLng(lat, long);
     
@@ -82,7 +82,7 @@ function setmarker(){
    
     
 
-    // getlocation();
+    getlocation();
 }
 
 
