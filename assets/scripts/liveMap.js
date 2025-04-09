@@ -1,8 +1,6 @@
 
 
-   
-   
-   let map = L.map('map',{center:[19.3150, 84.7941],zoom:20});
+   let map = L.map('map',{center:[19.3150, 84.7941],zoom:17});
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -33,6 +31,12 @@
     //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     // }).addTo(map);
 
+
+    let marker=L.marker([19.314922, 84.794218],{zoom:20}).addTo(map).bindPopup("Your live position");
+
+
+
+    // --------------------------------------------------bus live Icon-------------------------
     var myIcon = L.icon({
         iconUrl: 'https://cdn2.iconfinder.com/data/icons/map-locations-colored-outlined-pixel-perfect/64/pin-map-location-06-1024.png',
         iconSize: [50, 75],
@@ -44,6 +48,8 @@
     });
 
 
+
+    // --------------------------------------------------bus stopage point icon----------------------
     var busStopIcon = L.icon({
         iconUrl: '/assets/icons/busStop.png',
         iconSize: [50, 75],
@@ -54,7 +60,9 @@
         shadowAnchor: [25, 25]
     });
     
-    let marker=L.marker([19.314922, 84.794218],{zoom:20}).addTo(map).bindPopup("Your live position");
+
+
+//    ----------------------------------------------------------Assigning routing service------------------------------
     let myRoute=L.Routing.control({
         waypoints: [
           L.latLng(19.311041, 84.831311),
@@ -89,12 +97,6 @@
 
     
 
-
-    // L.Routing.line(myRoute, {
-    //     styles:[{color: 'black', opacity: 0.15, weight: 9}, {color: 'white', opacity: 0.8, weight: 6}, {color: 'green', opacity: 1, weight: 2}]
-    //  });
-
-    // --------------ma layers and mods---------------------
    
 
 function getlocation() {
@@ -138,7 +140,7 @@ function getposition(pos) {
 
 function setmarker(){
     
-    map.flyTo([lat,long],18);
+    map.flyTo([lat,long],17);
     
     let newLatLng = new L.LatLng(lat, long);
     
@@ -150,7 +152,6 @@ function setmarker(){
 
     getlocation();
 }
-
 
 
 
