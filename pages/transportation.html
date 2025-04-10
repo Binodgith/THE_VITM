@@ -13,8 +13,8 @@
     <script src="https://kit.fontawesome.com/f118dac063.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header></header>
-
+    <header style="position: relative;"></header>
+    <div id="loader-section-main"></div>
     <!-- ---------heading primary -->
     
     <div id="box-primary-title">
@@ -26,7 +26,7 @@
         
         <div class="grid-wrapper grid-col-auto">
            <label for="radio-card-1" class="radio-card">
-              <input type="radio" name="radio-card" id="radio-card-1" />
+              <input type="radio" name="bus-type-radio-card" value="Route" id="radio-card-1" />
               <div class="card-content-wrapper">
                  <span class="check-icon"></span>
                  <div class="card-content">
@@ -39,7 +39,7 @@
            <!-- /.radio-card -->
      
            <label for="radio-card-2" class="radio-card">
-              <input type="radio" name="radio-card" id="radio-card-2" />
+              <input type="radio" name="bus-type-radio-card" value="Bus" id="radio-card-2" />
               <div class="card-content-wrapper">
                  <span class="check-icon"></span>
                  <div class="card-content">
@@ -63,63 +63,15 @@
 
      <div id="bus-result-container">
         <div id="result-box">
-            <div class="result-content">
-                <div class="icon">
-                    <i class="fa-solid fa-route"></i>
-                </div>
-                <div class="title">
-                    <h2><b>Route: </b> R104</h2>
-                </div>
-                <div class="location">
-                    <p><b>From: </b> Kamapalli</p>
-                    <p><b>To: </b> College</p>
-                    <p><b></b></p>
-                </div>
-
-                <div class="proceed-btn">
-                    <a href="">Proceed</a>
-                </div>
-            </div>
-            <div class="result-content">
-                <div class="icon">
-                    <i class="fa-solid fa-route"></i>
-                </div>
-                <div class="title">
-                    <h2><b>Route: </b> R102</h2>
-                </div>
-                <div class="location">
-                    <p><b>From: </b> Kamapalli</p>
-                    <p><b>To: </b> College</p>
-                    <p><b></b></p>
-                </div>
-
-                <div class="proceed-btn">
-                    <a href="">Proceed</a>
-                </div>
-            </div>
-            <div class="result-content">
-                <div class="icon">
-                    <i class="fa-solid fa-route"></i>
-                </div>
-                <div class="title">
-                    <h2><b>Route: </b> R101</h2>
-                </div>
-                <div class="location">
-                    <p><b>From: </b> Kamapalli</p>
-                    <p><b>To: </b> College</p>
-                    <p><b></b></p>
-                </div>
-
-                <div class="proceed-btn">
-                    <a href="">Proceed</a>
-                </div>
-            </div>
+            
         </div>
      </div>
   
+    
 
-
+     <footer></footer>
 </body>
 </html>
 
 <script src="../components/header-footer/header-footer.js"></script>
+<script type="module"  src="/assets/scripts/transportation.js"></script>
