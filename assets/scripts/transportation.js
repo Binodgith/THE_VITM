@@ -78,7 +78,7 @@ search_radios.forEach((radio )=> radio.addEventListener('change',async () => {
             result_content.addEventListener("click",async (e)=>{
                 e.preventDefault();
                 start_loader_1();
-                let bus_res= await check_bus_route("SELECT Bus_number FROM ? WHERE Rout_number!=''");
+                let bus_res= await check_bus_route(`SELECT Bus_number FROM ? WHERE Rout_number="${ele["Rout_number"]}"`);
                 append_buses(bus_res);
             })
             document.getElementById("result-box").append(result_content)
