@@ -19,6 +19,11 @@ function append_buses(res){
                 <div class="route-icon">
                     <img src="/assets/icons/wifiSignal.gif" alt="">
                 </div>
+
+                <div class="route-direction">
+                    <p><b>From: </b>${ele["Bus_starts"]}</p>
+                    <p><b>To: </b> ${ele["Bus_ends"]}</p>
+                </div>
                 
 
                 <div class="proceed-btn">
@@ -47,7 +52,7 @@ search_radios.forEach((radio )=> radio.addEventListener('change',async () => {
         start_loader_1();
 
         // console.log(radio.value)
-        let res= await check_bus_route("SELECT Rout_number FROM ? WHERE Rout_number!=''")
+        let res= await check_bus_route("SELECT DISTINCT Rout_number,Bus_starts,Bus_ends FROM ? WHERE Rout_number!=''")
         //  console.log(res);
         
         document.getElementById("bus-result-container").style.display="block";
@@ -69,6 +74,11 @@ search_radios.forEach((radio )=> radio.addEventListener('change',async () => {
                         <img src="/assets/icons/towerSignal.gif" alt="">
 
                     </div>
+
+                    <div class="route-direction">
+                        <p><b>From: </b>${ele["Bus_starts"]}</p>
+                        <p><b>To: </b> ${ele["Bus_ends"]}</p>
+                    </div>
                    
 
                     <div class="proceed-btn">
@@ -78,7 +88,7 @@ search_radios.forEach((radio )=> radio.addEventListener('change',async () => {
             result_content.addEventListener("click",async (e)=>{
                 e.preventDefault();
                 start_loader_1();
-                let bus_res= await check_bus_route(`SELECT Bus_number FROM ? WHERE Rout_number="${ele["Rout_number"]}"`);
+                let bus_res= await check_bus_route(`SELECT * FROM ? WHERE Rout_number="${ele["Rout_number"]}"`);
                 append_buses(bus_res);
             })
             document.getElementById("result-box").append(result_content)
@@ -90,7 +100,7 @@ search_radios.forEach((radio )=> radio.addEventListener('change',async () => {
     if(radio.value=="Bus"){
         // console.log(radio.value)
         start_loader_1();
-        let res= await check_bus_route("SELECT Bus_number FROM ? WHERE Rout_number!=''")
+        let res= await check_bus_route("SELECT * FROM ? WHERE Rout_number!=''")
         // console.log(res);
         append_buses(res);
     }
