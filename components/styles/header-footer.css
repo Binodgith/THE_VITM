@@ -212,6 +212,8 @@ header{
 /* -------------------------------Foooter Secton ------------------------------------------------*/
 #footer-main{
     background-color: var(--black-color-index);
+    overflow: hidden;
+
 }
 
 #footer-container{
@@ -447,3 +449,38 @@ header{
 }
 
 
+
+
+
+
+
+
+
+@media (max-width:479px) {
+    #footer-container{
+        /* display: grid;
+        grid-template-columns: repeat(2,1fr); */
+        flex-wrap: wrap;
+    }
+    #footer-container #footer-brand-details-sec p{
+        font-size:1rem;
+    }
+    #footer-container #footer-brand-details-sec {
+        width: 45%;
+    }
+    #footer-container #footer-brand-details-sec a{
+        font-size:1rem ;
+    }
+    #footer-container .footer-primary-heading h2{
+        font-size: 1.1rem;
+    }
+    #footer-container .footer-anchor-tags a{
+        /* font-size: 0.9rem; */
+    }
+
+
+
+    #copyrights-disclaimer-sec #copyrights-disclaimer-container p{
+        font-size: 0.8rem;
+    }
+}
