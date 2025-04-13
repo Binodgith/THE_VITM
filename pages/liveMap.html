@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <script src="https://kit.fontawesome.com/f118dac063.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/styles/liveMap.css">
+
 <!-- AIzaSyBusZM4-eJ7N1IKCM4UQV-Xo5dFZ_im1oE -->
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -17,13 +19,48 @@
 </head>
 <body>
 
-    <div id="map" style="
-      height: 100vh;
-      width: 100%;
-      z-index: 0;
-    "></div>
+    <div id="map-full-page-container">
+      <div id="page-heading">
+        <h2><i class="fa-solid fa-wifi"></i> &nbsp; Bus Live Map</h2>
+        
+        <div class="Bus_live_deatils">
+          <p><b>Bus Started at</b><span id="Bus_Start_time"></span></p>
+          <p><b>Signal Status:</b> Offline</p>
+        </div>
+
+        <div class="Bus_Conductor_deatils">
+          <a href="tel:"><i class="fa-solid fa-square-phone"></i> &nbsp; Connect to Conductor</a>
+        </div>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+
+    <div id="map" ></div>
     
+    <div id="bus-stopage-list">
+      <div id="stopage-container">
+        <div class="rightbox">
+          <div class="rb-container">
+            <ul class="rb">
+              <!-- <li class="rb-item" ng-repeat="itembx">
+
+                <div class="item-title">Kamapalli</div>
+                <div class="timestamp">
+                   7:00 PM
+                </div>
+      
+              </li> -->
+              
+              
+      
+            </ul>
+      
+          </div>
+        </div>
+      </div>
+
+    </div>
 </body>
 
-<script src="../assets/scripts/liveMap.js" ></script>
 </html>
+<script type="module" src="../assets/scripts/liveMap.js" ></script>

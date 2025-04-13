@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+body {
+    background: #232931;
+    font-family: "PT Sans", sans-serif;
+}
+
+#map-full-page-container {
+    width: 100%;
+    height: 7vh;
+    background-color: black;
+}
+
+#map-full-page-container #page-heading {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: #fff;
+}
+
+#map-full-page-container #page-heading i {
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+#map-full-page-container #page-heading i:hover {
+    color: red;
+    cursor: pointer;
+    border-radius: 50%;
+    /* padding: 10px; */
+}
+
+
+
+/* --------------------------map itself---------------- */
+
+#map {
+    width: 100%;
+    /* height: 65vh; */
+    height: 63vh;
+
+
+
+
+}
+
+/* --------------------------Route Stopage list viewer------------- */
+
+
+
+
+#bus-stopage-list {
+    background: #232931;
+    height: 30vh;
+    margin: auto;
+    overflow-x: scroll;
+    /* margin-top: 10%; */
+    box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+}
+
+
+
+.rb-container {
+    font-family: "PT Sans", sans-serif;
+    width: 90%;
+    margin: auto;
+    /* display: block; */
+    position: relative;
+
+}
+
+
+.rb-container ul.rb {
+    width: max-content;
+    margin: 4em;
+    padding: 0;
+    display: flex;
+    justify-content: baseline;
+
+}
+
+.rb-container ul.rb li {
+    width: 20rem;
+    list-style: none;
+  
+    min-height: 50px;
+    border-left: 1px solid #fff;
+    padding: 0 0 50px 30px;
+    position: relative;
+
+
+}
+
+.rb-container ul.rb li:last-child {
+    /* border-left: 0; */
+}
+
+.rb-container ul.rb li::before {
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 8px solid rgba(255, 255, 255, 1);
+    border-radius: 500%;
+    background: #50d890;
+    height: 20px;
+    width: 20px;
+    transition: all 500ms ease-in-out;
+}
+
+.rb-container ul.rb li::after {
+    content: '';
+    width: 100%;
+    border: 2px solid white;
+    position: absolute;
+    top: 10vh;
+    left: 0%;
+}
+
+.rb-container ul.rb li:last-child::after {
+    border: 0px;
+}
+
+.rb-container ul.rb li:hover::before {
+    border-color: #232931;
+    transition: all 1000ms ease-in-out;
+}
+
+ul.rb li .timestamp {
+    color: #50d890;
+    position: relative;
+    width: 100px;
+    font-size: 12px;
+}
+
+.item-title {
+    color: #fff;
+}
