@@ -1,17 +1,18 @@
 import { getRouteDetails } from "../../db/Transportation DB/getRouteDetails.js";
+import { getLivelocation } from "../../db/Transportation DB/getLiveLocation.js";
 
-
-    let busN="B03";
-    let rw="4";
+    let busN="B01";
+    let rw="2";
 
 
     async function getRoute(busN){
         let res= await getRouteDetails(busN);
-        console.log(res)
-        console.log(res[1]["Latitude"]);
+        // console.log(res)
+        // console.log(res[1]["Latitude"]);
         
         embedRout(res);
-        AllignStopages(res);
+        AllignStopages(res,'2025-04-13T18:10:12.000Z');
+
     }
 
     getRoute(busN);
@@ -43,6 +44,8 @@ import { getRouteDetails } from "../../db/Transportation DB/getRouteDetails.js";
             shadowAnchor: [25, 25]
         });
 
+    let marker=L.marker([19.245839,84.765546]).addTo(map).bindPopup("Bus Current position");
+    ;
 
 
 
@@ -50,7 +53,6 @@ import { getRouteDetails } from "../../db/Transportation DB/getRouteDetails.js";
     function embedRout(res){
         
 
-        // let marker=L.marker([19.245839,84.765546],{zoom:20}).addTo(map).bindPopup("Your live position");
         let points=[];
         res.map(pos=>{
             let x=L.latLng(pos["Latitude"], pos["Longitude"]);
@@ -77,27 +79,25 @@ import { getRouteDetails } from "../../db/Transportation DB/getRouteDetails.js";
                         
         }).addTo(map);
 
+        myRoute.hide();
 
-
-
+        updateLocation();
 
 
     }  
 
 
 
-    function setmarker(){
+    function setmarker(lat,long){
     
         map.flyTo([lat,long],17);
         
         let newLatLng = new L.LatLng(lat, long);
         
         // L.circle([lat,long], {radius: 30}).addTo(map);  
-    
-    
-    
+
         marker.setLatLng(newLatLng);
-    
+        updateLocation();   
     
     }
 
@@ -106,7 +106,7 @@ import { getRouteDetails } from "../../db/Transportation DB/getRouteDetails.js";
 
 
 
-    function AllignStopages(res){
+    function AllignStopages(res,startTime){
         document.querySelector(".rb-container .rb").innerHTML='';
         res.map(pos=>{
             let StoageLI=document.createElement("li");
@@ -115,13 +115,57 @@ import { getRouteDetails } from "../../db/Transportation DB/getRouteDetails.js";
 
             StoageLI.innerHTML=`<div class="item-title">${pos.Stopage_Name}</div>
                 <div class="timestamp">
-                   00:00 PM
+                   00:00 
                 </div>`
 
             document.querySelector(".rb-container .rb").append(StoageLI);
 
             
         })
+    }
+
+
+    async function updateLocation(){
+        let res= await getLivelocation(rw);
+        console.log(res);
+
+
+        if(res[0]["Bus_Departures"]!=''){
+            document.querySelector(".bus-live-details").innerHTML='';
+
+            let details_div=document.createElement("div");
+            details_div.setAttribute("class","details");
+            details_div.innerHTML=`<p><b>Bus Started at</b> <span id="Bus_Start_time">${new Date(res[0]["Bus_Departures"]).getHours()}:${new Date(res[0]["Bus_Departures"]).getMinutes()}</span></p>
+          <p ><b>Signal Status:</b> <span id="signal-status">${res[0]["IsLive"]}</span> </p>
+          <a href="tel:${res[0]["Bus_Condctor_Mobile"]}"><i class="fa-solid fa-phone"></i>  Connect to Conductor</a>`
+
+            document.querySelector(".bus-live-details").append(details_div);
+        }
+        else{
+            alert("Bus not yet Started.")
+        }
+
+
+        let lat=res[0]["Bus_Live_Latitude"];
+        let lng=res[0]["Bus_Live_Longitude"]
+
+
+        if(res[0]["IsLive"]){
+            setmarker(lat,lng);
+            map.addLayer(marker);
+            document.querySelector(".bus-live-details .details #signal-status").innerText="- Live"
+            
+
+        }
+        else{
+            document.querySelector(".bus-live-details .details #signal-status").innerText="offline"
+            map.removeLayer(marker);
+            updateLocation();
+        }
+        
+
+
+
     }
 
 
