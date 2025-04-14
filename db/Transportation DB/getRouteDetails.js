@@ -12,7 +12,7 @@ async function getRouteDetails(bs){
         }
         catch(err){
             console.log(err,"error from serer.");
-            alert("Error Drom Servver");
+            // alert("Error from Server");
             
             
         }

@@ -126,7 +126,9 @@
     width: 100%;
     top: 0%;
     position: fixed;
-    background-color: rgba(250, 250, 250, 0.719);
+    /* background-color: rgba(250, 250, 250, 0.719); */
+    /* filter: blur(8px);*/
+    backdrop-filter: blur(5px);
     height: 100vh;
     z-index: 5050;
   }

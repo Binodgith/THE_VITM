@@ -12,7 +12,7 @@ async function getLivelocation(rw){
         }
         catch(err){
             console.log(err,"error from serer.");
-            alert("Error Drom Servver");
+            // alert("Error Drom Servver");
             
             
         }

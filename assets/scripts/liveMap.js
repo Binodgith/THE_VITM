@@ -1,9 +1,24 @@
 import { getRouteDetails } from "../../db/Transportation DB/getRouteDetails.js";
 import { getLivelocation } from "../../db/Transportation DB/getLiveLocation.js";
+import {start_loader_1,start_loader_2,close_loader} from "../../components/loader/loader.js"
 
-    let busN="B01";
-    let rw="2";
+    // let busN="B01";
+    // let rw="2";
 
+
+
+const urlParams = new URLSearchParams(window.location.search);
+let busN = urlParams.get('busN');
+let rw = urlParams.get('rw');
+
+if(rw=='' || rw==null || busN=='' || busN==null){
+    alert("Invalid URL");
+    location.href="/pages/transportation.html";
+}
+    
+
+
+    start_loader_1();
 
     async function getRoute(busN){
         let res= await getRouteDetails(busN);
@@ -11,7 +26,8 @@ import { getLivelocation } from "../../db/Transportation DB/getLiveLocation.js";
         // console.log(res[1]["Latitude"]);
         
         embedRout(res);
-        AllignStopages(res,'2025-04-13T18:10:12.000Z');
+        updateBus(res);
+        updateLocation();
 
     }
 
@@ -50,6 +66,12 @@ import { getLivelocation } from "../../db/Transportation DB/getLiveLocation.js";
 
 
 
+
+
+
+
+
+
     function embedRout(res){
         
 
@@ -81,10 +103,17 @@ import { getLivelocation } from "../../db/Transportation DB/getLiveLocation.js";
 
         myRoute.hide();
 
-        updateLocation();
+        // updateLocation();
 
 
     }  
+
+
+
+
+
+
+
 
 
 
@@ -106,6 +135,8 @@ import { getLivelocation } from "../../db/Transportation DB/getLiveLocation.js";
 
 
 
+
+
     function AllignStopages(res,startTime){
         document.querySelector(".rb-container .rb").innerHTML='';
         res.map(pos=>{
@@ -113,9 +144,14 @@ import { getLivelocation } from "../../db/Transportation DB/getLiveLocation.js";
             StoageLI.setAttribute("class","rb-item");
             StoageLI.setAttribute("ng-repeat","itembx");
 
+            let time=new Date(startTime);
+            // console.log(time)
+            time.setMinutes(time.getMinutes()+ pos.TimeTaking);
+            // console.log(time)
+
             StoageLI.innerHTML=`<div class="item-title">${pos.Stopage_Name}</div>
                 <div class="timestamp">
-                   00:00 
+                   ${time.toLocaleTimeString()}
                 </div>`
 
             document.querySelector(".rb-container .rb").append(StoageLI);
@@ -125,26 +161,44 @@ import { getLivelocation } from "../../db/Transportation DB/getLiveLocation.js";
     }
 
 
-    async function updateLocation(){
-        let res= await getLivelocation(rw);
-        console.log(res);
 
+
+
+    async function updateBus(RouteRes) {
+        let res= await getLivelocation(rw);
 
         if(res[0]["Bus_Departures"]!=''){
             document.querySelector(".bus-live-details").innerHTML='';
 
             let details_div=document.createElement("div");
             details_div.setAttribute("class","details");
-            details_div.innerHTML=`<p><b>Bus Started at</b> <span id="Bus_Start_time">${new Date(res[0]["Bus_Departures"]).getHours()}:${new Date(res[0]["Bus_Departures"]).getMinutes()}</span></p>
+            details_div.innerHTML=`<p><b>Bus Started at</b> <span id="Bus_Start_time">${new Date(res[0]["Bus_Departures"]).toLocaleTimeString()}</span></p>
           <p ><b>Signal Status:</b> <span id="signal-status">${res[0]["IsLive"]}</span> </p>
           <a href="tel:${res[0]["Bus_Condctor_Mobile"]}"><i class="fa-solid fa-phone"></i>  Connect to Conductor</a>`
 
             document.querySelector(".bus-live-details").append(details_div);
+
+            AllignStopages(RouteRes,res[0]["Bus_Departures"]);
+
+            close_loader();
         }
         else{
             alert("Bus not yet Started.")
+            close_loader();
+            AllignStopages(RouteRes,"Apr 14 2025 0:00:00 MT+0530");
         }
 
+
+    }
+
+
+
+
+
+    async function updateLocation(){
+        let res= await getLivelocation(rw);
+        // console.log(res);
+        close_loader();
 
         let lat=res[0]["Bus_Live_Latitude"];
         let lng=res[0]["Bus_Live_Longitude"]

@@ -13,7 +13,7 @@ body {
 #map-full-page-container {
     width: 100%;
     /* height: 7vh; */
-    height: 10dvh;
+    /* height: 10dvh; */
     background-color: black;
 }
 
@@ -25,7 +25,10 @@ body {
     padding: 1rem;
     color: #fff;
 }
-
+#map-full-page-container #page-heading a{
+    text-decoration: none;
+    color: #fff;
+}
 #map-full-page-container #page-heading i {
     font-size: 2rem;
     transition: 0.3s;
@@ -44,8 +47,8 @@ body {
 
 #map {
     width: 100%;
-    /* height: 65vh; */
-    height:50dvh;
+    height: 60vh;
+    /* height:50dvh; */
 
 
 
@@ -60,9 +63,12 @@ body {
 #bus-stopage-list {
     background: #232931;
     /* height: 30vh; */
-    /* height: 35dvh; */
-    margin: auto;
+    height: 40%;
+    /* margin: auto; */
+    padding: 2rem auto;
     overflow-x: scroll;
+    position:sticky;
+    bottom: 0px;
     /* margin-top: 10%; */
     box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
 }
@@ -72,7 +78,7 @@ body {
 .rb-container {
     font-family: "PT Sans", sans-serif;
     width: 90%;
-    margin: auto;
+    margin:3rem auto;
     /* display: block; */
     position: relative;
 
@@ -81,7 +87,7 @@ body {
 
 .rb-container ul.rb {
     width: max-content;
-    margin: 2.5rem;
+    margin-top: 2.5rem;
     padding: 0;
     display: flex;
     justify-content: baseline;
@@ -119,11 +125,11 @@ body {
 
 .rb-container ul.rb li::after {
     content: '';
-    /* width: 100%; */
+    /* width: 50%; */
     border: 2px dashed white;
-    position: absolute;
-    top: 15dvh;
+    position:absolute;
     left: 0%;
+    bottom: 0%;
     animation: lineGrow 5s  linear forwards alternate;
 }
 
@@ -145,10 +151,10 @@ body {
 .rb-container ul.rb li::before {
     /* border-color: #232931; */
     transition: all 1000ms ease-in-out;
-    animation: fadeup 2s  linear infinite alternate;
+    animation: fadeupease 2s  linear infinite alternate;
 }
 
-@keyframes fadeup {
+@keyframes fadeupease {
     0%{
         border-color: #232931;
     }

@@ -27,11 +27,14 @@ function append_buses(res){
                 
 
                 <div class="proceed-btn">
-                    <a href="">Track</a>
+                    <a href="/pages/liveMap.html?rw=${ele["Row_no"]}&busN=${ele["Bus_number"]}">Track</a>
                 </div>`;
 
-            
+            result_content.addEventListener("click",()=>{
+                location.href=`/pages/liveMap.html?rw=${ele["Row_no"]}&busN=${ele["Bus_number"]}`;
+            })
             document.getElementById("result-box").append(result_content)
+            
 
         })
 
