@@ -95,7 +95,7 @@ if(rw=='' || rw==null || busN=='' || busN==null){
                         draggable: false,
                         icon: busStopIcon,
                         iconSize: [25, 25],
-                       routeWhileDragging: false,
+                       routeWhileDragging: true,
                 }).bindPopup(res[i]["Stopage_Name"]+","+res[i]["Note"]);
             }   
                         
