@@ -24,36 +24,16 @@
       
 
 /* -------facilities---------- */
-.clg_front{
-  background-color: var(--bg-color-white);
-  /* background-image:url(../media/litul_image/college-front.jpeg) ; */
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  width: 100%;
-  margin-top: 100px;
-  overflow: hidden;
 
-  
-}
-.clg_front .clg_tag{
-  text-align: center;
-
-
-}
-.clg_front #clg-main{
-  font-size:x-large;
-  text-align: center;
-
-}
 /* campus---------------- */
-.campus_head h3
+
 
 /* ------------facility lab content------------- */
 #lab-content-container{
   width: 100%;
   background-color: var(--color-grey);
   overflow: hidden;
+  background-color: var(--bg-color-white);
 }
 
 #lab-content-container #lab-content{
@@ -70,7 +50,7 @@
 #lab-content .row_01{
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  
   gap: 30px;
 }
 #lab-content .row_01>div {
@@ -108,22 +88,19 @@
 
   
 /* ------------facility hostel content--------------- */
-#hostel-container{
-  background-color:var(--bg-color-white);
-  overflow:hidden;
-}
-#hostel-container #hostel-content{
+
+ #hostel-content{
   
   width: 100%;
-  background-color:var(--bg-color-white);
+  background-color:var(--bg--color--white);
 }
 #hostel-content #hostel-heading{
  text-align: center;
- margin-top: 80px; 
- margin-bottom: 40px;
+ margin-top: 20px;
+
  font-size:x-large;
  font-weight: bolder;
- background-color: var(--bg-color-white);
+ 
 }
 #hostel-content  .row_02{
  
@@ -156,8 +133,7 @@ background-color: var(--bg-color-white);
 
 }
 #hostel-content .row_02 .hostel_data img{
-  height: 100px;
-  width: 100px;
+ 
 }
 
 #hostel-info #col-02-hostel img{
