@@ -71,6 +71,7 @@ body {
     bottom: 0px;
     /* margin-top: 10%; */
     box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+    z-index: 1000;
 }
 
 
@@ -175,6 +176,9 @@ ul.rb li .timestamp {
 .item-title {
     color: #fff;
 }
+
+
+
 
 
 
