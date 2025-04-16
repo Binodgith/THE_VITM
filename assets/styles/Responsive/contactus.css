@@ -3,8 +3,12 @@
     #main-for-contact .contactus_page_01{
         flex-direction: column;
         width: 100%;
+        gap: 1px;
     }
+    #main-for-contact #scrol-something h1{
+      font-size: 1.4rem;
 
+    }
     #main-for-contact .contactus_page_01 .partfor_info{
         height: 50%;
         width: 90%;
@@ -19,13 +23,13 @@
     }
 
     #main-for-contact .contactus_page_01 .clg_location{
-        height: 40%;
+        height: 20%;
         width: 90%;
         margin-right:20px;
         border: 2px solid black;
     }
     #main-for-contact .contactus_page_01 .clg_location h2{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     #contact-us-page-02{
     width: 90%;
