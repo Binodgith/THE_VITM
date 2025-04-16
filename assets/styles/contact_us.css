@@ -64,6 +64,7 @@
     margin-bottom: 50px;
     border: 1px solid black;
     border-radius: 5px;
+    overflow: hidden;
   }
   #main-for-contact .contactus_page_01 .partfor_info h2{
     text-align: center;
@@ -104,6 +105,7 @@
     border: 1px solid black;
     border-radius: 5px;
     z-index: auto;
+    overflow: hidden;
   
   }
   #main-for-contact .contactus_page_01 .clg_location h2{
@@ -165,10 +167,7 @@
   width: 40%;
 
 }
-#contact-form-container{
-  /* width: 100%; */
-  /* background-color: #e6000028; */
-}
+
 
 #contact-form-container #form-itself{
   width:90%;

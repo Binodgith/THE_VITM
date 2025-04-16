@@ -1,0 +1,10 @@
+@media (max-width:479px) {
+  
+    #admission-Details-main-sec{
+        flex-direction: column;
+         width: 100%;   
+    } 
+    #admission-course-sec #admission-course-list-container{
+        
+    } 
+}
