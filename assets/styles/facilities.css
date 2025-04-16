@@ -88,10 +88,111 @@
 
   
 /* ------------facility hostel content--------------- */
+ #hostel-content-01{
+width: 100%;
+margin: auto;
+
+}
+#hostel-content-01 #hostel-heading-01{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin: auto;
+  padding: auto;
+  margin-top: 80px;
+  padding-bottom: 60px;
+  background-color: var(--bg-color-white);
+  
+} 
+/* boys hoste; */
+#hostel-content-01 #hostel-info-01{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 110px;
+  background-color: var(--bg-color-white);
+  overflow: hidden;
+}
+#hostel-content-01 #hostel-info-01 #col-01-hostel-01{
+  width: 45%;
+  font-size: 1.5rem;
+
+}
+#col-01-hostel-01 #hostel-facilities-01{
+ padding-bottom:30px;
+
+}
+#hostel-content-01 #hostel-info-01 #col-01-hostel-01 p{
+  margin-bottom:10px;
+  padding: auto;
+}
+
+#hostel-content-01 #hostel-info-01 #col-02-hostel-01{
+  width: 30%;
+  
+}
+#col-02-hostel-01 img{
+  object-fit:contain;
+  padding: auto;
+  margin: auto;
+  
+  width: 450px;
+  border:2px solid var(--bg-color-black);
+  border-radius: 10px;
+  
+} */
 
 
 
-/* --------------------library----gym----canteen----------------- */
+/* girls hostel */
+
+
+#hostel-content-02{
+  width: 100%;
+ 
+  
+}
+#hostel-content-02 #hostel-info-02{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  
+  background-color: var(--bg-color-white);
+  overflow: hidden;
+}
+#hostel-content-02 #hostel-info-02 #col-01-hostel-02{
+  width: 45%;
+  font-size: 1.5rem;
+
+}
+#col-01-hostel-02 #hostel-facilities-02{
+
+
+}
+#hostel-content-02 #hostel-info-02 #col-01-hostel-02 p{
+
+}
+  
+
+#hostel-content-02 #hostel-info-02 #col-02-hostel-02{
+  width: 25%;
+  
+}
+#hostel-content-02 #hostel-info-02 #col-02-hostel-02 img{
+  width: 450px;
+  border:2px solid var(--bg-color-black);
+  border-radius: 10px;
+  
+}
+
+
+
+
+
+/*--------------------library----gym----canteen----------------- */
 #heading-for-other{
   margin-top: 50px;
   width: 100%;
