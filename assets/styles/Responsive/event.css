@@ -1,0 +1,27 @@
+@media (max-width:479px) {
+ 
+#event_main{
+    width:90%;
+}  
+#event_main .event_main_content{
+    width: 90%;
+    height:30vh;
+    gap:10px;
+} 
+#event_main .event_main_content .event_date_box {
+    font-size:0.4rem;
+    gap:3px;  
+}
+#event_main .event_main_content .event_info{
+    font-size:0.7rem;
+}
+#event_main .event_main_content .event_image img{
+    width: 25vw;
+    height: 17vh;  
+     
+}
+.horizontal_line{
+    width: 100%;
+    margin: 40px 10px;
+}
+}

@@ -1,6 +1,6 @@
 @media (max-width:479px){
     #about-peropery-section-container .about-section-under-main  p, ul{
-        font-size: 1.2rem;
+        font-size:0.95rem;
         
     } 
     #about-peropery-section-container .about-section-under-main  h1, h2 {
@@ -29,5 +29,8 @@
        
         width: 350px;
         height: 300px;
+    }
+    #contact-us-sec-container #contact-us-content #contact-details p{
+        font-size: 0.98rem;
     }
 } 
