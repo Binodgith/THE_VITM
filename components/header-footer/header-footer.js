@@ -1,6 +1,10 @@
 function header_main(){
     return `<div id="main-logo-sec">
+            
             <div id="main-logo-sec-container">
+                <div id="menu-bar-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <div id="logo-container">
                     <img src="https://i.ibb.co/kyZcGjJ/Logo-main-light.png"  title="bland_logo" alt="MAIN LOGO">
                 </div>
@@ -22,6 +26,9 @@ function header_main(){
 
 
         <div id="Menu-bar-sec">
+            <div id="menu-bar-close-icon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
             <div id="menu-list-container">
                 <ul id="main-list">
                     <li><a href="/"><i class="fa-solid fa-house"></i> &nbsp;Home</a></li>
