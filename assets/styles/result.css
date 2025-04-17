@@ -38,13 +38,13 @@ body{
 }
 
 #mid-sem-result-container #mid-sem-search-container{
-    width: 100%;
+    /* width: 100%; */
     background-color: #fb0202;
     padding: 2rem;
     box-shadow: 0px 2px 10px grey;
 }
 #mid-sem-result-container #mid-sem-search-sec{
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -57,6 +57,18 @@ body{
     border-radius: 8px;
 }
 
+#mid-sem-result-container #mid-sem-search-sec #result-get-btn{
+    font-size: 1.2rem;
+    color: white;
+    background-color: green;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+#mid-sem-result-container #mid-sem-search-sec #result-get-btn:hover{
+    opacity: 0.8;
+}
 
 #result-table-append-sec{
     width: 50%;
@@ -85,4 +97,38 @@ table thead th{
 }
 table th{
     background-color: rgba(222, 222, 222, 0.494);
+}
+
+
+
+
+
+/* ---------------------------mobile view */
+
+
+
+
+@media (max-width:479px){
+    #exam-type-section{
+        width: 60%;
+    }
+
+    #mid-sem-result-container #mid-sem-search-sec{
+        /* width: 90%; */
+        flex-direction: column;
+    }
+    #mid-sem-result-container #mid-sem-search-sec input, select{
+        margin: 0.5rem auto;
+        width: 70%;
+        height: 2rem;
+    }
+
+
+
+    #result-table-append-sec{
+        width: 85%;
+    }
+    #result-table-append-sec table{
+        width: 100%;
+    }
 }

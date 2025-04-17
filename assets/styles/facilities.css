@@ -1,4 +1,4 @@
-
+@import url(/assets/styles/Responsive/facilities.css);
 :root{
   --font-for-all-facility:"Roboto", sans-serif;
   --bg-color-white:white;
@@ -142,7 +142,7 @@ margin: auto;
   border:2px solid var(--bg-color-black);
   border-radius: 10px;
   
-} */
+}
 
 
 

@@ -139,6 +139,7 @@ if(rw=='' || rw==null || busN=='' || busN==null){
 
     function AllignStopages(res,startTime){
         document.querySelector(".rb-container .rb").innerHTML='';
+        // console.log(res)
         res.map(pos=>{
             let StoageLI=document.createElement("li");
             StoageLI.setAttribute("class","rb-item");
@@ -147,6 +148,7 @@ if(rw=='' || rw==null || busN=='' || busN==null){
             let time=new Date(startTime);
             // console.log(time)
             time.setMinutes(time.getMinutes()+ pos.TimeTaking);
+            // console.log(pos.TimeTaking)
             // console.log(time)
 
             StoageLI.innerHTML=`<div class="item-title">${pos.Stopage_Name}</div>
@@ -181,6 +183,12 @@ if(rw=='' || rw==null || busN=='' || busN==null){
             AllignStopages(RouteRes,res[0]["Bus_Departures"]);
 
             close_loader();
+        }
+        else if(res[0]["Bus_Reached"]!=''){
+            let time =new Date(res[0]["Bus_Reached"]);
+            if(time < new Date()){
+                alert(`Bus already Reached college at ${new Date(res[0]["Bus_Reached"]).toLocaleTimeString()}`)
+            }
         }
         else{
             alert("Bus not yet Started.")

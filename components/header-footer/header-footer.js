@@ -15,7 +15,7 @@ function header_main(){
                 </div>
     
                 <div id="Admission-btn1-container" class="admission-btn">
-                    <a href="./pages/admission.html"> Admission </a>
+                    <a href="/pages/admission.html"> Admission </a>
                     <img id= "new-tag" src="https://i.ibb.co/7VhfvRb/New-tag.png" alt="">
                 </div>
             </div>
@@ -32,53 +32,53 @@ function header_main(){
             <div id="menu-list-container">
                 <ul id="main-list">
                     <li><a href="/"><i class="fa-solid fa-house"></i> &nbsp;Home</a></li>
-                    <li><a href="./pages/aboutUs.html">About Us</a></li>
+                    <li><a href="/pages/aboutUs.html">About Us</a></li>
                     <li>
                         <a href="#">Academic &nbsp;<i class="fa-solid fa-sort-down"></i></a>
                         <ul id="menu-sub-list">
                             <li><a href="https://www.bput.ac.in/" target="_blank">BPUT</a></li>
-                            <li><a href="./pages/facilities.html">Facilities</a></li>
-                            <li><a href="./pages/alumni.html">Alumni</a></li>
-                            <li><a href="./pages/gallery.html">Gallery</a></li>
-                            <li><a href="./pages/aboutUs.html">Campus</a></li>
-                            <li><a href="./pages/events.html">Academic Calander</a></li>
-                            <li><a href="./pages/staff_faculty.html">Faculty & Staff</a></li>
-                            <li><a href="./pages/announcement.html">Notice</a></li>
-                            <li><a href="./pages/alumni.html">Placements</a></li>
+                            <li><a href="/pages/facilities.html">Facilities</a></li>
+                            <li><a href="/pages/alumni.html">Alumni</a></li>
+                            <li><a href="/pages/gallery.html">Gallery</a></li>
+                            <li><a href="/pages/aboutUs.html">Campus</a></li>
+                            <li><a href="/pages/events.html">Academic Calander</a></li>
+                            <li><a href="/pages/staff_faculty.html">Faculty & Staff</a></li>
+                            <li><a href="/pages/announcement.html">Notice</a></li>
+                            <li><a href="/pages/alumni.html">Placements</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">Admission  &nbsp;<i class="fa-solid fa-sort-down"></i></a>
 
                         <ul id="menu-sub-list">
-                            <li><a href="./pages/admission.html">U.G Course</a></li>
-                            <li><a href="./pages/admission.html">P.G Course</a></li>
-                            <li><a href="./pages/admission.html">Eligibility</a></li>
+                            <li><a href="/pages/admission.html">U.G Course</a></li>
+                            <li><a href="/pages/admission.html">P.G Course</a></li>
+                            <li><a href="/pages/admission.html">Eligibility</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">Examination  &nbsp;<i class="fa-solid fa-sort-down"></i></a>
 
                         <ul id="menu-sub-list">
-                            <li><a href="./pages/result.html">Results</a></li>
-                            <li><a href="./pages/downloads.html">Forms</a></li>
+                            <li><a href="/pages/result.html">Results</a></li>
+                            <li><a href="/pages/downloads.html">Forms</a></li>
                             <li><a href="">Hall ticket</a></li>
-                            <li><a href="./pages/syllabus.html">Syllabus</a></li>
+                            <li><a href="/pages/syllabus.html">Syllabus</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">Students  &nbsp;<i class="fa-solid fa-sort-down"></i></a>
 
                         <ul id="menu-sub-list">
-                            <li><a href="./pages/admission.html">Admission</a></li>
-                            <li><a href="./pages/result.html">Results</a></li>
-                            <li><a href="./pages/alumni.html">Alumni</a></li>
+                            <li><a href="/pages/admission.html">Admission</a></li>
+                            <li><a href="/pages/result.html">Results</a></li>
+                            <li><a href="/pages/alumni.html">Alumni</a></li>
                             <li><a href="https://scholarship.odisha.gov.in/website/"  target="_blank">Scholarship Portal</a></li>
                         </ul>
                     </li>
-                    <li><a href="./pages/facilities.html">Facilities</a></li>
-                    <li><a href="./pages/gallery.html">Gallery</a></li>
-                    <li><a href="./pages/contactUs.html">Contact Us</a></li>
+                    <li><a href="/pages/facilities.html">Facilities</a></li>
+                    <li><a href="/pages/gallery.html">Gallery</a></li>
+                    <li><a href="/pages/contactUs.html">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -94,10 +94,10 @@ function footer_main(){
                         <img src="https://i.ibb.co/ZSggZM6/fav-icon.png" alt="">
                    </div>
                    <p class="footer-address">Berhampur, Ganjam, Odisha - 760001</p>
-                   <a href=""> <span><i class="fa-solid fa-phone-volume"></i> &nbsp;</span>1800 354 125</a>
-                   <a href=""> <span><i class="fa-solid fa-phone-volume"></i> &nbsp;</span>+91 8259690902</a>
-                   <a href=""> <span><i class="fa-regular fa-envelope"></i> &nbsp;</span>help@thevitm.in</a>
-                   <a href=""> <span><i class="fa-regular fa-envelope"></i> &nbsp;</span>admission@thevitm.in </a>
+                   <a href="tel:1800354125"> <span><i class="fa-solid fa-phone-volume"></i> &nbsp;</span>1800 354 125</a>
+                   <a href="tel:8259690902"> <span><i class="fa-solid fa-phone-volume"></i> &nbsp;</span>+91 8259690902</a>
+                   <a href="mailto:help@vitm.tech"> <span><i class="fa-regular fa-envelope"></i> &nbsp;</span>help@vitm.tech</a>
+                   <a href="mailto:admission@vitm.tec"> <span><i class="fa-regular fa-envelope"></i> &nbsp;</span>admission@vitm.tech </a>
 
                 </div>
 
@@ -108,14 +108,14 @@ function footer_main(){
 
                     <div  class="footer-anchor-tags">
                         <a href="">BPUT</a>
-                        <a href="../../pages/facilities.html">Facilities</a>
-                        <a href="../../pages/alumni.html">Alumni</a>
-                        <a href="../../pages/aboutUs.html">Campus</a>
-                        <a href="../../pages/staff_faculty.html">Faculty & Staff</a>
-                        <a href="../../pages/alumni.html">Placements</a>
-                        <a href="../../pages/result.html">Results</a>
-                        <a href="../../pages/syllabus.html">Syllabus</a>
-                        <a href="../../pages/admission.html">Admission</a>
+                        <a href="/pages/facilities.html">Facilities</a>
+                        <a href="/pages/alumni.html">Alumni</a>
+                        <a href="/pages/aboutUs.html">Campus</a>
+                        <a href="/pages/staff_faculty.html">Faculty & Staff</a>
+                        <a href="/pages/alumni.html">Placements</a>
+                        <a href="/pages/result.html">Results</a>
+                        <a href="/pages/syllabus.html">Syllabus</a>
+                        <a href="/pages/admission.html">Admission</a>
                     </div>
 
 
@@ -127,15 +127,15 @@ function footer_main(){
                     </div>
 
                     <div  class="footer-anchor-tags">
-                        <a href="../../pages/career.html">Career</a>
+                        <a href="/pages/career.html">Career</a>
                         <a href="">Hall Ticket</a>
-                        <a href="../../pages/announcement.html">Notice</a>
-                        <a href="../../pages/events.html">Events</a>
+                        <a href="/pages/announcement.html">Notice</a>
+                        <a href="/pages/events.html">Events</a>
                         <a href="">Developers</a>
-                        <a href="../../pages/gallery.html">Gallery</a>
-                        <a href="../../pages/aboutUs.html">About US</a>
-                        <a href="../../pages/contactUs.html">Contact US </a>
-                        <a href="../../pages/downloads.html">Downloads</a>
+                        <a href="/pages/gallery.html">Gallery</a>
+                        <a href="/pages/aboutUs.html">About US</a>
+                        <a href="/pages/contactUs.html">Contact US </a>
+                        <a href="/pages/Transportation.html">Transportation</a>
                     </div>
 
                 </div>
@@ -170,3 +170,18 @@ function footer_main(){
 
 document.querySelector("header").innerHTML=header_main();
 document.querySelector("footer").innerHTML=footer_main();
+
+
+document.querySelector("#logo-container img").addEventListener("click",()=>{
+    location.href="/"
+})
+
+
+document.querySelector("#menu-bar-icon i").addEventListener("click",()=>{
+    document.querySelector(" #Menu-bar-sec").style.display="block";
+    document.querySelector(" #Menu-bar-sec").style.left="0%";
+})
+document.querySelector("#menu-bar-close-icon i").addEventListener("click",()=>{
+    document.querySelector(" #Menu-bar-sec").style.left="-100%";
+    document.querySelector(" #Menu-bar-sec").style.display="none";
+})

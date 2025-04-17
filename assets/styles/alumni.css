@@ -27,6 +27,7 @@ body{
 #student-achievement-content-alumni .achievement-box-alumni{
     text-align: center;
     background-color: var(--white-color-index);
+    border: 1px solid grey;
     border-radius: 10px;
     padding: 4vh 0vh;
     font-family: Arial, Helvetica, sans-serif;

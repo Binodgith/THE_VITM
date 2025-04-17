@@ -133,23 +133,38 @@
     background-color: darken(var(--email-hover-color), 10%);
   }
   
+
+
+
+
+
+
   /* Responsive Design */
-  @media (max-width: 768px) {
+  @media (max-width: 479px) {
     h1 {
       font-size: 2em;
     }
   
     .grid-container {
       padding: 0 10px;
+      grid-template-columns: repeat(2,1fr);
     }
   
     .member-card {
       padding: 15px;
+      border: 1px solid grey;
     }
   
     .button-container {
       flex-direction: column;
       gap: 10px;
+    }
+
+    .member-name{
+      font-size: 1rem;
+    }
+    .button{
+      font-size: 0.8rem;
     }
   }
   

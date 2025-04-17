@@ -231,3 +231,62 @@ html{
 	border-radius: 5px;
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------Mobile view---------------------- */
+@media (max-width:479px) {
+	label .card-content-wrapper{
+		/* width:100%;
+		margin: auto; */
+	}
+	.grid-wrapper {
+		grid-gap: 20px;
+	}
+	.grid-wrapper .radio-card .card-content-wrapper h4{
+		font-size: 1rem;
+	}
+	.grid-wrapper label .card-content img{
+		/* grid-template-columns: repeat(1,1fr); */
+		width: 100%;
+		
+	}
+
+
+	#bus-result-container{
+		width: 100%;
+		margin: auto;
+		margin-bottom: 2rem;
+	}
+	#bus-result-container #result-box{
+		width: 90%;
+	}
+	#result-box .result-content{
+		width: 90%;
+		flex-wrap: wrap;
+		padding: 10px;
+	}
+	#result-box .result-content div{
+		margin: 1rem auto;
+	}
+	#result-box .result-content .icon{
+		width: 20%;
+	}
+
+
+
+
+
+	
+}
