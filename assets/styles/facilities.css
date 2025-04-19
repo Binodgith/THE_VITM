@@ -9,7 +9,13 @@
   --color-page-primary:#e60000; 
   --bg--color--blue: rgb(36, 3, 126);
   --color--blue:blue;
-
+  --bg-color-white: #ffffff;
+  --color-black: #000;
+  --color-grey: rgba(0, 0, 0, 0.1);
+  
+  --color-white: #fff;
+  --bg--color--blue: #cce0ff;
+  --color--blue: #003399;
 }
 
 
@@ -88,207 +94,183 @@
 
   
 /* ------------facility hostel content--------------- */
- #hostel-content-01{
-width: 100%;
-margin: auto;
 
+/* ========== HOSTEL SECTIONS ========== */
+.hostel-section {
+  padding: 50px 20px;
+  background-color: #f5faff;
 }
-#hostel-content-01 #hostel-heading-01{
+
+.alt-bg {
+  background-color: #e0ecff;
+}
+
+.hostel-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
+  max-width: 1200px;
   margin: auto;
-  padding: auto;
-  margin-top: 80px;
-  padding-bottom: 60px;
-  background-color: var(--bg-color-white);
-  
-} 
-/* boys hoste; */
-#hostel-content-01 #hostel-info-01{
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hostel-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.hostel-image img {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  gap: 110px;
-  background-color: var(--bg-color-white);
-  overflow: hidden;
-}
-#hostel-content-01 #hostel-info-01 #col-01-hostel-01{
-  width: 45%;
-  font-size: 1.5rem;
-
-}
-#col-01-hostel-01 #hostel-facilities-01{
- padding-bottom:30px;
-
-}
-#hostel-content-01 #hostel-info-01 #col-01-hostel-01 p{
-  margin-bottom:10px;
-  padding: auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-#hostel-content-01 #hostel-info-01 #col-02-hostel-01{
-  width: 30%;
-  
-}
-#col-02-hostel-01 img{
-  object-fit:contain;
-  padding: auto;
-  margin: auto;
-  
-  width: 450px;
-  border:2px solid var(--bg-color-black);
-  border-radius: 10px;
-  
+.hostel-content {
+  flex: 1;
+  min-width: 280px;
 }
 
-
-
-/* girls hostel */
-
-
-#hostel-content-02{
-  width: 100%;
- 
-  
+.hostel-content h2 {
+  font-size: 32px;
+  color:#e60000;
+  margin-bottom: 15px;
 }
-#hostel-content-02 #hostel-info-02{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content:space-around;
-  
-  background-color: var(--bg-color-white);
-  overflow: hidden;
-}
-#hostel-content-02 #hostel-info-02 #col-01-hostel-02{
-  width: 45%;
-  font-size: 1.5rem;
 
+.hostel-content p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
 }
-#col-01-hostel-02 #hostel-facilities-02{
 
-
-}
-#hostel-content-02 #hostel-info-02 #col-01-hostel-02 p{
-
-}
-  
-
-#hostel-content-02 #hostel-info-02 #col-02-hostel-02{
-  width: 25%;
-  
-}
-#hostel-content-02 #hostel-info-02 #col-02-hostel-02 img{
-  width: 450px;
-  border:2px solid var(--bg-color-black);
-  border-radius: 10px;
-  
-}
+/* Responsive Design */
 
 
 
 
 
 /*--------------------library----gym----canteen----------------- */
-#heading-for-other{
-  margin-top: 50px;
+
+#heading-for-other {
   width: 100%;
-  overflow: hidden ;
-
-
+  overflow: hidden;
+  padding: 20px;
+  background-color: var(--color-page-primary);
+  color: var(--color-white);
 }
-#heading-for-other h4{
-  font-size: xx-large;
+
+#heading-for-other h4 {
+  font-size: 28px;
   text-align: center;
-}
-.cards_clg{
-  display: inline-block;
-  width: 25%;
-  height: 500px;
-  background-color: var(--bg-color-white);
-  margin-top: 40px;
-  margin-bottom: 20px;
-  margin-left:85px;
-  margin-right: 10px;
-  border:2px solid var(--color-black);
-  border-radius: 5px;
-  box-shadow:10px 15px 20px var(--color-grey);
-  padding: 5px;
-  transition: .10s;
-}
-.cards_clg:hover{
-  background-color: var(--bg-color-white);
+  margin: 0;
 }
 
-.cards_clg .image_clg img{
+.cards_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+   gap: 25px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.cards_clg {
+  width: calc(33.33% - 20px);
+  height: 480px;
+  background-color: var(--bg-color-white);
+  border: 2px solid var(--color-black);
+  border-radius: 5px;
+  box-shadow: 10px 15px 20px var(--color-grey);
+  transition: 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards_clg:hover {
+  transform: scale(1.02);
+}
+
+.cards_clg .image_clg img {
   width: 100%;
-  height:300px;
+  height: 220px;
   object-fit: cover;
 }
-.cards_clg  .title_clg {
+
+.cards_clg .title_clg {
   text-align: center;
-  background-color:var(--color-page-primary);
-  color:var(--color-white);
-} 
-.cards_clg .desc_clg{
+  background-color: var(--color-page-primary);
+  color: var(--color-white);
+  padding: 10px;
+}
+
+.cards_clg .title_clg h2 {
+  margin: 0;
+}
+
+.cards_clg .desc_clg {
   text-align: center;
-}
-.cards_clg .desc_clg button{
-  margin-top: 15px;
-
-}
-.desc_clg button:hover{
-  background-color:var(--bg--color--blue);
-  color:var(--color--blue);
-
-
-
-}
-.cards_clg .title_clg h4{
-  margin-top: 5px;
-  
-}
-.cards_clg .desc_clg p{
-  font-size: large;
-  margin-top: 5px;
-  padding: 5px;
+  padding: 15px;
 }
 
+.cards_clg .desc_clg p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.cards_clg .desc_clg button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--color-page-primary);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.cards_clg .desc_clg button:hover {
+  background-color: var(--bg--color--blue);
+  color: var(--color--blue);
+}
 
 
+
+@media (max-width:479px) {
+  .cards_clg {
+    width: 100%;
+  }
+  .hostel-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hostel-container.reverse {
+    flex-direction: column;
+  }
+
+  .hostel-content h2 {
+    font-size: 28px;
+  }
+
+  .hostel-content p {
+    font-size: 16px;
+  }
+  #lab-content-container{
+    width: 100%;
+  }
+  #lab-content .row_01{
+    flex-direction:column;
+    width: 100%;
+  }
+  .lab_content_box{
+    width: 90%;
+  }
+
+}
 
 
 /*-------footer------*/
 
-.footer{
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-
-}
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-}
-.icons .fa {
-    color:var(--color-page-primary);
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-}
-
-/*---about us page---*/
-
-.sub-header{
-    height: 50vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: var(--color-white);
-}
