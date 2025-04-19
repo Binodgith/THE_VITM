@@ -42,6 +42,8 @@ body{
     background-color: #fb0202;
     padding: 2rem;
     box-shadow: 0px 2px 10px grey;
+    display:none;
+    /* margin-bottom: 2rem; */
 }
 #mid-sem-result-container #mid-sem-search-sec{
     width: 90%;
@@ -50,6 +52,7 @@ body{
     justify-content: space-between;
     color: white;
     font-weight: bolder;
+    
 }
 #mid-sem-result-container #mid-sem-search-sec input, select{
     padding: 5px;
@@ -78,6 +81,8 @@ body{
     box-shadow: 0px 1px 10px gray;
     padding: 15px;
     font-family:var(--font-roboto) ;
+    display: none;
+    
 }
 #result-table-append-sec table{
     width: 90%;

@@ -10,9 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../components/styles/header-footer.css">
+    <link rel="stylesheet" href="/components/styles/secondary-header.css">
     <title>Result | THE VITM</title>
 </head>
 <body>
+
+
+    <div id="loader-section-main"></div>
+
 
     <header style="position: relative;"></header>
 
@@ -32,28 +37,28 @@
             <div id="mid-sem-search-sec">
                 <select name="select-academic-year" id="select-academic-year">
                     <option value="">Select academic year</option>
-                    <option value="2023-2024">2023-24</option>
-                    <option value="2023-2024">2024-25</option>
+                   
+                    <option value="2024-2025">2024-25</option>
                 </select>
                 <select name="select-semester" id="select-semester">
                     <option value="">Select Semester</option>
-                    <option value="s001">1st Sem</option>
-                    <option value="s002">2nd Sem</option>
-                    <option value="s003">3rd Sem</option>
-                    <option value="s004">4th Sem</option>
-                    <option value="s005">5th Sem</option>
-                    <option value="s006">6th Sem</option>
-                    <option value="s007">7th Sem</option>
-                    <option value="s008">8th Sem</option>
+                    <option value="1">1st Sem</option>
+                    <option value="2">2nd Sem</option>
+                    <option value="3">3rd Sem</option>
+                    <option value="4">4th Sem</option>
+                    <option value="5">5th Sem</option>
+                    <option value="6">6th Sem</option>
+                    <option value="7">7th Sem</option>
+                    
                 </select>
                 <select name="select-mid-semester" id="select-mid-semester">
                     <option value="">Select Mid Semester</option>
-                    <option value="ms001">1st Mid Sem</option>
-                    <option value="ms002">2nd Mid Sem</option>
+                    <option value="1">1st Mid Sem</option>
+                    <option value="2">2nd Mid Sem</option>
                   
                 </select>
     
-                <input type="number" id="reg-number" placeholder="Enter Reg Number">
+                <input type="text" id="reg-number" placeholder="Enter Reg Number">
     
                 <p>OR</p>
     
@@ -67,9 +72,9 @@
 
 
         <div id="result-table-append-sec">
-            <h2>Your Result will be append here.</h2>
+            <!-- <h2>Your Result will be append here.</h2> -->
 
-            <div id="result-table-itselt">
+            <!-- <div id="result-table-itselt">
                 <table>
                     <thead class="table-heading">
                         <th colspan="4">Student Details</th>
@@ -78,27 +83,27 @@
                     <tbody>
                         <tr>
                             <th colspan="1">Name</th>
-                            <td colspan="3">Binod</td>
+                            <td colspan="2">Binod</td>
                         </tr>
                         <tr>
                             <th colspan="1">Reg</th>
-                            <td colspan="3">254125698</td>
+                            <td colspan="2">254125698</td>
                         </tr>
                         <tr>
                             <th colspan="1">College Name</th>
-                            <td colspan="3">THE VITM</td>
+                            <td colspan="2">THE VITM</td>
                         </tr>
                         <tr>
                             <th colspan="1">Branch</th>
-                            <td colspan="3">CSE</td>
+                            <td colspan="2">CSE</td>
                         </tr>
                         <tr>
                             <th colspan="1">Semester</th>
-                            <td colspan="3">2nd Semester</td>
+                            <td colspan="2">2nd Semester</td>
                         </tr>
                         <tr>
                             <th colspan="1">Mid Semester</th>
-                            <td colspan="3">1st Mid Sem</td>
+                            <td colspan="2">1st Mid Sem</td>
                         </tr>
                    
 
@@ -108,7 +113,7 @@
                                 <th scope="col">Subject</th>
                                 <th scope="col">Total Mark</th>
                                 <th scope="col">Secured Mark</th>
-                                <th scope="col">Grade</th>
+                                
                             </tr>
                             
                         </thead>
@@ -118,7 +123,7 @@
                             <th scope="row">Mathematics-II</th>
                             <td>30</td>
                             <td>02</td>
-                            <td>Z</td>
+                            
                         </tr>
                         
                    
@@ -127,7 +132,7 @@
                             <th scope="row">Digital Logic Design</th>
                             <td>30</td>
                             <td>02</td>
-                            <td>Z</td>
+                           
                         </tr>
                         
                     
@@ -136,7 +141,7 @@
                             <th scope="row">Data Structure</th>
                             <td>30</td>
                             <td>02</td>
-                            <td>Z</td>
+                           
                         </tr>
                         
                    
@@ -145,7 +150,7 @@
                             <th scope="row">Environment Science</th>
                             <td>30</td>
                             <td>02</td>
-                            <td>Z</td>
+                            
                         </tr>
                         
                     
@@ -154,7 +159,7 @@
                             <th scope="row">Organisational Behaviour</th>
                             <td>30</td>
                             <td>02</td>
-                            <td>Z</td>
+                            
                         </tr>
                        
                     
@@ -163,14 +168,14 @@
                             <th scope="row">Object Oriented Programming Using JAVA</th>
                             <td>30</td>
                             <td>02</td>
-                            <td>Z</td>
+                           
                         </tr>
                         
                         <tr>
                             <th scope="row">Mathematics-II</th>
                             <td>30</td>
                             <td>02</td>
-                            <td>Z</td>
+                            
                         </tr>
 
                       
@@ -183,8 +188,8 @@
                     
                        
                     </tbody>
-                </table>
-            </div>
+                </table> 
+             </div> -->
         </div>
     </div>
 
@@ -192,11 +197,14 @@
 
 
 
-    <footer></footer>
+    <!-- <footer></footer> -->
 
 
 </body>
 </html>
 
 <!-- <script src="../components/header-footer/header-footer.js"></script> -->
-<script src="../components/header-footer/header-footer.js"></script>
+<script src="../components/header-footer/header-footer.js">
+
+</script>
+<script src="../assets/scripts/result.js" type="module"></script>
