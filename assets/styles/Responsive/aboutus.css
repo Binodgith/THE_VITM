@@ -1,4 +1,8 @@
 @media (max-width:479px){
+    #about-peropery-section-container{
+        width: 90%;
+        margin-left:17px;
+    }
     #about-peropery-section-container .about-section-under-main  p, ul{
         font-size:0.95rem;
         

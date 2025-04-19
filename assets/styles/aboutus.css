@@ -16,12 +16,13 @@
     box-sizing: border-box;
   }
   
-  #main-content {
+  /* #main-content {
     font-family: var(--font-body);
     color: var(--secondary-color-index);
     background-color: var(--ghost-white-index);
   }
-  
+   */
+   
   #about-us-header {
     position: relative;
     text-align: center;
