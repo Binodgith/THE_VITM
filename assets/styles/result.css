@@ -5,6 +5,9 @@
 body{
     background-color: ghostwhite;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 :root{
     --primary-color-index: #e60000;

@@ -31,7 +31,7 @@ result_find_btn.addEventListener("click",Show_Result)
     
 
     if ((reg_number!="" || roll_number!="") && academic_year!= "" && select_semester!="" && select_mid_semester!="" ){
-        start_loader_1();
+        start_loader_2();
         let query=`?AY=${academic_year}&SEM=${select_semester}&MSEM=${select_mid_semester}&RN=${reg_number}&RL=${roll_number}`
         let response=await get_results(query)
         append_table(response)
@@ -125,6 +125,7 @@ function append_table(response){
 
                 document.querySelector("#result-table-append-sec").append(table_div)
                 document.querySelector("#result-table-append-sec").style.display="block"
+                location.href="#result-table-append-sec";
 
                 
 }
