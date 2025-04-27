@@ -133,6 +133,10 @@ function appendFeeDetails(res){
           </div>
       </div>`;
 
+      table_content_sec.querySelector(".generate-pay a").addEventListener("click",()=>{
+        let amount_input=document.querySelector(".enter-amount-sec input").value;
+        window.location.href=`/pay.html?am=${amount_input}&srw=${res[0]["Row_No"]}`
+      })
       
       document.querySelector(".fee-container").append(student_details_sec,table_content_sec);
 
