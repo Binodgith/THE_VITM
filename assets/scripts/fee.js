@@ -135,7 +135,16 @@ function appendFeeDetails(res){
 
       table_content_sec.querySelector(".generate-pay a").addEventListener("click",()=>{
         let amount_input=document.querySelector(".enter-amount-sec input").value;
-        window.location.href=`/pay.html?am=${amount_input}&srw=${res[0]["Row_No"]}`
+
+        if(amount_input<=res[0]["Total_Fee_Due"]){
+           window.location.href=`/pay.html?am=${amount_input}&srw=${res[0]["Row_No"]}`
+        }
+        else{
+          alert("Entered Amount can't be more than Due Amount.")
+        }
+
+
+       
       })
       
       document.querySelector(".fee-container").append(student_details_sec,table_content_sec);
