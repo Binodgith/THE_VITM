@@ -71,6 +71,7 @@ function header_main(){
 
                         <ul id="menu-sub-list">
                             <li><a href="/pages/admission.html">Admission</a></li>
+                            <li><a href="/pages/Fees.html">Fees Payment</a></li>
                             <li><a href="/pages/result.html">Results</a></li>
                             <li><a href="/pages/alumni.html">Alumni</a></li>
                             <li><a href="https://scholarship.odisha.gov.in/website/"  target="_blank">Scholarship Portal</a></li>
