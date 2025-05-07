@@ -189,6 +189,7 @@ if(rw=='' || rw==null || busN=='' || busN==null){
             if(time < new Date()){
                 alert(`Bus already Reached college at ${new Date(res[0]["Bus_Reached"]).toLocaleTimeString()}`)
             }
+            AllignStopages(RouteRes,"Apr 14 2025 0:00:00 MT+0530");
         }
         else{
             alert("Bus not yet Started.")
