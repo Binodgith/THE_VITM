@@ -136,7 +136,7 @@ function appendFeeDetails(res){
       table_content_sec.querySelector(".generate-pay a").addEventListener("click",()=>{
         let amount_input=document.querySelector(".enter-amount-sec input").value;
 
-        if(amount_input<=res[0]["Total_Fee_Due"]){
+        if(amount_input<=res[0]["Total_Fee_Due"] && amount_input!=0 && amount_input!=''){
            window.location.href=`/pay.html?am=${amount_input}&srw=${res[0]["Row_No"]}`
         }
         else{

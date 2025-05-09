@@ -132,7 +132,7 @@ function footer_main(){
                         <a href="">Hall Ticket</a>
                         <a href="/pages/announcement.html">Notice</a>
                         <a href="/pages/events.html">Events</a>
-                        <a href="">Developers</a>
+                        <a href="https://conductor-the-vitm.vercel.app/">Conductors</a>
                         <a href="/pages/gallery.html">Gallery</a>
                         <a href="/pages/aboutUs.html">About US</a>
                         <a href="/pages/contactUs.html">Contact US </a>

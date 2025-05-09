@@ -218,6 +218,94 @@ body{
 
 
 
+/* -----------------------------Sevices Section----------------------------------- */
+.services-section {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: auto;
+  }
+  
+  
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    /* max-width: 700px; */
+  }
+  
+  .service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.267);
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 4px solid var(--primary-color-index);
+  }
+  .service-card:hover{
+    background:#c42a2ac7;
+    color: var(--white-color-index);
+    cursor: pointer;
+  }
+  
+  /* .service-card.active {
+    background-color: #007bff;
+    color: #fff;
+  } */
+  
+  .service-card .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .service-card h3 {
+    margin: 10px 0;
+  }
+  
+  .service-card p {
+    font-size: 0.9rem;
+    position: relative;
+  }
+  .service-card>a{
+    font-size: 1.1rem;
+    color:var(--white-color-index);
+    background-color: var(--primary-color-index);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(175, 175, 175);
+    margin-top: 10px;
+    position: relative;
+  }
+  
+
+ 
+  
+  @media (max-width: 768px) {
+    .services-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ---------------------------------Admission Advertisment ---------------------- */

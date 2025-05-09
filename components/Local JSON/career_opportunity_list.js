@@ -18,8 +18,8 @@ let career_opportunity_list=[
         job_adv_no:"VITM-TS-00013",
         job_status:"active",
         job_released_date:"28-09-2024",
-        job_application_start:"01-10-2024",
-        job_application_ends:"30-11-2024",
+        job_application_start:"01-05-2025",
+        job_application_ends:"15-05-2025",
         job_appliaction_id:"241025469",
         job_short_description:"Join our team! We're seeking an experienced HOD for the ETC department to lead and inspire with strategic vision, innovation, and a strong commitment to academic excellence.",
         job_prospectus_file_id:"16sjkn-VztuZxo68HNx00zKR7CkKyfEgDmAmSNSTahUc"
@@ -57,8 +57,8 @@ let career_opportunity_list=[
         job_adv_no:"VITM-TS-00017",
         job_status:"inactive",
         job_released_date:"28-09-2024",
-        job_application_start:"01-10-2024",
-        job_application_ends:"30-11-2024",
+        job_application_start:"05-05-2025",
+        job_application_ends:"20-05-2025",
         job_appliaction_id:"241014587",
         job_short_description:"We are looking for a skilled electrician to join our team. The ideal candidate will have experience in electrical systems, maintenance, and troubleshooting. Apply now to be part of our dynamic campus team",
         job_prospectus_file_id:"1lUVoh5AiEbdUmLXTy3TS8TpAWBtCmSqz742S8T-wy9I"

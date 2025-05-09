@@ -9,9 +9,7 @@ let srw = urlParams.get('srw');
 
 if(srw=='' || srw==null || am=='' || am==null){
 
-    document.addEventListener('DOMContentLoaded', () => {
-        document.getElementById('verify-payment').classList.add('active');
-    });
+    location.href='/pages/Fees.html'
 }
 else{
     document.querySelector(".merchant-info .amount-field").innerText=am
