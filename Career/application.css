@@ -29,3 +29,14 @@ header{
     background-color: #fff;
     
 }
+
+
+
+@media (max-width:480px){
+    #career-application-container{
+        width:95%;
+    }
+    #career-application-container form{
+        width: 95%;
+    }
+}
