@@ -1,4 +1,4 @@
-body {
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f5f5f5;
@@ -120,4 +120,39 @@ body {
     color: brown;
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:480px){
+  header #header-container{
+    width: 90%;
+    
+  }
+
+  .payment-container{
+    width: 90%;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .payment-container .sidebar{
+    width: 100%;
+    display: inline-block
+  }
+
+  #Scanner-sec{
+    width: 70%;
+  }
+
+}
   

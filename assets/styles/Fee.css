@@ -1,4 +1,4 @@
-body {
+  body {
     font-family: Arial, sans-serif;
     /* margin: 20px; */
     margin: 0;
@@ -170,3 +170,48 @@ body {
   opacity: 0.8;
  }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width:480px){
+  .fee-container{
+    width: 90%;
+  }
+
+  .fee-container{
+    flex-direction: column;
+  }
+  .student-details-sec{
+    width: 80%;
+    margin: auto;
+  }
+  .table-content-sec-right{
+    width: 95%;
+    margin: auto;
+  }
+
+  .fee-container table{
+    font-size:0.9rem ;
+  }
+ }
