@@ -5,6 +5,12 @@ The system includes Admissions, Examination & Results Management, Syllabus Acces
 
 ---
 
+## ☁️Hosted 
+
+1. [Students Portal] https://vitm.tech/
+2. [Conductor Portal] https://conductor.vitm.tech/
+3. [Institute Admin] Managed by backend(ExcelSheet)
+
 ## 🔨 Tech Stack
 
 ![HTML](https://img.shields.io/badge/HTML5-E44D26?style=for-the-badge&logo=html5&logoColor=white)
@@ -123,6 +129,22 @@ VITM.tech (Version 2.0) is built to elevate the digital operations of VITM Insti
 ![Bus Tracking](https://github.com/user-attachments/assets/372708fe-ec35-4324-802e-69643fb7aa8b)
 
 
+### Conductor Login
+![Conductor login](https://github.com/user-attachments/assets/2ba9e345-2ce7-402d-b286-45cbf2be59af)
+
+### Conductor Dashboard
+![Conductor login](https://github.com/user-attachments/assets/3215a89c-877d-4f6f-8c87-5c6aa9c3ba34)
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 ## 🗄 Database Overview
@@ -169,6 +191,10 @@ Key tables (suggested schema summary):
    git clone https://github.com/<your-username>/<your-repo>.git
    cd <your-repo>
 
+
+
+## Cost of project 
+<img width="2001" height="1187" alt="image" src="https://github.com/user-attachments/assets/05ad04c1-5266-4e85-ae62-04542205e785" />
 
 
 ## Feedback
